@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<p>
+			选择你喜欢的电视剧：
+			<input type="radio" name="book" onclick="book()" />轩辕剑.汉之云
+			<input type="radio" name="book" onclick="book()" />复合大师
+		</p>
+		<div>
+			<img src="" alt="" id="image" onclick="img()" /><span></span>
+		</div>
+		<script>
+			function book(){
+				var obj = document.getElementsByName("book");
+			var book = document.getElementById("image");
+			if(obj[0].checked){
+				document.getElementById("image").setAttribute("src","img/a_100040138_m_601_m8_180_236.jpg");
+				document.getElementById("image").setAttribute("alt","新片轩辕剑汉之云");
+				document.getElementById("image").nextElementSibling.innerHTML="<br />新片轩辕剑汉之云"
+			}else if(obj[1].checked){
+				document.getElementById("image").setAttribute("src","img/a_100040261_m_601_m2_180_236.jpg");
+				document.getElementById("image").setAttribute("alt","新片复合大师");
+				document.getElementById("image").nextElementSibling.innerHTML="<br />新片复合大师"
+			}
+			}
+			function img(){
+				var alt = document.getElementById("image").getAttribute("alt");
+				alert(alt);
+			}
+		</script>
+	</body>
+</html>
