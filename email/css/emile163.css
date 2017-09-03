@@ -1,0 +1,237 @@
+			header{
+				width: 1024px;
+				margin: 0 auto;
+			}
+			#box{
+				position: absolute;
+				right: 226px;
+				top: 193px;
+				width: 350px;
+				height: 338px;
+				border-radius: 20px 20px 0px 0px;
+				background: white;
+				box-shadow: 0 5px 5px rgba(0,0,0,0.1), 0 0 10px 0 rgba(0,0,0,0.2);
+			}
+			input.in1{
+				margin-left:38px ;
+				width: 246px;
+				height: 35px;
+				padding-left: 0px;
+				
+			}
+			input.in2{
+				margin-left:38px ;
+				width: 246px;
+				height: 35px;
+				padding-left: 0px;
+			}
+
+			input.check{
+				margin-left: 40px;
+				margin-top: 20px;
+			}
+			input.login{
+				margin-left: 60px;
+				margin-top: 20px;
+				width: 90px;
+				height: 40px;
+				border-radius: 10px;
+				background: #00BFFF;
+				color: white;
+			}
+			span.forget{
+				float: right;
+				margin-right: 30px;
+				margin-top: 16px;
+				
+			}
+			span a {
+				text-decoration: none;
+				color: black;
+			}
+			span a:visited{
+				color: black;
+			}
+			span a:hover{
+				color: orangered;
+			}
+			.zhuce{
+				float: right;
+				margin-right: 60px;
+				margin-top: 20px;
+				width: 90px;
+				height: 40px;
+				border-radius: 10px;
+				background: #00BFFF;
+				color: white;
+				
+			}
+			.bgcolor{
+				margin-left: 157px;
+			}
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			section{
+				margin: 0px;
+				padding: 0px;
+				background: #e8e6e7;
+			}
+			.item{
+				background: url(img/icon1.jpg) no-repeat ;
+				
+				margin-top: 50px;
+				margin-left: 30px;
+				width: 300px;
+				height: 40px;
+			}
+			.item2{
+				background: url(img/icon2.jpg) no-repeat ;			
+				margin-top: 26px;
+				margin-left: 30px;
+				width: 300px;
+				height: 40px;
+			}
+			.loginbox{
+				width: 200px;
+				height: 50px;
+				margin-top: 40px;
+			}
+			.emilelogin{
+				width: 177px;
+				height: 55px;
+				text-align: center;
+				line-height: 55px;
+				border-bottom:1px gainsboro solid ;
+				border-radius: 0px 20px 0px 0px;
+				clear: both;
+				display: inline-block;
+			}
+			.erweima{
+				width: 172px;
+				height: 55px;
+				text-align: center;
+				line-height: 55px;
+				float: left;
+				border-bottom:1px gainsboro solid ;
+				border-right: 1px gainsboro solid;
+				background: linear-gradient(#CCCCFF,#FFFFFF);
+				display: inline-block;
+				border-radius: 20px 0px 0px 0px;
+			}
+			form{
+				display: block;
+			}
+			h3{
+				position: absolute;
+				left: 57px;
+				top: 97px;
+				color: gray;
+			}
+			h3 span{
+				font-weight: 100;
+				font-size: 18px;
+			}
+			.appLogin{
+				position: absolute;
+				left: 83px;
+				top: 130px;
+			}
+			a.downlode:link{
+				text-decoration: none;
+				color: blue;
+			}
+			a.downlode:visited{
+				text-decoration: none;
+				color: blue;
+			}
+			a.downlode:hover{
+				text-decoration: underline;
+				color: blue;
+			}
+			.imgErweima{
+				position: absolute;
+				left: 117px;
+				top: 157px;
+			}
+			#boxErweima{
+				display: none;
+			}
+***********************************************************
+/*header*/
+			header {
+				height: 75px;
+			}
+			
+			img {
+				margin-top: 17px;
+			}
+			
+		
+			
+			.login163 {
+				vertical-align: middle;
+				display: inline-block;
+				margin-right: 20px;
+				margin-left: 70px;
+				margin-top: 0px;
+			}
+			
+			nav {
+				display: inline-block;
+				margin: 20px;
+				margin-left: 30px;
+				margin-top: 30px;
+			}
+			nav a{
+				font-size: 10px;
+				margin-right: 10px;
+				text-decoration: none;
+			}
+			nav a:link{
+				color: gray;			
+			}
+			nav a:hover{
+				color: black;
+			}
+			.unvisi{
+				font-size: 20px;
+				color: gray;
+				
+				
+			}
+			a{
+				text-decoration: none;
+			}
+			
+			.unvisi:hover{
+				color: #000000;
+			}
+**********************************************************
+/*footer*/
+	footer{
+				height: 65px;
+				margin: 0 auto;
+			}
+			
+			#footer{
+				width: 1000px;
+   				height: 63px;   				
+   				margin-left: 222px;
+   				color: #848585;
+   				position: relative;
+			}
+			.footerLogo{
+				position: absolute;
+				top: 10px;
+			}
+			.footerNav{
+				display: inline-block;
+				position: absolute;
+				left: 161px;
+				top: 0px;
+			}
+			.footerSize{
+				font-size: 20px;
+			}

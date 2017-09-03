@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="css/emile163.css" rel="stylesheet" />
+		<style>
+			.item{
+				background: url(img/icon1.jpg) no-repeat ;			
+				margin-top: 50px;
+				margin-left: 30px;
+				width: 300px;
+				height: 40px;
+			}
+			.item2{
+				background: url(img/icon2.jpg) no-repeat ;			
+				margin-top: 26px;
+				margin-left: 30px;
+				width: 300px;
+				height: 40px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<a href="http://mail.163.com/html/mail_intro/"><img src="img/163logo.gif" height="45px" width="130px" class="login163" /></a>
+			
+				<a  href="http://mail.163.com/html/mail_intro/" target="_blank"><span class="unvisi">中文邮箱第一品牌</span></a>
+			<nav>
+				
+				<a href="http://mail.163.com/html/160513_yellow/" target="_blank">邮箱黄页</a>
+				<a href="http://qiye.163.com/" target="_blank">企业邮箱</a>
+				<a href="http://vip.163.com?b08abh1" target="_blank">VIP邮箱</a>
+				<a href="http://hw.mail.163.com/#163" target="_blank">国外用户登录</a>
+				<a href="http://mail.163.com/dashi/dlpro.html?from=mail13" target="_blank">手机版</a>
+				<a href="http://mail.163.com/dashi/dlpro.html?from=mail1&amp;spread=pc" target="_blank">电脑版</a>
+				<a href="http://help.mail.163.com" target="_blank">帮助</a>
+				<a href="http://help.mail.163.com/faqDetail.do?code=d7a5dc8471cd0c0e8b4b8f4f8e49998b374173cfe9171305fa1ce630d7f67ac24ebe7a3165848018" target="_blank">常见问题</a>
+				<span class="separator">&nbsp;|&nbsp;</span>&nbsp;
+				<a class="last" href="https://v.mail.163.com/?from=logintop" target="_blank">私人助理</a>
+			</nav>
+		
+			
+
+		</header>
+		<section>
+
+			<div class="bgcolor"><a href="https://you.163.com/item/detail?id=1165018&from=web_gg_mail_mailin_0"><img src="https://mimg.127.net/m/lc/img/LoginBackgroundPic/1301/1/promPic.jpg" /></a></div>
+
+			<div id="box">
+				<div class="erweima" id="erwema" onmouseover="erweima()">二维码</div>
+				<div class="emilelogin" id="login" onmouseover="login()">邮箱账号登录</div>
+				<form id="form">
+					<div class="item">
+						<input type="email" name="email" class="in1"  placeholder="输入邮箱"/>
+					</div>
+
+					<div class="item2">
+						<input class="in2" type="password" placeholder="密码"/>
+					</div>
+
+					<input class="check" type="checkbox" />十天内免费登录<span class="forget">
+               			<a href="#">忘记密码</a></span>
+
+					<input class="login" type="submit" value="登录" /><input class="zhuce" type="submit" value="注册" />
+
+				</form>
+
+				<div id="boxErweima">
+					<h3>网易邮箱大师 <span>手机版扫码登录</span></h3>
+					<p class="appLogin">官方APP更安全&nbsp;&nbsp;
+						<a href="http://mail.163.com/dashi/?from=mail101&gotodownload=1" class="downlode">立即下载</a>
+					</p>
+					<p class="imgErweima"><img src="img/二维码.jpg" width="130px" height="130px" /></p>
+				</div>
+
+			</div>
+		</section>
+		
+		<footer>
+			
+			<div id="footer">
+				<a  href="http://www.163.com/" class="footerLogo"><img src="https://mimg.127.net/logo/netease_logo.gif"></a>
+				<nav class="footerNav">
+					<a href="http://www.163.com/" target="_blank">网易首页</a>
+           			<a href="http://mail.163.com/html/mail_intro" target="_blank">关于网易免费邮</a>
+          			<a href="https://3c.163.com/?from=pdengluyetoutu1" target="_blank">网易智造</a>
+           			<a href="http://qian.163.com" target="_blank">网易•有钱</a>
+         			<a href="http://you.163.com/" target="_blank">网易严选</a>
+					<a href="http://pin.mail.163.com?utm_source=maillogin&amp;utm_medium=163" target="_blank">网易一起拼</a>
+					<span style="font-size:10px ;"> |&nbsp;&nbsp;网易公司版权所有©1997-2017</span>
+				</nav>
+				
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			
+		</footer>
+		<script>
+			function erweima() {
+				document.getElementById("form").style.display = "none"
+				document.getElementById("boxErweima").style.display = "block"
+				document.getElementById("erwema").style.background = "white"
+				document.getElementById("login").style.background = "linear-gradient(#CCCCFF,#FFFFFF)"
+
+			}
+
+			function login() {
+				document.getElementById("form").style.display = "block"
+				document.getElementById("boxErweima").style.display = "none"
+				document.getElementById("erwema").style.background = "linear-gradient(#CCCCFF,#FFFFFF)"
+				document.getElementById("login").style.background = "white"
+			}
+		</script>
+	</body>
+
+</html>
