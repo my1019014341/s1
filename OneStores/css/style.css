@@ -1,0 +1,326 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+img{border: none;}
+body {
+	font-size: 12px;
+	margin: 0 auto;
+}
+
+#top {
+	width: 1350px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	background: linear-gradient(to bottom, #d1d1d1, #f4f4f4, #f5f5f5);
+}
+
+ul,
+li {
+	margin: 0px;
+	padding: 0px;
+}
+
+li {
+	text-decoration: none;
+}
+
+.left span {
+	float: left;
+	margin-left: 60px;
+}
+
+.service {
+	height: 136px;
+	width: 82px;
+	overflow: hidden;
+	position: absolute;
+	right: 294px;
+	top: 35px;
+	background: white;
+	border: 1px solid gainsboro;
+	display: none;
+}
+
+.service ul li {
+	line-height: 24px;
+}
+
+.ss_list {
+	display: inline-block;
+	background: url(../img/t_arrow.gif) no-repeat right center;
+	padding-right: 20px;
+	padding-left: 10px;
+	float: left;
+}
+
+.ss_list:hover .ss_list_bg {
+	display: block;
+}
+
+.right {
+	float: left;
+	margin-right: 5px;
+}
+
+.right1 {
+	float: left;
+	margin-left: 10px;
+}
+
+#top-right {
+	float: right;
+	margin-right: 20px;
+}
+
+a,
+img {
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+a:visited {
+	color: black;
+}
+
+a:hover {
+	color: orangered;
+}
+
+#top2 {
+	width: 1200px;
+	height: 140px;
+}
+
+.logo {
+	margin-top: 40px;
+	margin-left: 82px;
+	float: left;
+}
+
+.search {
+	width: 520px;
+	height: 65px;
+	float: left;
+	margin-top: 56px;
+	margin-left: 121px;
+}
+
+.searin {
+	width: 408px;
+	height: 40px;
+	line-height: 36px;
+	border: 2px #ff3c3c solid;
+	float: left;
+	outline: none;
+}
+
+.seasub {
+	width: 90px;
+	height: 40px;
+	line-height: 40px;
+	background-color: #ff3c3c;
+	color: #FFF;
+	font-size: 16px;
+	text-align: center;
+	float: left;
+	border: none;
+	cursor: pointer;
+}
+
+.seabottom {
+	display: inline-block;
+	padding-right: 10px;
+	padding-left: 0px;
+}
+
+.i_car {
+	width: 120px;
+	height: 38px;
+	line-height: 38px;
+	background: #f6f6f6 url(../img/car.png) no-repeat 10px center;
+	float: right;
+	margin-top: 59px;
+	border: 1px solid #d9d9d9;
+	position: relative;
+}
+
+.car_t {
+	width: 80px;
+	height: 38px;
+	overflow: hidden;
+	font-size: 14px;
+	margin-left: 38px;
+	cursor: pointer;
+	padding-left: 10px;
+}
+
+************************************************************
+/*footer*/
+
+.center {
+	width: 1200px;
+	overflow: hidden;
+}
+
+.b_btm_bg {
+	width: 100%;
+	min-width: 1200px;
+	overflow: hidden;
+	margin: 30px auto;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.btmbg {
+	clear: both;
+}
+
+.b_btm_c {
+	background-color: #FFF;
+}
+
+.b_btm {
+	margin-left: 144px;
+	list-style: none;
+}
+
+.b_btm li {
+	color: #888888;
+	font-size: 14px;
+	width: 210px;
+	float: left;
+	margin-left: 25px;
+	text-align: center;
+}
+
+.b_btm li img {
+	transition: all 3s;
+}
+
+.b_btm li img:hover {
+	transform: rotate(360deg) scale(1.2);
+}
+
+.b_btm li h2 {
+	color: #3e3e3e;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.bottomBox {
+	margin: 20px auto;
+	overflow: hidden;
+	padding: 0 50px;
+}
+
+.bottomBox dl {
+	display: inline-block;
+	width: 91px;
+	height: 165px;
+	float: left;
+	margin-left: 64px;
+}
+
+dt a {
+	font-size: 16px;
+	color: black;
+}
+
+dd a {
+	font-size: 12px;
+	color: gray;
+}
+
+dt a :visited {
+	color: black;
+}
+
+dd a:visited {
+	color: gray;
+}
+
+dd a:hover {
+	color: orangered;
+}
+
+dt a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+dt {
+	margin-bottom: 20px;
+}
+
+dd {
+	height: 20px;
+	line-height: 20px;
+}
+
+.er {
+	width: 120px;
+	text-align: center;
+	float: right;
+	display: inline;
+	margin-right: 22px;
+	margin-top: 5px;
+}
+
+ul {
+	list-style: none;
+}
+
+.bottomBox li a {
+	font-size: 14px;
+	color: gray;
+}
+
+.bottomBox li a:hover {
+	color: orangered;
+}
+
+dl+ul {
+	display: inline-block;
+	width: 108px;
+	height: 142px;
+	margin-top: 14px;
+	margin-left: 10px;
+	float: right;
+}
+
+dl+ul li:last-child {
+	margin-top: 10px;
+	color: gray;
+	font-size: 12px;
+}
+
+dl+ul li:last-child span {
+	font-size: 16px;
+	color: orangered;
+}
+
+.btmbg {
+	width: 100%;
+	min-width: 1200px;
+	overflow: hidden;
+	padding: 30px 0 40px 0;
+	border-top: 1px solid #eaeaea;
+}
+
+.btm {
+	width: 1200px;
+	overflow: hidden;
+	color: #999999;
+	text-align: center;
+}
+
+.btm img {
+	width: 98px;
+	height: 33px;
+	display: inline-block;
+	margin: 15px 5px 5px 5px;
+	border: 1px solid #d9d9d9;
+	border-radius: 5px;
+}

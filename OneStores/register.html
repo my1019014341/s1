@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/util.css">
+</head>
+<body>
+		<header id="head">
+			<div class="headBox">
+				<a href="#"><img src="https://passport.yhd.com/front-passport/passport/images/loginlogo.jpg" alt="" /></a>
+				<div class="helpBox">
+					<img src="img/runbun.png" class="help" />
+					<a href="#" class="headHelp">&nbsp;帮助中心&nbsp;</a><img src="img/turnb.png" style="vertical-align: middle;" />
+					<ul class="helpText">
+						<li>
+							<a href="#">包裹跟踪</a>
+						</li>
+						<li>
+							<a href="#">常见问题</a>
+						</li>
+						<li>
+							<a href="#">在线退换货</a>
+						</li>
+						<li>
+							<a href="#">在线投诉</a>
+						</li>
+						<li>
+							<a href="#">配送范围</a>
+						</li>
+					</ul>
+
+				</div>
+
+				<div class="headLeft">
+					<span>您好，欢迎光临1号店！&nbsp;&nbsp;&nbsp;<a href="login.html" class="headLogin">请登录</a></span>
+
+				</div>
+
+			</div>
+		</header>
+<section id="secTab">
+    <div class="innerTab">
+        <h2>1号店注册</h2>
+        <form action="#">
+            <div class="tableItem">
+                <input type="text" required placeholder="手机号"/>
+            </div>
+            <div class="clear">
+                <div class="tableItem onlyItem fl">
+                    <input class="" type="text" required placeholder="手机号"/>
+                </div>
+                <a class="tableText fr" href="#">获取验证码</a>
+            </div>
+            <div class="tableItem">
+                <input type="password" required placeholder="密码"/>
+            </div>
+            <div class="tableItem">
+                <input type="password" required placeholder="确认密码"/>
+            </div>
+            <p class="clickRegist">点击注册，表示您同意1号店 <a href="#">《服务协议》</a></p>
+           <input type="submit" class="login" value="同意协议并注册" style="width: 330px; margin-left: 0px ;"/>
+        </form>
+    </div>
+</section>
+<footer id="footNav">
+    <p><a href="#">沪ICP备13044278号</a>|&nbsp;&nbsp;合字B1.B2-20130004&nbsp;&nbsp;|<a href="#">营业执照</a></p>
+
+    <p>Copyright © 1号店网上超市 2007-2016，All Rights Reserved</p>
+</footer>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
+		<script>
+			$("#moreLoad").click(function(){
+				$(".moreweb").show()
+				$("section").css("height","490px")
+			})
+			$(".headHelp,.helpText").mouseover(function(){
+				$(".helpText").show()
+			})
+			$(".helpText").mouseout(function(){
+				$(".helpText").hide()
+			})
+			$("input").click(function(){
+				$("input").css("")
+			})
+		</script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<link rel="stylesheet" type="text/css" href="css/util.css"/>
+	</head>
+
+	<body>
+		<header id="head">
+			<div class="headBox">
+				<a href="#"><img src="https://passport.yhd.com/front-passport/passport/images/loginlogo.jpg" alt="" /></a>
+				<div class="helpBox">
+					<img src="img/runbun.png" class="help" />
+					<a href="#" class="headHelp">&nbsp;帮助中心&nbsp;</a><img src="img/turnb.png" style="vertical-align: middle;" />
+					<ul class="helpText">
+						<li>
+							<a href="#">包裹跟踪</a>
+						</li>
+						<li>
+							<a href="#">常见问题</a>
+						</li>
+						<li>
+							<a href="#">在线退换货</a>
+						</li>
+						<li>
+							<a href="#">在线投诉</a>
+						</li>
+						<li>
+							<a href="#">配送范围</a>
+						</li>
+					</ul>
+
+				</div>
+
+				<div class="headLeft">
+					<span>您好，欢迎光临1号店！&nbsp;&nbsp;&nbsp;<a href="login.html" class="headLogin">请登录</a></span>
+
+				</div>
+
+			</div>
+		</header>
+		<section>
+			<a target="_blank" href="http://qianggou.yhd.com/?ref=ad.19022_47198172_1"><img class="bgimg" src="https://imgssl.yhd.com/V01/M01/47/3F/ChEi3VjwyzCAE_i8AACeYUoCpec98400.jpg"></a>
+			<form class="inputBox">
+				<h4 class="inputText">1号店用户登录</h4>
+				<a href="register.html" target="_blank">注册新账号</a>
+				<div class="input1">
+					<img src="img/userHead.png" sty/><input type="text" required="required" />
+				</div>
+				<div class="input2">
+					<img src="img/lock.png" sty/><input type="password" required="required" />
+				</div>
+				<div class="input3">
+					<input type="checkbox" id="autoLogin" /><label for="autoLogin">自动登录</label>
+					<a href="https://passport.yhd.com/passport/find_pwd_input.do" class="forget">忘记密码?</a>
+				</div>
+				<input type="submit" class="login" value="登录" />
+				<span class="more">更多合作网站账号登录</span>
+				<ul class="moreLogo">
+					<li><a href="#"><img src="img/QQ.png" /></a></li>
+					<li><a href="#"><img src="img/百度.png" /></a></li>
+					<li><a href="#"><img src="img/微信.png" /></a></li>
+					<li><a href="#"><img src="img/新浪微博.png" /></a></li>
+					<span id="moreLoad">更多合作网站</span><img src="img/loadMore.png" width="20px" height="20px" />
+				</ul>
+				<div class="moreweb">
+					<ul>
+						<li><a href="#"><img src="img/QQ空间.png" />QQ空间</a></li>
+						<li><a href="#"><img src="img/豆瓣网.png" />豆瓣网</a></li>
+						<li><a href="#"><img src="img/短信.png" />短信</a></li>
+						<li><a href="#"><img src="img/朋友圈.png" />朋友圈</a></li>
+
+					</ul>
+					<ul>
+						<li><a href="#"><img src="img/朋友网.png" />朋友网</a></li>
+						<li><a href="#"><img src="img/人人网.png" />人人网</a></li>
+						<li><a href="#"><img src="img/腾讯微博.png" />腾讯微博</a></li>
+						<li><a href="#"><img src="img/易信好友.png" />易信好友</a></li>
+
+					</ul>
+				</div>
+			</form>
+		</section>
+		<footer id="footNav">
+			<p>
+				<a href="#">沪ICP备13044278号</a>|&nbsp;&nbsp;合字B1.B2-20130004&nbsp;&nbsp;|
+				<a href="#">营业执照</a>
+			</p>
+			<p>Copyright © 1号店网上超市 2007-2016，All Rights Reserved</p>
+		</footer>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
+		<script>
+			$("#moreLoad").click(function(){
+				$(".moreweb").show()
+				$("section").css("height","490px")
+			})
+			$(".headHelp,.helpText").mouseover(function(){
+				$(".helpText").show()
+			})
+			$(".helpText").mouseout(function(){
+				$(".helpText").hide()
+			})
+		</script>
+	</body>
+	
+</html>

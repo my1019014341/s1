@@ -1,0 +1,324 @@
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			#head {
+				padding: 16px;
+				border-bottom: 1px solid #e1e1e1;
+				box-shadow: 0px 0px 10px #ccc;
+			}
+			
+			.headBox {
+				width: 1174px;
+				height: 46px;
+				margin-left: 60px;
+			}
+			
+			.headLeft {
+				float: right;
+				margin-top: 5px;
+				font-size: 12px;
+				color: gray;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			a.headLogin:link {
+				color: blue;
+			}
+			
+			a.headLogin:visited {
+				color: blue;
+			}
+			
+			a.headLogin:hover {
+				color: orangered;
+			}
+			
+			a.headHelp:link {
+				color: black;
+			}
+			
+			a.headHelp:visited {
+				color: black;
+			}
+			
+			a.headHelp:hover {
+				color: orangered;
+			}
+			
+			.headHelp {
+				font-size: 12px;
+			}
+			
+			.headLogin {}
+			
+			.help {
+				vertical-align: middle;
+			}
+			
+			.helpBox {
+				cursor: pointer;
+				float: right;
+				height: 177px;
+				margin-left: 40px;
+			}
+			
+			ul,
+			li {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			.helpText {
+				text-indent: 23px;
+				display: none;
+				font-size: 12px;
+			}
+			
+			.helpText>li {
+				list-style: none;
+				height: 30px;
+				line-height: 30px;
+				border-top: 1px gainsboro dashed;
+			}
+			
+			.headHelp,.helpText a:link {
+				color: black;
+			}
+			
+			.headHelp,.helpText a:visited {
+				color: black;
+			}
+			
+			.headHelp,.helpText a:hover {
+				color: orangered;
+			}
+			
+			section {
+				background: white;
+				width: auto;
+			}
+			
+			.bgimg {
+				margin-left: 196px;
+				margin-top: 84px;
+			}
+			
+			.inputBox {
+				width: 356px;
+				height: 433px;
+				
+				display: inline-block;
+				float: right;
+				margin-right: -21px;
+				margin-top: 60px;
+			}
+			
+			.inputText {
+				margin-top: 30px;
+				margin-left: 30px;
+				opacity: 0.7;
+				font-size: 14px;
+				display: inline-block;
+			}
+			
+			.inputText+a {
+				margin-left: 108px;
+				font-size: 12px;
+			}
+			
+			.inputText+a:link {
+				color: blue;
+			}
+			
+			.inputText+a:visited {
+				color: blue;
+			}
+			
+			.inputText+a:hover {
+				color: orangered;
+			}
+			
+			.input1 {
+				height: 46px;
+				width: 312px;
+				border: 1px gainsboro solid;
+				line-height: 46px;
+				margin-left: 19px;
+				margin-top: 5px;
+			}
+			
+			.input2 {
+				height: 46px;
+				width: 312px;
+				border: 1px gainsboro solid;
+				line-height: 46px;
+				margin-left: 19px;
+				margin-top: 25px;
+			}
+			
+			img {
+				vertical-align: middle;
+			}
+			
+			.input1>img {
+				margin-left: 15px;
+			}
+			
+			.input1 input {
+				margin-left: 20px;
+				width: 200px;
+				border: none;
+				outline: none;
+				height: 24px;
+				line-height: 24px;
+				font-size: 24px;
+				vertical-align: middle;
+			}
+			
+			.input2>img {
+				margin-left: 15px;
+			}
+			
+			.input2 input {
+				margin-left: 20px;
+				width: 200px;
+				border: none;
+				outline: none;
+				height: 24px;
+				line-height: 24px;
+				font-size: 24px;
+				vertical-align: middle;
+			}
+			
+			.input3 {
+				font-size: 12px;
+				color: gray;
+				margin-top: 15px;
+				margin-left: 20px;
+			}
+			
+			.input3 input {
+				vertical-align: middle;
+			}
+			
+			.forget {
+				margin-left: 198px;
+				color: gray;
+			}
+			
+			.login {
+				background: red;
+				opacity: 0.8;
+				font-size: 20px;
+				font-weight: bold;
+				color: white;
+				text-align: center;
+				line-height: 49px;
+				height: 49px;
+				width: 314px;
+				margin-left: 20px;
+				margin-top: 20px;
+				border: none;
+				cursor: pointer;
+			}
+			
+			.more {
+				color: gray;
+				font-size: 12px;
+				margin-left: 20px;
+				height: 40px;
+				line-height: 40px;
+			}
+			
+			.moreLogo {
+				margin: 0px;
+				padding: 0px;
+				margin-left: 20px;
+				display: inline-block;
+			}
+			
+			.moreLogo>li {
+				list-style: none;
+				display: inline-block;
+				margin-right: 10px;
+			}
+			
+			li img {
+				width: 40px;
+				height: 40px;
+			}
+			
+			#moreLoad {
+				font-size: 5px;
+				color: gray;
+				margin-left: 10px;
+				cursor: pointer;
+			}
+			
+			.moreweb {
+				height: 65px;
+				width: 314px;
+				display: none;
+				margin-left: 20px;
+				margin-top: 10px;
+				font-size: 12px;
+			}
+			
+			.moreweb li {
+				list-style: none;
+				display: inline-block;
+				width: 75px;
+			}
+			
+			.moreweb img {
+				width: 20px;
+				height: 20px;
+			}
+			
+			.moreweb ul:nth-of-type(2) {
+				margin-top: 10px;
+			}
+			section{
+				height: 475px;
+			}
+			#footNav {
+				height: 46px;
+				width: 980px;
+				margin: 20px auto 0;
+				text-align: center;
+				font-size: 12px;
+			}
+			
+			#footNav p {
+				margin-top: 10px;
+				color: #333;
+			}
+			
+			#footNav p a {
+				padding: 0 6px;
+				color: #333;
+			}
+			
+			#footNav p a:hover {
+				color: #c00;
+			}
+
+			.fl {
+				float: left;
+			}
+			
+			.fr {
+				float: right;
+			}
+			
+			.clear:after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+		img{border: none}
