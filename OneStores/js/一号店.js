@@ -66,3 +66,21 @@ $(function() {
 		}
 	)
 })
+$(".gusLove li").hover(
+	function() {
+		$(this).css({
+			"background": "#FF6700",
+			"color": "black"
+		})
+		$(this).children("img").css("transform", "scale(1.1)")
+		$(this).children("img").css("transition", "all 1s ease")
+	},
+	function() {
+		$(this).css({
+			"background": "none",
+			"color": "grey"
+		})
+		$(this).children("img").css("transform", "scale(1)")
+		$(this).children("img").css("transition", "all 1s ease")
+	}
+)
