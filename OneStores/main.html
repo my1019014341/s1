@@ -347,7 +347,18 @@
 		</footer>
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 		<script type="text/javascript" src="js/一号店.js" >
-			
+			$(".nav_bottom li").hover(
+	function() {
+		var index = $(this).index(this)
+		$(this).css("transform", "translate(20px)")
+		$(this).css("transition", "all 1s ease")
+	},
+	function() {
+		var index = $(this).index(this)
+		$(this).css("transform", "translate(0px)")
+		$(this).css("transition", "all 1s ease")
+	}
+)
 		</script>
 	</body>
 
