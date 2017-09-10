@@ -202,3 +202,63 @@ h3+span {
 .ul li:first-child {
 	background: orange;
 }
+.right_nav {
+	height: 250px;
+	width: 60px;
+	position: fixed;
+	right: 10px;
+	top: 150px;
+}
+
+.right_nav li {
+	width: 40px;
+	height: 40px;
+	border: 1px gainsboro solid;
+	margin-bottom: 10px;
+	font-size: 13px;
+	padding-left: 6px;
+	padding-top: 2px;
+	box-sizing: border-box;
+	cursor: pointer;
+	background: white;
+	color: gray;
+}
+
+.gusLove {
+	width: 1200px;
+	margin-top: 20px;
+	float: left;
+}
+
+.gusLove li {
+	height: 269px;
+	width: 220px;
+	display: inline-block;
+	margin-left: 10px;
+	float: left;
+	background: #F0F0F0;
+	box-shadow: 10px;
+}
+
+.gusLove li p:nth-of-type(1) {
+	color: #383838;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.gusLove li p:nth-of-type(2) {
+	color: orangered;
+	margin-left: 10px;
+	margin-top: 4px;
+	font-size: 17px;
+}
+
+.gusLove li img {
+	width: 220px;
+	height: 200px;
+}
+
+.gusLove ul {
+	height: 270px;
+	margin-top: 20px;
+}
