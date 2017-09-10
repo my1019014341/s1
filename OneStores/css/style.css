@@ -79,7 +79,9 @@ img {
 	text-decoration: none;
 	vertical-align: middle;
 }
-
+a{
+	color: black;
+}
 a:visited {
 	color: black;
 }
