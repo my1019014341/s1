@@ -57,7 +57,7 @@ $(function() {
 	$(".right_nav li").hover(
 		function() {
 
-			var bgColor = Array("orangered", "orange", "yellow", "orchid", "pink", "#33FFFF", "#plum");
+			var bgColor = Array("orangered", "orange", "yellow", "orchid", "pink", "#33FFFF", "plum");
 			var rand = bgColor[Math.floor(Math.random() * 7)];
 			$(this).css("background", rand)
 		},
