@@ -9,7 +9,8 @@ body {
 }
 
 #top {
-	width: 1350px;
+	width: 100%;
+	min-width: 1200px;
 	height: 35px;
 	text-align: center;
 	line-height: 35px;
@@ -79,7 +80,9 @@ img {
 	text-decoration: none;
 	vertical-align: middle;
 }
-
+a{
+	color: black;
+}
 a:visited {
 	color: black;
 }

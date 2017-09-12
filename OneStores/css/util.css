@@ -4,6 +4,8 @@
 			}
 			
 			#head {
+				width:100%;
+				min-width:1200px;
 				padding: 16px;
 				border-bottom: 1px solid #e1e1e1;
 				box-shadow: 0px 0px 10px #ccc;
@@ -101,6 +103,7 @@
 			section {
 				background: white;
 				width: auto;
+				margin-top: 10px;
 			}
 			
 			.bgimg {
@@ -284,6 +287,8 @@
 				margin-top: 10px;
 			}
 			section{
+				width:100%;
+				min-width:1200px;
 				height: 475px;
 			}
 			#footNav {
