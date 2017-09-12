@@ -18,10 +18,11 @@ $(".nav_bottom li").hover(
 		$(this).css("transition", "all 1s ease")
 	}
 )
-$(".middle_bg").css("background", "url(img/bg1.jpg) no-repeat -489px 23px")；
+$(".middle_bg").css("background", "url(img/bg1.jpg) no-repeat -489px 23px")
 $(function() {
 	var img = Array("bg1.jpg", "bg2.jpg", "bg3.jpg", "bg4.jpg", "bg5.jpg", "bg6.jpg", "bg7.jpg");
 	var flog = 0;
+	
 	$(function(){
 		
 		setInterval(function(){
@@ -40,13 +41,15 @@ $(function() {
 			
 		},3000)	
 	})
+	$(".middle_bg").css("transition","all 1s ease")
 	$("._right").click(function() {
 		if(flog == img.length - 1) {
 			$(".middle_bg").css("background", "url(img/bg" + 1 + ".jpg) no-repeat -489px 23px")
 			flog = 0;
 			$(".ul li:first-child").css("background", "orange")
 			$(".ul li:last-child").css("background", "white")
-		} else {
+		}
+		else {
 			flog++;
 			var i = flog + 1;
 			$(".middle_bg").css("background", "url(img/bg" + i + ".jpg) no-repeat -489px 23px")
