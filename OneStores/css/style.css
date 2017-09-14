@@ -42,6 +42,7 @@ li {
 	background: white;
 	border: 1px solid gainsboro;
 	display: none;
+	padding: 0 10px;
 }
 
 .service ul li {
