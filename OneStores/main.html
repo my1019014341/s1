@@ -4,42 +4,153 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>一号店</title>
-		<link href="css/style.css" rel="stylesheet" /><link rel="stylesheet" type="text/css" href="css/section.css" />
+		<link href="css/style.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/section.css" />
 		<style>
-			.right_nav {
-				height: 250px;
-				width: 60px;
-				position: fixed;
-				right: 10px;
-				top: 150px;
+			.menu {
+				width: 1300px;
+				height: 368px;
+				
+				margin-top: 20px;
+				padding-left: 60px;
+				background: linear-gradient(to bottom,white,#F0F0F0);
 			}
 			
-			.right_nav li {
-				width: 40px;
-				height: 40px;
-				border: 1px gainsboro solid;
-				margin-bottom: 10px;
-				font-size: 13px;
-				padding-left: 6px;
-				padding-top: 2px;
-				box-sizing: border-box;
+			.menu_left {
+				width: 610px;
+				height: 365px;
+				float: left;
+				border: 1px solid gainsboro;
+				overflow: hidden;
+			}
+			
+			.menu_right {
+				width: 610px;
+				height: 365px;
+				float: left;
+				margin-left: 20px;
+				
+				overflow: hidden;
+			}
+			
+			.left_nav {
+				width: 146px;
+				height: 365px;
+				float: left;
+				background: linear-gradient(10deg, #c000e1 0%, #8f00f8 40%, #8f01f6 100%);
+			}
+			.menu_right .left_nav{
+				background: linear-gradient(10deg,#f9ab57 0%,#f9a868 40%,#f78a4b 100%);;				
+			}
+			.left_nav>p {
+				width: 114px;
+				height: 55px;
+				margin-left: 16px;
+				line-height: 55px;
+				text-align: center;
+				color: white;
+				font-weight: bold;
+				font-size: 15px;
+				border-bottom: 1px solid #c000e1;
+			}
+			.menu_right .left_nav>p{
+				border-bottom: 1px solid #F9AB5B;
+				
+			}
+			.left_nav li {
+				position: relative;
+				float: left;
+				width: 50px;
+				height: 77px;
+				padding-left: 18px;
+				margin-top: 19px;
+				text-align: center;
 				cursor: pointer;
-				background: white;
-				color: gray;
+			}
+			
+			.left_nav li img {
+				display: inline-block;
+				width: 45px;
+				height: 45px;
+				margin: 0 auto;
+				border-radius: 50%;
+			}
+			
+			.left_nav li p {
+				height: 32px;
+				line-height: 32px;
+				overflow: hidden;
+				color: #fff;
+			}
+			
+			.nav_right {
+				width: 310px;
+				height: 182px;
+				display: inline-block;
+				
+				float: left;
+			}
+			
+			._top {
+				height: 365px;
+				width: 464px;
+				display: inline-block;
+			}
+			
+			.right_left {
+				width: 111px;
+				font-size: 14px;
+				margin-top: 25px;
+				margin-left: 18px;
+				cursor: pointer;
+				display: inline-block;
+			}
+			
+			.right_left p:nth-child(2) {
+				color: red;
+			}
+			
+			.right_left a {
+				margin-top: 20px;
+			}
+			
+			.right_left+img {
+				margin-bottom: 30px;
+				margin-left: 18px;
+			}
+			
+			._top li {
+				width: 133px;
+				height: 163px;
+				display: inline-block;
+				margin: 10px;
+				margin-left: 8px;
+				overflow: hidden;
+				cursor: pointer;
+				
+			}
+			
+			
+			
+			._top li img {
+				width: 100px;
+				height: 100px;
+				margin-left: 21px;
+				
 			}
 		</style>
 	</head>
 
 	<body>
-		
+
 		<header>
 			<div id="top">
 				<div class="left"><span>送货至:四川</span></div>
 				<div id="top-right">
 					<div class="right">
-						
-						<a href="login.html">你好，请  登录</a>
-						<a href="register.html"><span style="color: orangered;"> 免费注册</span></a>
+
+						<a href="#">你好，请 登录</a>
+						<a href="#"><span style="color: orangered;"> 免费注册</span></a>
 						<a href="#"> | 我的订单 | </a>
 					</div>
 					<div class="right">
@@ -49,7 +160,7 @@
 							</li>
 							<li class="ss_list" id="serve">
 								<a href="#">客户服务</a>
-								<div class=" service" >
+								<div class=" service">
 
 									<ul>
 										<li>
@@ -120,159 +231,420 @@
 				</div>
 			</div>
 		</header>
-		
+
 		<section>
-			<div class="section_left">
-				<div class="nav_top">全部商品分类</div>
-				<ul class="nav_bottom">
-					<li>
-						<div><img src="img/nav1.png" /></div>进口食品、生鲜</li>
-					<li>
-						<div><img src="img/nav2.png" /></div>食品、饮料、酒</li>
-					<li>
-						<div><img src="img/nav3.png" /></div>母婴、玩具、童装</li>
-					<li>
-						<div><img src="img/nav4.png" /></div>家居、家庭清洁、纸品</li>
-					<li>
-						<div><img src="img/nav5.png" /></div>美装、个人护理、洗簌</li>
-					<li>
-						<div><img src="img/nav6.png" /></div>女装、内衣、中老年</li>
-					<li>
-						<div><img src="img/nav7.png" /></div>鞋靴、箱包、腕表配饰</li>
-					<li>
-						<div><img src="img/nav8.png" /></div>男装、运动</li>
-					<li>
-						<div><img src="img/nav9.png" /></div>手机、小家电</li>
-					<li>
-						<div><img src="img/nav10.png" /></div>礼品、充值</li>
-				</ul>
-			</div>
-			<div class="section_middle">
-				<div class="middle_nav">
-					<nav>
-						<a href="#">首页</a>
-						<a href="#">自营超市</a>
-						<a href="#">1号团</a>
-						<a href="#">1号超市</a>
-						<a href="#">女装</a>
-						<a href="#">美装</a>
-						<a href="#">1号海购</a>
-						<a href="#">团购</a>
-					</nav>
+
+			<div class="top_menu">
+				<div class="section_left">
+					<div class="nav_top">全部商品分类</div>
+					<ul class="nav_bottom">
+						<li>
+							<div><img src="img/nav1.png" /></div>进口食品、生鲜</li>
+						<li>
+							<div><img src="img/nav2.png" /></div>食品、饮料、酒</li>
+						<li>
+							<div><img src="img/nav3.png" /></div>母婴、玩具、童装</li>
+						<li>
+							<div><img src="img/nav4.png" /></div>家居、家庭清洁、纸品</li>
+						<li>
+							<div><img src="img/nav5.png" /></div>美装、个人护理、洗簌</li>
+						<li>
+							<div><img src="img/nav6.png" /></div>女装、内衣、中老年</li>
+						<li>
+							<div><img src="img/nav7.png" /></div>鞋靴、箱包、腕表配饰</li>
+						<li>
+							<div><img src="img/nav8.png" /></div>男装、运动</li>
+						<li>
+							<div><img src="img/nav9.png" /></div>手机、小家电</li>
+						<li>
+							<div><img src="img/nav10.png" /></div>礼品、充值</li>
+					</ul>
 				</div>
-				<div class="middle_bg">
-					<div class="_left">
-						<</div>
-							<div class="_right">></div>
-							<div class="ul">
-								<ul>
-									<li></li>
-									<li></li>
-									<li></li>
-									<li></li>
-									<li></li>
-									<li></li>
-									<li></li>
-								</ul>
+				<div class="section_middle">
+					<div class="middle_nav">
+						<nav>
+							<a href="#">首页</a>
+							<a href="#">自营超市</a>
+							<a href="#">1号团</a>
+							<a href="#">1号超市</a>
+							<a href="#">女装</a>
+							<a href="#">美装</a>
+							<a href="#">1号海购</a>
+							<a href="#">团购</a>
+						</nav>
+					</div>
+					<div class="middle_bg">
+						<div class="_left">
+							<</div>
+								<div class="_right">></div>
+								<div class="ul">
+									<ul>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+								</div>
+						</div>
+					</div>
+					<div class="section_right">
+						<div class="right_top">
+							<a href="#"><img src="img/phone.png" /></a>
+						</div>
+						<div class="right_middle">
+							<div class="news">
+								<h3>快讯</h3>
+								<span><a href="#">更多 ></a></span>
 							</div>
+							<ul>
+								<li><span>【特惠】</span>
+									<a href="#">掬一轮明月表无尽惦念</a>
+								</li>
+								<li><span>【公告】</span>
+									<a href="#">好奇金装成长裤新品上市</a>
+								</li>
+								<li><span>【特惠】</span>
+									<a href="#">大牌闪购 · 抢！</a>
+								</li>
+								<li><span>【公告】</span>
+									<a href="#">发福利 买车就抢千元油卡</a>
+								</li>
+								<li><span>【公告】</span>
+									<a href="#">家电低至五折</a>
+								</li>
+							</ul>
+
+						</div>
+						<div class="right_bottom">
+							<div class="news">
+								<h3>1号钱包</h3>
+							</div>
+							<p>收益日结，收益赚High！</p>
+							<img src="img/oneAD.jpg" width="180px" height="100px" />
+						</div>
+					</div>
+
+					<div class="right_nav">
+						<ul>
+							<li>食品<br />专区</li>
+							<li>服装<br />专区</li>
+							<li>家居<br />专区</li>
+							<li>美妆<br />专区</li>
+							<li>女装<br />专区</li>
+							<li>男装<br />专区</li>
+							<li>手机<br />专区</li>
+						</ul>
 					</div>
 				</div>
-				<div class="section_right">
-					<div class="right_top">
-						<a href="#"><img src="img/phone.png" /></a>
+
+				<div class="menu">
+					<div class="menu_left">
+						<div class="left_nav">
+							<p>全球进口 ></p>
+							<ul>
+								<li><img src="http://d6.yihaodianimg.com/N11/M06/92/C9/ChEwoFkDT8OAMjQdAAAJVDbjwlc82800.webp" alt="" />
+									<p>进口乳品</p>
+								</li>
+								<li><img src="http://d8.yihaodianimg.com/N10/M05/FB/7D/ChEi3FkDUbWACjW6AAAIkymqp8I52500.webp" alt="" />
+									<p>进口水饮</p>
+								</li>
+								<li><img src="http://d9.yihaodianimg.com/N09/M04/AE/FE/ChEi11kDUjWADdCUAAAJeWbJQfw43900.webp" alt="" />
+									<p>进口零食</p>
+								</li>
+								<li><img src="http://d8.yihaodianimg.com/N10/M05/FB/80/ChEi3FkDU7aAVC2-AAAJz_XaoBg77600.webp" alt="" />
+									<p>进口酒品</p>
+								</li>
+								<li><img src="http://d8.yihaodianimg.com/N08/M07/F8/EE/ChEi1VkDVcmAagpbAAAKdf8Za7M76800.webp" alt="" />
+									<p>进口冲饮</p>
+								</li>
+								<li><img src="http://d6.yihaodianimg.com/N08/M05/F9/5C/ChEi1lkDVmyAXU-JAAALJBam8IQ69000.webp" alt="" />
+									<p>进口速食</p>
+								</li>
+							</ul>
+						</div>
+						<div class="_top">
+							<div class="nav_right">
+								<div class="right_left">
+									<a href="#">Meixin 美心 双黄白莲蓉月饼</a>
+									<p>￥238</p>
+									<a class="cs_addcart">加入购物车</a>
+
+								</div>
+								<img src="//d9.yihaodianimg.com/N11/M07/53/BF/ChEwoVmWk0qAUvc8AAXvqMvRf8o95001_150x150.webp" width="150" height="150" alt="Meixin 美心 双黄白莲蓉月饼 740g（185g*4个）/盒 香港地区进口" data-imgattr="original">
+							</div>
+							<ul>
+								<li><img src="http://d6.yihaodianimg.com/N05/M07/6E/28/CgQI0lVcM9KAEwNMAAMiSy5uXUM82901_110x110.webp" alt="" />
+									<p class="pi_txt">
+										<a href="#">EDO 原味饼（韧性饼干） 172g 韩国进口</a>
+									</p>
+
+									<p class="fruit_price">￥39.9</p>
+									<a class="cs_addcart">加入购物车</a>
+								</li>
+								<li><img src="http://d6.yihaodianimg.com/N08/M01/B1/67/ChEi1ldFYC-AYOm4AAMSs__wNKk78601_110x110.webp" alt="" />
+									<p class="pi_txt">
+										<a href="#">weidendorf 德亚 全脂牛奶 1L*12盒/整箱 </a>
+									</p>
+
+									<p class="fruit_price">￥119</p>
+									<a class="cs_addcart">加入购物车</a>
+								</li>
+								<li><img src="http://d11.yihaodianimg.com/t1/2012/0905/9/451/e65e4d6fefc23e7fc77fecedee40a191_110x110.webp" alt="" />
+									<p class="pi_txt">
+										<a href="#">Kjeldsens丹麦蓝罐 无核葡萄干巧克力曲</a>
+									</p>
+
+									<p class="fruit_price">￥9.9</p>
+									<a class="cs_addcart">加入购物车</a>
+								</li>
+								<li><img src="http://d6.yihaodianimg.com/N08/M05/BF/96/ChEi1ldOf0yAJykeAAGrIa5H5ho54401_110x110.webp" alt="" />
+									<p class="pi_txt">
+										<a href="#">MALEE COCO 玛丽牌 椰子水 1L/盒</a>
+									</p>
+
+									<p class="fruit_price">￥29.8</p>
+									<a class="cs_addcart">加入购物车</a>
+								</li>
+						</div>
 					</div>
-					<div class="right_middle">
-						<div class="news">
-							<h3>快讯</h3>
-							<span><a href="#">更多 ></a></span>
+					<div class="menu_right">
+						<div class="menu_left">
+						<div class="left_nav">
+							<p>全球进口 ></p>
+							<ul>
+								<li><img src="http://d7.yihaodianimg.com/N10/M00/FB/46/ChEi3FkDHwmAN8vfAAAQPWFC98I05500.webp" alt="" />
+									<p>休闲零食</p>
+								</li>
+								<li><img src="http://d7.yihaodianimg.com/N08/M05/F9/23/ChEi1lkDH62AWVHFAAAOepqk6L870500.webp" alt="" />
+									<p>粮油干货</p>
+								</li>
+								<li><img src="http://d9.yihaodianimg.com/N08/M07/F9/26/ChEi1lkDIg2AYFT5AAAP6ZH-e2o07000.webp" alt="" />
+									<p>饼干糕点</p>
+								</li>
+								<li><img src="http://d7.yihaodianimg.com/N10/M03/FB/4C/ChEi3FkDIxyABFclAAAOx836jp086000.webp" alt="" />
+									<p>厨卫调料</p>
+								</li>
+								<li><img src="http://d6.yihaodianimg.com/N08/M06/F8/E1/ChEi1VkDSSmAfVzEAAARvc3CEKg65600.webp" alt="" />
+									<p>糖果巧克</p>
+								</li>
+								<li><img src="http://d7.yihaodianimg.com/N09/M02/AE/F2/ChEi11kDSbKAFPHlAAAPke2vNOk23600.webp" alt="" />
+									<p>方便速食</p>
+								</li>
+							</ul>
+						</div>
+						<div class="_top">
+							<div class="nav_right">
+								<div class="right_left">
+									<a href="#">百草味 抱抱果 和田红枣夹核桃仁</a>
+									<p>￥26.8</p>
+									<a class="cs_addcart">加入购物车</a>
+
+								</div>
+								<img src="http://d6.yihaodianimg.com/N10/M03/FC/50/ChEi21gFyEGAQN26AAS7Gm7YSWk94101_150x150.webp" width="150" height="130" alt="Meixin 美心 双黄白莲蓉月饼 740g（185g*4个）/盒 香港地区进口" data-imgattr="original">
+							</div>
+							<ul>
+								<li><img src="http://d7.yihaodianimg.com/N06/M00/98/54/ChEbu1WuDYmASLEwAAFqblIBBbk91401_110x110.webp" alt="" />
+									<p class="pi_txt">
+										<a href="#">金龙鱼 阳光葵花籽油 5L/桶（另送小油)</a>
+									</p>
+
+									<p class="fruit_price">￥78.9</p>
+									<a class="cs_addcart">加入购物车</a>
+								</li>
+								<li><img src="http://d6.yihaodianimg.com/N05/M01/B3/F8/CgQI01X5QaGADKvvAAL-iFq-FLU22701_110x110.webp" alt="" />
+									<p class="pi_txt">
+										<a href="#">雀巢 脆脆鲨巧克力味夹心 640g </a>
+									</p>
+
+									<p class="fruit_price">￥23.9</p>
+									<a class="cs_addcart">加入购物车</a>
+								</li>
+								<li><img src="http://d6.yihaodianimg.com/N10/M01/9C/41/ChEi2ljQuU-AKsw5AAHp8LHKVW856001_110x110.webp" alt="" />
+									<p class="pi_txt">
+										<a href="#">MORTON 莫顿牌 无碘海盐 737g/罐</a>
+									</p>
+
+									<p class="fruit_price">￥26.9</p>
+									<a class="cs_addcart">加入购物车</a>
+								</li>
+								<li><img src="http://d9.yihaodianimg.com/N11/M03/24/03/ChEwolgbA9CAC8TOAAPGXxi5IBc42201_110x110.webp" alt="" />
+									<p class="pi_txt">
+										<a href="#">品客 薯片三连装(原味+洋葱)</a>
+									</p>
+
+									<p class="fruit_price">￥19.9</p>
+									<a class="cs_addcart">加入购物车</a>
+								</li>
+						</div>
+					</div>
+					</div>
+				</div>
+
+				<!--guslove-->
+				<div class="gusLove_bg">
+					<div class="gusLove">
+						<div>
+							<img src="img/gusLove.png" />
 						</div>
 						<ul>
-							<li><span>【特惠】</span>
-								<a href="#">掬一轮明月表无尽惦念</a>
+							<li><img src="img/gus1.jpg" alt="" />
+								<p>古剑轩-实木立式剑架 高档刀剑架子 还有刀架等各类出售</p>
+								<p>￥245</p>
+								<div>
+									<p class="similar">找相似</p>
+									<p>发现更多相似的宝贝</p>
+								</div>
 							</li>
-							<li><span>【公告】</span>
-								<a href="#">好奇金装成长裤新品上市</a>
+							<li><img src="img/gus2.jpg" alt="" />
+								<p>【ikea宜家专业代购】 莱瓦 书架 书柜 搁架 简约书柜</p>
+								<p>￥149</p>
+								<div>
+									<p class="similar">找相似</p>
+									<p>发现更多相似的宝贝</p>
+								</div>
 							</li>
-							<li><span>【特惠】</span>
-								<a href="#">大牌闪购 · 抢！</a>
+							<li><img src="img/gus3.jpg" alt="" />
+								<p>2017秋冬装棉服加厚大码棉袄中长款连帽外套修身女学生运动棉衣</p>
+								<p>￥98</p>
+								<div>
+									<p class="similar">找相似</p>
+									<p>发现更多相似的宝贝</p>
+								</div>
 							</li>
-							<li><span>【公告】</span>
-								<a href="#">发福利 买车就抢千元油卡</a>
+							<li><img src="img/gus8.jpg" alt="" />
+								<p>真丝素绉缎面料布料磅服装床上用品斤零</p>
+								<p>￥48.51</p>
+								<div>
+									<p class="similar">找相似</p>
+									<p>发现更多相似的宝贝</p>
+								</div>
 							</li>
-							<li><span>【公告】</span>
-								<a href="#">家电低至五折</a>
+							<li><img src="img/gus7.jpg" alt="" />
+								<p>龙泉胜武堂宝剑太极剑影视剑镇宅宝剑卧龙剑未开刃</p>
+								<p>￥118</p>
+								<div>
+									<p class="similar">找相似</p>
+									<p>发现更多相似的宝贝</p>
+								</div>
+							</li>
+						</ul>
+						<ul>
+							<li><img src="img/gus6.jpg" alt="" />
+								<p>龙泉万字号宝剑镇宅僻邪剑托汉剑单层双层镇宅之宝剑架厂家直销</p>
+								<p>￥35</p>
+								<div>
+									<p class="similar">找相似</p>
+									<p>发现更多相似的宝贝</p>
+								</div>
+							</li>
+							<li><img src="img/gus5.jpg" alt="" />
+								<p>龙泉冷兵堂宝剑花纹钢八面汉剑手工如意剑镇宅一体剑硬剑未开刃</p>
+								<p>￥450</p>
+								<div>
+									<p class="similar">找相似</p>
+									<p>发现更多相似的宝贝</p>
+								</div>
+							</li>
+							<li><img src="img/gus4.jpg" alt="" />
+								<p>龙泉古羽宝剑刀剑 红木包铜碎花剑花纹钢太极硬剑武术重剑未开刃</p>
+								<p>￥1180</p>
+								<div>
+									<p class="similar">找相似</p>
+									<p>发现更多相似的宝贝</p>
+								</div>
+							</li>
+							<li><img src="img/gus10.jpg" alt="" />
+								<p>银手镯S999足纯银镯子光面闭口圆棍实心男女</p>
+								<p>￥140</p>
+								<div>
+									<p class="similar">找相似</p>
+									<p>发现更多相似的宝贝</p>
+								</div>
+							</li>
+							<li><img src="img/gus9.jpg" alt="" />
+								<p>包邮龙泉小宝剑 一体剑卧龙剑镇宅辟邪短剑硬剑礼品短剑未开刃</p>
+								<p>￥29.7</p>
+								<div>
+									<p class="similar">找相似</p>
+									<p>发现更多相似的宝贝</p>
+								</div>
 							</li>
 						</ul>
 
 					</div>
-					<div class="right_bottom">
-						<div class="news">
-							<h3>1号钱包</h3>
-						</div>
-						<p>收益日结，收益赚High！</p>
-						<img src="img/oneAD.jpg" width="180px" height="100px" />
+					<div class="first_fruit">
+						<img src="img/ongFruit.png" />
+						<ul>
+							<li><img src="http://d7.yihaodianimg.com/N08/M01/F9/64/ChEi1lkDX3yAE_j4AAIVI04cxWw37901_205x205.webp" alt="" />
+								<p class="pi_txt">
+									<a href="#">1号生鲜 ZESPRI/佳沛 阳光金奇异果 8粒/盒 650g以上 新西兰</a>
+								</p>
+
+								<p class="fruit_price">￥39.9</p>
+								<a class="cs_addcart">加入购物车</a>
+							</li>
+							<li><img src="http://d7.yihaodianimg.com/N09/M07/B7/21/ChEi11kINZuAbn3RAAOjXohpqJQ56301_205x205.webp" alt="" />
+								<p class="pi_txt">
+									<a href="#">1号生鲜 美国进口橙 6粒/盒 1.2KG以上</a>
+								</p>
+
+								<p class="fruit_price">￥39.9</p>
+								<a class="cs_addcart">加入购物车</a>
+							</li>
+							<li><img src="http://d7.yihaodianimg.com/N08/M08/B2/A1/ChEi1VYKXrmANy2MAAOD3ZCoaUM39301_205x205.webp" alt="" />
+								<p class="pi_txt">
+									<a href="#">越南红心火龙果 2个/盒 900g以上</a>
+								</p>
+
+								<p class="fruit_price">￥39.9</p>
+								<a class="cs_addcart">加入购物车</a>
+							</li>
+							<li><img src="http://d7.yihaodianimg.com/N09/M0B/5D/EA/ChEi2VcXWH6AJ13ZAAKtX0jnr5w48301_205x205.webp" alt="" />
+								<p class="pi_txt">
+									<a href="#">1号生鲜 新西兰 精选嘎啦果6粒/盒 900G以上</a>
+								</p>
+
+								<p class="fruit_price">￥39.9</p>
+								<a class="cs_addcart">加入购物车</a>
+							</li>
+							<li><img src="http://d9.yihaodianimg.com/N11/M01/90/67/ChEwoVkDXsCAXB08AAQECyGJ4t014301_205x205.webp" alt="" />
+								<p class="pi_txt">
+									<a href="#">11号生鲜 山东精选红富士苹果 6个/盒 约1.25kg</a>
+								</p>
+
+								<p class="fruit_price">￥39.9</p>
+								<a class="cs_addcart">加入购物车</a>
+							</li>
+						</ul>
 					</div>
 				</div>
-				<div class="right_nav">
-					<ul>
-						<li>食品<br />专区</li>
-						<li>服装<br />专区</li>
-						<li>家居<br />专区</li>
-						<li>美妆<br />专区</li>
-						<li>女装<br />专区</li>
-						<li>男装<br />专区</li>
-						<li>手机<br />专区</li>
-					</ul>
+				<div class="weekChoose">
+					<div class="weekChoose_first">
+						<ul>
+							<li><img src="http://d7.yihaodianimg.com/N08/M00/56/24/ChEi1VlKVvCAcQU7AALgrYcOw9Q00501_224x224.webp" alt="" /></li>
+							<li><img src="http://d7.yihaodianimg.com/N08/M01/7E/7D/ChEi1VmBTH2ANh24AALQYOxFW5g66301_200x200.jpg" alt="" /></li>
+							<li><img src="http://d9.yihaodianimg.com/N08/M04/72/6B/ChEi1VXuzkaAZQJrAAKvgNmmppc91701_200x200.jpg" alt="" /></li>
+							<li><img src="http://d7.yihaodianimg.com/N03/M02/9D/3D/CgQCs1M75T-APhhhAASGzgNcPNs98101_224x224.webp" alt="" /></li>
+							<li><img src="http://d9.yihaodianimg.com/N10/M0B/8F/9D/ChEi21jBCxyAJeKqAAW22wMk8UE48401_200x200.jpg" alt="" /></li>
+							<li><img src="http://d7.yihaodianimg.com/V00/M03/63/24/CgQDsVTR_xuAH9OEAARqVtqAb5Y94501_224x224.webp" alt="" /></li>
+						</ul>
+					</div>
+					<div class="bottom_bg"></div>
+					<div class="weekChoose_second">
+						<ul>
+							<li><img src="http://d7.yihaodianimg.com/N09/M04/8C/D5/ChEi2FmjxVOAHDGuAABkV5rrDBM49200.webp" alt="" /></li>
+							<li><img src="http://d6.yihaodianimg.com/N09/M0A/98/32/ChEi11mxB8iASj4yAABHPGtX7tw83500.webp" alt="" /></li>
+							<li><img src="http://d7.yihaodianimg.com/N09/M06/98/10/ChEi2FmxCAOAclACAAA8hZd5U7g59200.webp" alt="" /></li>
+							<li><img src="http://d8.yihaodianimg.com/N11/M04/6D/1E/ChEwoFmxCESADrspAABMXW2NTU495900.webp" alt="" /></li>
+							<li><img src="http://d6.yihaodianimg.com/N09/M01/98/34/ChEi11mxCIyAEwBIAABGTpWBu_w38400.webp" alt="" /></li>
+						</ul>
+					</div>
 				</div>
-							<div class="gusLove">
-				<ul>
-					<li><img src="img/gus1.jpg" alt="" />
-						<p>古剑轩-实木立式剑架 高档刀剑架子 还有刀架等各类出售</p>
-						<p>￥245</p>
-					</li>
-					<li><img src="img/gus2.jpg" alt="" />
-						<p>【ikea宜家专业代购】 莱瓦 书架 书柜 搁架 简约书柜</p>
-						<p>￥149</p>
-					</li>
-					<li><img src="img/gus3.jpg" alt="" />
-						<p>2017秋冬装棉服加厚大码棉袄中长款连帽外套修身女学生运动棉衣</p>
-						<p>￥98</p>
-					</li>
-					<li><img src="img/gus8.jpg" alt="" />
-						<p>真丝素绉缎面料布料磅服装床上用品斤零</p>
-						<p>￥48.51</p>
-					</li>
-					<li><img src="img/gus7.jpg" alt="" />
-						<p>龙泉胜武堂宝剑太极剑影视剑镇宅宝剑卧龙剑未开刃</p>
-						<p>￥118</p>
-					</li>
-				</ul>
-				<ul>
-					<li><img src="img/gus6.jpg" alt="" />
-						<p>龙泉万字号宝剑镇宅僻邪剑托汉剑单层双层镇宅之宝剑架厂家直销</p>
-						<p>￥35</p>
-					</li>
-					<li><img src="img/gus5.jpg" alt="" />
-						<p>龙泉冷兵堂宝剑花纹钢八面汉剑手工如意剑镇宅一体剑硬剑未开刃</p>
-						<p>￥450</p>
-					</li>
-					<li><img src="img/gus4.jpg" alt="" />
-						<p>龙泉古羽宝剑刀剑 红木包铜碎花剑花纹钢太极硬剑武术重剑未开刃</p>
-						<p>￥1180</p>
-					</li>
-					<li><img src="img/gus10.jpg" alt="" />
-						<p>银手镯S999足纯银镯子光面闭口圆棍实心男女</p>
-						<p>￥140</p>
-					</li>
-					<li><img src="img/gus9.jpg" alt="" />
-						<p>包邮龙泉小宝剑 一体剑卧龙剑镇宅辟邪短剑硬剑礼品短剑未开刃</p>
-						<p>￥29.7</p>
-					</li>
-				</ul>
-	
-			</div>
 		</section>
-		
+
 		<footer style="width: 1200px;margin: 0 auto;">
 
 			<div class="b_btm_bg b_btm_c">
@@ -392,9 +764,8 @@
 			</div>
 
 		</footer>
-<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-		<script type="text/javascript" src="js/一号店.js" >
-			
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/一号店.js">
 		</script>
 	</body>
 
