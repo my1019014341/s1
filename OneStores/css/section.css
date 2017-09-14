@@ -226,7 +226,9 @@ h3+span {
 	color: gray;
 }
 
+
 /******************************************************************* */
+
 .gusLove {
 	width: 1160px;
 	margin: 30px 75px;
@@ -468,4 +470,136 @@ h3+span {
 .weekChoose_second li img {
 	width: 236px;
 	height: 310px;
+}
+
+
+/**********************************************************/
+
+.menu {
+	width: 1300px;
+	height: 368px;
+	margin-top: 20px;
+	padding-left: 60px;
+	background: linear-gradient(to bottom, white, #F0F0F0);
+}
+
+.menu_left {
+	width: 610px;
+	height: 365px;
+	float: left;
+	border: 1px solid gainsboro;
+	overflow: hidden;
+}
+
+.menu_right {
+	width: 610px;
+	height: 365px;
+	float: left;
+	margin-left: 20px;
+	overflow: hidden;
+}
+
+.left_nav {
+	width: 146px;
+	height: 365px;
+	float: left;
+	background: linear-gradient(10deg, #c000e1 0%, #8f00f8 40%, #8f01f6 100%);
+}
+
+.menu_right .left_nav {
+	background: linear-gradient(10deg, #f9ab57 0%, #f9a868 40%, #f78a4b 100%);
+	;
+}
+
+.left_nav>p {
+	width: 114px;
+	height: 55px;
+	margin-left: 16px;
+	line-height: 55px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 15px;
+	border-bottom: 1px solid #c000e1;
+}
+
+.menu_right .left_nav>p {
+	border-bottom: 1px solid #F9AB5B;
+}
+
+.left_nav li {
+	position: relative;
+	float: left;
+	width: 50px;
+	height: 77px;
+	padding-left: 18px;
+	margin-top: 19px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.left_nav li img {
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+
+.left_nav li p {
+	height: 32px;
+	line-height: 32px;
+	overflow: hidden;
+	color: #fff;
+}
+
+.nav_right {
+	width: 310px;
+	height: 182px;
+	display: inline-block;
+	float: left;
+}
+
+._top {
+	height: 365px;
+	width: 464px;
+	display: inline-block;
+}
+
+.right_left {
+	width: 111px;
+	font-size: 14px;
+	margin-top: 25px;
+	margin-left: 18px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.right_left p:nth-child(2) {
+	color: red;
+}
+
+.right_left a {
+	margin-top: 20px;
+}
+
+.right_left+img {
+	margin-bottom: 30px;
+	margin-left: 18px;
+}
+
+._top li {
+	width: 133px;
+	height: 163px;
+	display: inline-block;
+	margin: 10px;
+	margin-left: 8px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+._top li img {
+	width: 100px;
+	height: 100px;
+	margin-left: 21px;
 }
