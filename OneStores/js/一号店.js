@@ -88,20 +88,48 @@ $(function() {
 	)
 })
 $(".gusLove li").hover(
-	function() {
-		$(this).css({
-			"background": "#FF6700",
-			"color": "black"
-		})
-		$(this).children("img").css("transform", "scale(1.1)")
-		$(this).children("img").css("transition", "all 1s ease")
+			function(){
+				$(this).children("div").show();
+			},
+			function(){
+				$(this).children("div").hide();
+			}
+		)
+$(".first_fruit li").hover(
+	function(){
+		$(this).css("transform","translate(0,-15px)")
+		$(this).css("transition","all 1s ease")
 	},
-	function() {
-		$(this).css({
-			"background": "none",
-			"color": "grey"
-		})
-		$(this).children("img").css("transform", "scale(1)")
-		$(this).children("img").css("transition", "all 1s ease")
+	function(){
+		$(this).css("transform","translate(0,0)")
+	}
+)
+$(".weekChoose_second li").hover(
+	function(){
+		$(this).css("transform","translate(0,-15px)");
+		$(this).css("transition","all 1s ease");
+	},
+	function(){
+		$(this).css("transform","translate(0,0)");
+	}
+)
+$(".weekChoose_first li").hover(
+	function(){
+		$(this).children("img").css("transform","scale(1.3)");
+		$(this).children("img").css("transition","all 1s ease");
+	},
+	function(){
+		$(this).children("img").css("transform","scale(1)");
+		
+	}
+)
+$("._top img").hover(
+	function(){
+		$(this).css("transform","scale(1.1)")
+		$(this).css("transition","all 1s ease")
+	},
+	function(){
+		$(this).css("transform","scale(1)")
+		$(this).css("transition","all 1s ease")
 	}
 )
