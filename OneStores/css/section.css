@@ -1,6 +1,5 @@
 section {
-	width: 1200px;
-	margin: 0 auto;
+	width: 1349px;
 	overflow: hidden;
 }
 
@@ -8,6 +7,7 @@ section {
 	width: 223px;
 	height: 445px;
 	float: left;
+	margin-left: 80px;
 }
 
 .section_middle {
@@ -202,10 +202,12 @@ h3+span {
 .ul li:first-child {
 	background: orange;
 }
+
 .right_nav {
 	height: 250px;
 	width: 60px;
 	position: fixed;
+	z-index: 10;
 	right: 10px;
 	top: 150px;
 }
@@ -224,20 +226,26 @@ h3+span {
 	color: gray;
 }
 
+/******************************************************************* */
 .gusLove {
-	width: 1200px;
-	margin-top: 20px;
+	width: 1160px;
+	margin: 30px 75px;
+	padding: 10px;
 	float: left;
+	background: white;
+	overflow: hidden;
 }
 
 .gusLove li {
-	height: 269px;
+	height: 280px;
 	width: 220px;
 	display: inline-block;
 	margin-left: 10px;
 	float: left;
 	background: #F0F0F0;
 	box-shadow: 10px;
+	position: relative;
+	cursor: pointer;
 }
 
 .gusLove li p:nth-of-type(1) {
@@ -260,5 +268,204 @@ h3+span {
 
 .gusLove ul {
 	height: 270px;
-	margin-top: 20px;
+}
+
+.gusLove ul:last-child {
+	margin-top: 35px;
+}
+
+.top_menu {
+	width: 1349px;
+	overflow: hidden;
+}
+
+.gusLove_bg {
+	width: 1349px;
+	overflow: hidden;
+	padding-top: 20px;
+	padding-left: 20px;
+	background: url("http://image.yihaodianimg.com/front-homepage/index2/images/city/s_mod_bg.jpg?1842207") repeat-y center top;
+}
+
+.gusLove li div {
+	width: 220px;
+	height: 80px;
+	position: absolute;
+	bottom: 0;
+	z-index: 2;
+	display: none;
+	background: url("https://img.alicdn.com/tfs/TB1GYtrKpXXXXaVXXXXXXXXXXXX-221-82.png") no-repeat center top;
+}
+
+.similar {
+	line-height: 35px;
+	text-align: center;
+	margin-left: 48px !important;
+	margin-top: 12px !important;
+	height: 35px;
+	border-bottom: 1px solid #D65915;
+	width: 135px;
+	color: white !important;
+	font-size: 18px;
+	letter-spacing: 5px;
+}
+
+.similar+p {
+	line-height: 22px;
+	font-size: 12px !important;
+	height: 22px;
+	color: #fff !important;
+	text-align: center;
+}
+
+.gusLove>div {
+	width: 1160px;
+	text-align: center;
+}
+
+.first_fruit {
+	width: 1178px;
+	margin: 30px 75px;
+	overflow: hidden;
+	background: white;
+}
+
+.first_fruit li {
+	width: 205px;
+	height: 308px;
+	display: inline-block;
+	margin: 10px;
+	margin-left: 8px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.first_fruit li:first-child {
+	margin-left: 35px;
+}
+
+.first_fruit li img {
+	width: 205px;
+	height: :;
+	px;
+}
+
+.cs_addcart {
+	display: block;
+	width: 98px;
+	height: 26px;
+	margin: 4px auto 0;
+	line-height: 26px;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+	background-color: #ff3c2c;
+	border: 1px solid #ff3c2c;
+	border-radius: 18px;
+}
+
+.fruit_price {
+	height: 24px;
+	line-height: 28px;
+	color: #ff4040;
+	font-weight: bold;
+	font-family: 'Tahoma';
+}
+
+.fruit_price {
+	text-align: center;
+	font-size: 14px;
+}
+
+.pi_txt {
+	font-size: 14px;
+	text-align: center;
+}
+
+.cs_addcart:hover {
+	color: white;
+	background: #F31B03;
+}
+
+.weekChoose_first {
+	width: 100%;
+	min-width: 1349px;
+	height: 390px;
+	background: url("http://image.yihaodianimg.com/front-homepage/index2/images/city/aweek_select_bg.jpg?1842207") no-repeat;
+}
+
+.weekChoose {
+	position: relative;
+}
+
+.weekChoose ul {
+	padding-top: 100px;
+}
+
+.weekChoose_first li {
+	display: inline-block;
+	margin: 20px;
+	width: 170px;
+	height: 170px;
+	border-radius: 85px;
+	border: 2px blue solid;
+	text-align: center;
+	line-height: 170px;
+	background: white;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.weekChoose_first ul li:first-child {
+	margin-left: 40px;
+}
+
+.weekChoose_first li img {
+	margin-top: 30px;
+	width: 110px;
+	height: 110px;
+}
+
+
+/*.weekChoose_first li img:hover{
+				transform: scale(1.4);
+				transition: all 1s ease; 
+			}*/
+
+.bottom_bg {
+	height: 14px;
+	width: 100%;
+	min-width: 1349px;
+	position: absolute;
+	top: 386px;
+	z-index: 2;
+	background: url("http://image.yihaodianimg.com/front-homepage/index2/images/city/bl_sharp.png?1842207");
+}
+
+.weekChoose_second {
+	width: 100%;
+	min-width: 1349px;
+	height: 451px;
+	margin-top: 0;
+	z-index: 1;
+	background: url("http://image.yihaodianimg.com/front-homepage/index2/images/city/theme_bg_new.jpg?1842207");
+}
+
+.weekChoose_second li {
+	width: 236px;
+	height: 310px;
+	display: inline-block;
+	margin: 10px;
+	margin-left: 5px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.weekChoose_second li:first-child {
+	margin-left: 40px;
+}
+
+.weekChoose_second li img {
+	width: 236px;
+	height: 310px;
 }
