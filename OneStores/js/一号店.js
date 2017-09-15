@@ -133,3 +133,11 @@ $("._top img").hover(
 		$(this).css("transition","all 1s ease")
 	}
 )
+$(".menu .left_nav li").hover(
+	function(){
+		$(this).siblings().css("opacity","0.5");
+	},
+	function(){
+		$(this).siblings().css("opacity","1");
+	}
+)
