@@ -1,0 +1,227 @@
+.row_box {
+	height: 446px;
+}
+
+.col-md-4 .left_title {
+	width: 390px;
+	height: 45px;
+	margin: 0;
+	font-size: 24px;
+	line-height: 45px;
+	vertical-align: middle;
+	border-bottom: 2px solid #699f00;
+}
+
+.col-md-4 .left_title a {
+	color: #699f00;
+}
+
+.col-md-4 .left_title span a {
+	font-size: 14px;
+	margin-left: 10px;
+}
+
+.row_box a:hover {
+	text-decoration: none;
+	color: #699f00;
+}
+
+.col-md-4 .left_title h2 {
+	margin: 0;
+	line-height: 45px;
+	font-size: 24px;
+	display: inline-block;
+}
+
+.col-md-4 .left_title .onlyPlay {
+	width: 66px;
+	height: 26px;
+	border-radius: 15px;
+	float: right;
+	margin-top: 8px;
+	margin-right: 5px;
+	border: 1px solid gainsboro;
+	text-indent: 5px;
+	font-size: 14px;
+	line-height: 24px;
+	cursor: pointer;
+}
+
+.row_box a {
+	font-size: 23px;
+	color: #333;
+}
+
+.left_middle span a {
+	margin: 18px 0 5px 30px;
+	display: block;
+}
+
+.row_box li div {
+	width: 13px;
+	height: 15px;
+	vertical-align: middle;
+	display: inline-block;
+	background: url(../img/aiqiyi_icone.png) -40px -221px no-repeat;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.row_box ul {
+	margin-left: 10px;
+}
+
+.row_box li {
+	height: 32px;
+	line-height: 32px;
+}
+
+.row_box li a {
+	margin-bottom: 2px;
+	font-size: 16px;
+	margin-left: 5px;
+}
+
+.left_middle {
+	height: 227px;
+	position: relative;
+}
+
+.img_list div {
+	width: 180px;
+	height: 140px;
+	margin: 10px 0 0 10px;
+	background: #ebebeb;
+	display: inline-block;
+}
+
+.img_list div a:last-child {
+	color: #333333;
+	font-size: 14px;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+
+
+.img_list div a:hover {
+	color: #699f00;
+}
+
+.img_list div a {
+	text-indent: 5px;
+}
+
+.img_list div img {
+	width: 180px;
+	height: 101px;
+}
+
+.middle_top {
+	display: block;
+	margin: 0 auto;
+	width: 370px;
+	height: 250px;
+	position: relative;
+	background: url("http://pic3.qiyipic.com/common/20170917/d996e5f2015c443786979f1823787e85.jpg");
+}
+
+.title_box {
+	width: 370px;
+	height: 40px;
+	background: black;
+	opacity: 0.5;
+	position: absolute;
+	bottom: 0;
+	cursor: pointer;
+}
+
+.title_box+.title_icon {
+	width: 32px;
+	height: 27px;
+	position: absolute;
+	bottom: 6px;
+	left: 10px;
+	cursor: pointer;
+	background: url(../img/aiqiyi_icone.png) -80px -221px no-repeat;
+}
+
+.middle_top span {
+	color: #FFFFFF;
+	font-size: 16px;
+	position: absolute;
+	bottom: 8px;
+	left: 57px;
+	cursor: pointer;
+}
+
+.middle_top .botton_left {
+	width: 25px;
+	height: 43px;
+	background: url(../img/aiqiyi_icone.png) 0 -320px no-repeat;
+	cursor: pointer;
+	position: absolute;
+	left: 0;
+	top: 95px;
+}
+
+.middle_top .botton_right {
+	width: 25px;
+	height: 43px;
+	background: url(../img/aiqiyi_icone.png) -80px -320px no-repeat;
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	top: 95px;
+}
+
+.middle_bottom ul {
+	margin-top: 20px;
+}
+
+.middle_bottom li {
+	height: 35px;
+	line-height: 35px;
+}
+
+.col_box {
+	padding-left: 0;
+	padding-right: 0;
+	height: 446px;
+}
+
+.col_box:last-child .img_list div {
+	margin: 0 0px 10px 10px;
+}
+
+.left_middle .hidden_box {
+	width: 115px;
+	height: 170px;
+	position: absolute;
+	top: -18px;
+	right: 0;
+	display: none;
+	background: white;
+	border: 1px solid #CFCFCF;
+}
+
+.left_middle .hidden_box ul {
+	margin: 0;
+}
+
+.left_middle .hidden_box li {
+	width: 110px;
+	height: 33px;
+	line-height: 33px;
+	margin-left: 0px;
+	text-indent: 6px;
+	border-bottom: 1px dotted #cfcfcf;
+}
+
+.left_middle .hidden_box li a {
+	font-size: 14px;
+}
