@@ -1,3 +1,15 @@
+//********************导航*********************
+$(function(){
+	onscroll = function(){
+		var top = $("body").scrollTop();
+		
+		if(top>490){
+			$(".fix").fadeIn("fast");
+		}else{
+			$(".fix").fadeOut("fast");
+		}
+	}
+})
 //******************************************************
 $(function() {
 	var flog = 0;
@@ -52,13 +64,24 @@ $(function() {
 			$(".adv_title span").text(str[flog]);
 		}
 	)
+	$(".top_adver").click(function(){
+		var bghref = new Array("http://www.iqiyi.com/v_19rr8o2ajo.html","http://www.iqiyi.com/v_19rr8o1d8s.html","http://www.iqiyi.com/v_19rr8p1xww.html",
+		"http://www.iqiyi.com/a_19rrhdogml.html","http://www.iqiyi.com/v_19rr919h7k.html?list=19rrlcw1xa","http://www.iqiyi.com/v_19rr8oa3y0.html",
+		"http://www.iqiyi.com/v_19rr8op1ck.html","http://www.iqiyi.com/v_19rr8p01h4.html","http://www.iqiyi.com/v_19rr8mzyns.html");
+		window.open(bghref[flog]);
+	})
 })
 //********************************************************
 $(".top_adver").css("transition", "background 0.5s ease");
 //********************************************************
 $(function() {
 	var date = new Date();
+	
 	var today = (date.getDay() - 1);
+	if(today==-1){
+		today=6;
+	}
+	
 	$(".Chas_middle .week:eq(" + today + ")").show();
 	$(".Chas_list li:eq(" + today + ")").children(".week_img").css({
 		"display": "block",
@@ -98,9 +121,9 @@ $(function() {
 	)
 })
 $(function() {
-	$(".day_list_li:eq(1) li:eq(0),.day_list_li:eq(0) li:eq(0)").children(".num_icon").css("background", "#FF2533");
-	$(".day_list_li:eq(1) li:eq(1),.day_list_li:eq(0) li:eq(1)").children(".num_icon").css("background", "#FD8912");
-	$(".day_list_li:eq(1) li:eq(2),.day_list_li:eq(0) li:eq(2)").children(".num_icon").css("background", "#FEC300");
+	$(".new_China .day_list_li:eq(1) li:eq(0),.day_list_li:eq(1) li:eq(0),.new_China .day_list_li:eq(0) li:eq(0),.day_list_li:eq(0) li:eq(0)").children(".num_icon").css("background", "#FF2533");
+	$(".new_China .day_list_li:eq(1) li:eq(1),.day_list_li:eq(1) li:eq(1),.new_China .day_list_li:eq(0) li:eq(1),.day_list_li:eq(0) li:eq(1)").children(".num_icon").css("background", "#FD8912");
+	$(".new_China .day_list_li:eq(1) li:eq(2),.day_list_li:eq(1) li:eq(2),.new_China .day_list_li:eq(0) li:eq(2),.day_list_li:eq(0) li:eq(2)").children(".num_icon").css("background", "#FEC300");
 	$(".right_list li").mouseover(function() {
 		$(this).css("height", "70px");
 		$(this).siblings().css("height", "35px");
@@ -119,33 +142,36 @@ $(function() {
 			"border": "1px solid #5AA700",
 			"color": "#5AA700"
 		});
-		$(".day_list3").css({
+		$(this).next(".day_list3").css({
 			"border": "1px solid #CFCFCF",
 			"color": "#555"
 		});
-		$(".day_list_li:eq(0)").show();
-		$(".day_list_li:eq(1)").hide();
+		$(this).next().next().show();
+		$(this).next().next().next().hide();
 	})
 	$(".day_list3").click(function() {
 		$(this).css({
 			"border": "1px solid #5AA700",
 			"color": "#5AA700"
 		});
-		$(".day_list").css({
+		$(this).prev(".day_list").css({
 			"border": "1px solid #CFCFCF",
 			"color": "#555"
 		});
-		$(".day_list_li:eq(1)").show();
-		$(".day_list_li:eq(0)").hide();
+		$(this).next().next().show();
+		$(this).next().hide();
 	})
 })
 //*********************************************************
 $(function() {
 	$(".Ani_list .img_list").css("transition", "all 2s ease");
 	$(".Ani_list .img_list").hover(function() {
-		$(".Ani_list .left_button,.Ani_list .right_button").show();
+//		$(".Ani_list .left_button,.Ani_list .right_button").show();
+		$(this).children(".left_button,.right_button").show();
 	}, function() {
-		$(".Ani_list .left_button,.Ani_list .right_button").hide();
+//		$(".Ani_list .left_button,.Ani_list .right_button").hide();
+		$(this).children(".left_button,.right_button").hide();
+		
 	})
 	var flog = 0;
 	$(".Ani_list .left_button").click(function() {

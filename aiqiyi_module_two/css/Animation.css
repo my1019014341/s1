@@ -1,5 +1,86 @@
 /*********************public*************************/
 
+.fix {
+	position: fixed;
+	top: 0;
+	display: none;
+	z-index: 10;
+}
+
+body>.a {
+	width: 100%;
+	min-width: 1200px;
+	height: 58px;
+	background: #222;
+	overflow: hidden;
+}
+
+.a a {
+	color: white;
+}
+
+.b {
+	width: 1200px;
+	height: 70px;
+	margin: 0 auto;
+}
+
+.c {
+	width: 260px;
+	height: 70px;
+	float: left;
+}
+
+.d {
+	width: 512px;
+	height: 70px;
+	float: left;
+}
+
+.e {
+	width: 415px;
+	height: 70px;
+	float: right;
+}
+
+.e ul li:hover {
+	color: yellowgreen;
+}
+
+.d1 {
+	width: 300px;
+	height: 36px;
+	color: black;
+	margin-left: 34px;
+	margin-top: 10px;
+	padding-left: 10px;
+	line-height: 37px;
+}
+
+.d2 {
+	width: 100px;
+	height: 36px;
+	margin-left: 330px;
+	margin-top: -36px;
+	float: left;
+}
+
+.e ul {
+	margin-top: 13px;
+}
+
+.e li {
+	float: left;
+	list-style: none;
+	font-size: 15px;
+	display: inline-block;
+	padding: 5px;
+	color: gainsboro;
+}
+
+
+/*****************************************************/
+
 .box {
 	width: 1200px;
 	height: 311px;
@@ -101,7 +182,8 @@
 }
 
 .box7 {
-	width: 1400px;
+	width: 100%;
+	min-width: 1200px;
 	border-bottom: 1px solid grey;
 }
 
@@ -161,6 +243,7 @@
 	background: url(../img/bg0.jpg) -276px 0 no-repeat;
 	overflow: hidden;
 	position: relative;
+	cursor: pointer;
 }
 
 .adv_img {
@@ -168,7 +251,15 @@
 	height: 64px;
 	background: rgba(0, 0, 0, 0.5);
 	margin: 0 auto;
-	margin-top: 374px;
+	float: left;
+}
+
+.bottm_adver {
+	width: 1060px;
+	height: 64px;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 373px;
 }
 
 .adv_img li {
@@ -203,9 +294,7 @@
 	width: 68px;
 	height: 64px;
 	background: url("http://www.qiyipic.com/common/fix/focus_oneClick/site-focus-btnLeft6464.png") no-repeat;
-	position: absolute;
-	bottom: 22px;
-	left: 147px;
+	float: left;
 	cursor: pointer;
 }
 
@@ -217,9 +306,7 @@
 	width: 68px;
 	height: 64px;
 	background: url("http://www.qiyipic.com/common/fix/focus_oneClick/site-focus-btnRight6464.png") no-repeat;
-	position: absolute;
-	bottom: 22px;
-	right: 142px;
+	float: right;
 	cursor: pointer;
 }
 
@@ -512,6 +599,7 @@ a:hover {
 	width: 1200px;
 	height: 418px;
 	margin: 20px auto;
+	overflow: hidden;
 }
 
 .more {
@@ -633,6 +721,7 @@ a:hover {
 	width: 1200px;
 	height: 423px;
 	margin: 0 auto;
+	overflow: hidden;
 }
 
 .newAni .new_left {
@@ -883,3 +972,12 @@ a:hover {
 .Ani_2 .title_img {
 	background: url(../img/cartoon.png) -120px 0 no-repeat !important;
 }
+
+.new_China .title_img {
+	background: url(../img/cartoon.png) -180px 0 no-repeat;
+}
+
+.Ani_3 .rec_title .title_img {
+	background: url(../img/cartoon.png) -120px -60px no-repeat;
+}
+
