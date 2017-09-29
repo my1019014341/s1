@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="time"></div>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
+		<script>
+			(function(){
+				
+				var time = {"show":function(dom){
+					setInterval(function(){
+						var date = new Date();
+						document.querySelector(dom).innerText=date.getHours()+":"+date.getMinutes()+":"+date.getSeconds();
+						
+					},1000);
+
+				}};
+				this.Time = time;
+			})();
+			Time.show("#time");
+			
+		</script>
+	</body>
+</html>
