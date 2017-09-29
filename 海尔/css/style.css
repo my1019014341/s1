@@ -1,0 +1,356 @@
+* {
+	margin: 0 0;
+	padding: 0 0;
+	font-family: DeliciousRoman, arial, Microsoft Yahei, \5b8b\4f53, sans-serif!important;
+	text-decoration: none;
+	font-weight: 400;
+	font-style: normal;
+	word-break: break-all;
+}
+
+.header {
+	width: 100%;
+	min-width: 1200px;
+	height: 60px;
+	background: #fff;
+	overflow: hidden;
+}
+
+.top_content {
+	width: 1260px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.top_content>a {
+	width: 74.9px;
+	height: 60px;
+	overflow: hidden;
+	display: block;
+	float: left;
+	margin-right: 20px;
+}
+
+.top_logo {
+	width: 71px;
+	height: 21px;
+	display: block;
+	margin-top: 20px;
+	background: url(../img/hn_ico25_2.png) 0 -630px no-repeat;
+}
+
+.top_content ul li {
+	float: left;
+	height: 60px;
+	line-height: 60px;
+	border: 1px solid white;
+	font-size: 14px;
+	padding: 0 20px;
+	color: #333;
+}
+
+.top_content ul li span {
+	font-weight: bold;
+}
+
+.top_list {
+	width: 60px;
+	height: 60px;
+	float: right;
+	overflow: hidden;
+}
+
+.top_list_icon {
+	background: url(../img/hn_ico.png) 0 -25px;
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 25px;
+	height: 25px;
+	display: block;
+}
+
+.login {
+	widows: 120px;
+	height: 60px;
+	float: right;
+	line-height: 60px;
+	text-align: center;
+	margin-left: 10px;
+}
+
+.login a {
+	font-size: 14px;
+	color: #666;
+	padding: 0 6px;
+}
+
+.login a:hover {
+	color: #005aab;
+}
+
+.search {
+	width: 142px;
+	height: 40px;
+	float: right;
+	line-height: 40px;
+	overflow: hidden;
+	margin-top: 10px;
+	border: 1px solid gainsboro;
+}
+
+.search input {
+	width: 90px;
+	outline: none;
+	border: none;
+	height: 38px;
+	line-height: 38px;
+	font-size: 14px;
+	padding-left: 10px;
+}
+
+.search ._input_icon {
+	width: 25px;
+	height: 25px;
+	display: block;
+	margin-right: 8px;
+	margin-top: 8px;
+	float: right;
+	background: url(../img/hn_ico25_2.png) 0 -50px no-repeat;
+}
+
+.adver_box {
+	width: 1349px;
+	height: 500px;
+}
+
+.adver {
+	width: 945px;
+	height: 500px;
+	float: left;
+	position: relative;
+	background: url("http://image.haier.com/cn/xbsy_37860/sybanner_27044/201709/P020170922520499081166.jpg");
+}
+
+.adver_content {
+	width: 404px;
+	height: 500px;
+	background: #77574E;
+	float: right;
+	box-sizing: border-box;
+	padding-left: 45px;
+}
+
+.adver_content h2 {
+	color: white;
+	font-size: 2.8em;
+	height: 60px;
+	line-height: 60px;
+	margin-top: 40px;
+}
+
+.adver_content h3 {
+	font-size: 1.8em;
+	color: #C8BCB8;
+	height: 45px;
+	line-height: 45px;
+}
+
+.adver_content ul {
+	color: white;
+	font-size: 13px;
+	margin-top: 20px;
+}
+
+.adver_content .more {
+	width: 150px;
+	height: 42px;
+	text-align: center;
+	line-height: 42px;
+	color: white;
+	font-size: 13px;
+	display: block;
+	margin-top: 40px;
+	border: 1px solid white;
+}
+
+.adver .left_button {
+	height: 500px;
+	width: 236px;
+	position: absolute;
+	left: 0;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.adver .right_button {
+	height: 500px;
+	width: 236px;
+	position: absolute;
+	right: 0;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.adver .right_button i,
+.adver .left_button i {
+	width: 50px;
+	height: 90px;
+	display: block;
+}
+
+.adver .right_button i {
+	background: url(../img/hn_ico_banner.png) no-repeat;
+	margin-left: 132px;
+	margin-top: 200px;
+}
+
+.adver .left_button i {
+	background: url(../img/hn_ico_banner.png) 0 -90px no-repeat;
+	margin-left: 51px;
+	margin-top: 200px;
+}
+
+.shop_store {
+	width: 100%;
+	min-width: 1200px;
+	height: 90px;
+}
+
+.shop_store .store_title {
+	width: 1000px;
+	height: 90px;
+	margin: 0 auto;
+}
+
+.store_title li {
+	float: left;
+	width: 165px;
+	height: 90px;
+	cursor: pointer;
+}
+
+.store_title li a {
+	display: block;
+	width: 66px;
+	height: 66px;
+	margin: 0 auto;
+	margin-top: 15px;
+	font-size: 13px;
+}
+
+.store_title li a i {
+	display: block;
+	width: 40px;
+	height: 40px;
+}
+
+.store_title li:nth-of-type(1) {
+	border-top: 2px solid #32BEFF;
+	background: #EBEBEB;
+}
+
+.store_title li:nth-of-type(1) a i {
+	background: url(../img/hn_ico.png) -110px -40px;
+}
+
+.store_title li:nth-of-type(2) a i {
+	background: url(../img/hn_ico.png) -74px -115px;
+}
+
+.store_title li:nth-of-type(3) a i {
+	background: url(../img/hn_ico.png) -68px -79px;
+}
+
+.store_title li:nth-of-type(4) a i {
+	background: url(../img/hn_ico.png) -76px -360px;
+}
+
+.store_title li:nth-of-type(5) a i {
+	background: url(../img/hn_ico.png) -73px -40px;
+}
+
+.store_title li:nth-of-type(6) a i {
+	background: url(../img/hn_ico.png) -73px -600px;
+}
+
+.iceBox_content {
+	width: 1260px;
+	height: 420px;
+	margin: 20px auto;
+}
+
+.iceBox_content .left_content {
+	width: 394px;
+	height: 394px;
+	float: left;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.iceBox_content .left_content li {
+	width: 394px;
+	height: 394px;
+	float: left;
+}
+
+.iceBox_content .left_content li:first-child h2 {
+	color: #333333;
+	height: 96px;
+	width: 200px;
+	overflow: hidden;
+	line-height: 80px;
+	font-size: 2.5em;
+	line-height: 1.25em;
+	max-height: 2.5em;
+	overflow: hidden;
+	margin-bottom: 5px;
+}
+
+.iceBox_content .left_content li:first-child h3 {
+	color: #999;
+}
+
+.iceBox_content .left_content li:first-child img {
+	width: 200px;
+	height: 200px;
+	margin-left: 146px;
+	margin-top: 18px;
+}
+
+.iceBox_content .middle_content {
+	width: 420px;
+	height: 420px;
+	float: left;
+	overflow: hidden;
+	margin-left: 31px;
+}
+
+.iceBox_content .middle_content img:nth-of-type(2),
+.iceBox_content .middle_content img:nth-of-type(3) {
+	cursor: pointer;
+	width: 186px;
+	height: 186px;
+	margin-top: 20px;
+}
+
+.iceBox_content .middle_content img:nth-of-type(2) {
+	margin-right: 20px;
+}
+
+.iceBox_content .middle_content img:first-child {
+	width: 396px;
+	height: 198px;
+	cursor: pointer;
+}
+
+.iceBox_content .right_content {
+	width: 396px;
+	height: 396px;
+	float: right;
+	cursor: pointer;
+}
+
+.iceBox_content .right_content img {
+	width: 396px;
+	height: 396px;
+}
