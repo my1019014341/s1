@@ -235,7 +235,10 @@ body>.a {
 
 
 /***************************************************/
-
+.top_adver>a{
+	display: block;
+	height: 100%;
+}
 .top_adver {
 	width: 100%;
 	min-width: 1200px;
@@ -258,8 +261,12 @@ body>.a {
 	width: 1060px;
 	height: 64px;
 	overflow: hidden;
-	margin: 0 auto;
-	margin-top: 373px;
+	/*margin: 0 auto;
+	margin-top: 373px;*/
+	position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -524px;
 }
 
 .adv_img li {

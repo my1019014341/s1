@@ -26,6 +26,7 @@ $(function() {
 			$(".adv_img li:eq(" + flog + ") img").css("border", "3px solid #6CC900");
 			$(".top_adver").css("background", "url(img/bg" + flog + ".jpg)");
 			$(".adv_title span").text(str[flog]);
+			$(".top_adver>a").attr("href",bghref[flog]);
 		}, 5000
 	)
 	$(".adv_img li").mouseover(
@@ -36,7 +37,7 @@ $(function() {
 			$(".adv_img li:eq(" + flog + ") img").css("border", "3px solid #6CC900");
 			$(".top_adver").css("background", "url(img/bg" + flog + ".jpg)");
 			$(".adv_title span").text(str[flog]);
-
+			$(".top_adver>a").attr("href",bghref[flog]);
 		}
 	)
 	$(".button_left").click(
@@ -49,7 +50,7 @@ $(function() {
 			$(".adv_img li:eq(" + flog + ") img").css("border", "3px solid #6CC900");
 			$(".top_adver").css("background", "url(img/bg" + flog + ".jpg)");
 			$(".adv_title span").text(str[flog]);
-
+			$(".top_adver>a").attr("href",bghref[flog]);
 		}
 	)
 	$(".button_right").click(
@@ -62,14 +63,15 @@ $(function() {
 			$(".adv_img li:eq(" + flog + ") img").css("border", "3px solid #6CC900");
 			$(".top_adver").css("background", "url(img/bg" + flog + ".jpg)");
 			$(".adv_title span").text(str[flog]);
+			$(".top_adver>a").attr("href",bghref[flog]);
 		}
 	)
-	$(".top_adver").click(function(){
+	
 		var bghref = new Array("http://www.iqiyi.com/v_19rr8o2ajo.html","http://www.iqiyi.com/v_19rr8o1d8s.html","http://www.iqiyi.com/v_19rr8p1xww.html",
 		"http://www.iqiyi.com/a_19rrhdogml.html","http://www.iqiyi.com/v_19rr919h7k.html?list=19rrlcw1xa","http://www.iqiyi.com/v_19rr8oa3y0.html",
 		"http://www.iqiyi.com/v_19rr8op1ck.html","http://www.iqiyi.com/v_19rr8p01h4.html","http://www.iqiyi.com/v_19rr8mzyns.html");
-		window.open(bghref[flog]);
-	})
+//		$(".top_adver>a").attr("href",bghref[flog]);
+	
 })
 //********************************************************
 $(".top_adver").css("transition", "background 0.5s ease");
