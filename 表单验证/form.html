@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			.error {
+				margin-left: 10px;
+				color: orangered;
+				font-size: 14px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<form>
+			<div><label>用户名:</label><input type="text" name="uname" /> </div>
+			<div><label>手机号:</label><input type="text" name="tel" /> </div>
+			<div><label>密码:</label><input type="password" name="psw" /> </div>
+			<div><label>邮箱:</label><input type="text" name="email" /> </div>
+			<div><input type="submit" name="button" value="提交" /> </div>
+		</form>
+
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="jquery-validation-1.17.0/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="jquery-validation-1.17.0/localization/messages_zh.min.js"></script>
+		<script>
+			jQuery.validator.addMethod("pwd", function(value, element) {
+				return /^(?![0-9]+$)(?![a-zA-Z]+$)[a-zA-Z0-9]{6,12}$/.test(value);
+			}, "密码输入格式错误");
+			$(function() {
+				$("form").validate({
+					rules: {
+						uname: {
+							required: true,
+							rangelength: [2, 6]
+						},
+						tel: {
+							required: true
+						},
+						psw: {
+							required:true,
+							pwd:true
+						}
+					},
+					messages: {
+						uname: {
+							required: "这个字段不能为空",
+							rangelength: "必须填写2-6个字符"
+						},
+						tel: {
+							required: "这个字段不能为空"
+						},
+						psw:{
+							requirde:"密码不能为空",
+							pwd:"格式不对"
+						}
+					}
+
+				});
+			})
+		</script>
+	</body>
+
+</html>
