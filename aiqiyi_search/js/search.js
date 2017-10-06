@@ -123,10 +123,10 @@ $(".hot .rec_title li").mouseover(function() {
 	var index = $(this).index();
 	if(index == 0) {
 		$(".hot_content").show();
-		$(".beauty").hide();
+		$(".today_hot .beauty").hide();
 	} else {
 		$(".hot_content").hide();
-		$(".beauty").show();
+		$(".today_hot .beauty").show();
 	}
 })
 //*****************************电影****************************
