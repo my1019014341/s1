@@ -4,13 +4,61 @@
 		<meta charset="UTF-8">
 		<title></title>
 		<style>
-			body{
-				background: url("https://mimg.127.net/m/lc/img/LoginBackgroundPic/1301/1/promPic.jpg")
-				no-repeat;
+			span{
+				color: orangered;
 			}
 		</style>
 	</head>
 	<body>
+		<form method="post" action="">
+			<p>用户名:<input type="text" name="uname" id="uname" placeholder="输入用户名"  ><span></span> </p>
+  	 		<p>输入用户密码:<input type="password" id="pwd" name="pwd" placeholder="输入密码"  ><span></span></p>
+  			<p>确认密码输入:<input type="password" id="repwd" name="repetpwd" placeholder="重复密码"><span></span></p>
+  			<button type="submit" id="submit">提交</button>
+  			<button type="reset">重置</button>
+		</form>
 		
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
+		<script>
+			$("#uname").blur(function(){
+				if($(this).val()==null||$(this).val().trim()==""){
+					$(this).next().text("用户名不能为空");
+				}else{
+					$(this).next().text("");
+				}
+			})
+			$("#pwd").blur(function(){
+				if($(this).val()==null||$(this).val().trim()==""){
+					$(this).next().text("密码不能为空");
+				}else{
+					$(this).next().text("");
+				}
+			})
+			$("#repwd").blur(function(){
+				if($(this).val()==null||$(this).val().trim()==""){
+					$(this).next().text("密码不能为空");
+				}else if($(this).val().trim()!=$("#pwd").val().trim()){
+					$(this).next().text("两次密码输入不一致");
+				}else{
+					$(this).next().text("");
+				}
+			})
+			$("#submit").click(function(){
+				if($("#uname").val()==null||$("#uname").val().trim()==""){
+					alert("用户名不为空");
+					return false;
+				}else if ($("#pwd").val()==null||$("#pwd").val().trim()==""){
+					alert("密码不为空");
+					return false;
+				}else if($("#repwd").val().trim()!=$("#pwd").val().trim()){
+					alert("两次密码输入不一致");
+					return false;
+				}
+				else{
+					alert("注册成功，显示登录页面");
+					return true;
+				}
+			})
+		</script>
 	</body>
 </html>
