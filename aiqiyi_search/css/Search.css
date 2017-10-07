@@ -554,7 +554,7 @@ a:hover {
 .img_list li {
 	width: 160px;
 	height: 260px;
-	margin-right: 15px;
+	margin-right: 20px;
 	overflow: hidden;
 	position: relative;
 	display: inline-block;
@@ -663,7 +663,7 @@ a:hover {
 .img_list_s li {
 	width: 160px;
 	height: 140px;
-	margin-right: 15px;
+	margin-right: 20px;
 	overflow: hidden;
 	position: relative;
 	display: inline-block;
@@ -832,13 +832,20 @@ a:hover {
 .hot_content ul {
 	float: left;
 }
-
+.img_list_s li:last-child{
+	margin-right: 0;
+}
 .hot_content {
 	/*display: none;*/
+	width: 920px;
+	height: 100%;
+	overflow: hidden;
 }
 
 .today_hot .beauty {
 	display: none;
+	width: 920px;
+	height: 100%;
 }
 
 .beauty li {
@@ -1077,7 +1084,11 @@ a:hover {
 #movie_list3 {
 	display: none;
 }
-
+#movie,#tel,#Ani,#Fun{
+	width: 920px;
+	height: 100%;
+	overflow: hidden;
+}
 #Ani2,
 #Ani3,
 #Ani4,

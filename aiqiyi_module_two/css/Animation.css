@@ -184,7 +184,7 @@ body>.a {
 .box7 {
 	width: 100%;
 	min-width: 1200px;
-	border-bottom: 1px solid grey;
+	border-top: 1px solid grey;
 }
 
 .box8 {
@@ -988,3 +988,17 @@ a:hover {
 	background: url(../img/cartoon.png) -120px -60px no-repeat;
 }
 
+.toTop {
+	display: block;
+	width: 53px;
+	height: 52px;
+	background: url(../img/5-120601160025-50.png) no-repeat -53px 0;
+	position: fixed;
+	right: 15px;
+	bottom: 105px;
+	cursor: pointer;
+}
+
+.toTop:hover {
+	background: url(../img/5-120601160025-50.png) no-repeat 0px 0;
+}
