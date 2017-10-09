@@ -276,3 +276,31 @@ $(function() {
 		}
 	});
 });
+//********************li效果******************
+$(".li_style_1 li").hover(function(){
+	$(this).animate({
+			"top": "-15px"
+		}, 300);
+		
+},function(){
+	$(this).animate({
+			"top": "15px"
+		}, 300);
+		$(this).animate({
+			"top": "-5px"
+		}, "fast");
+		$(this).animate({
+			"top": "0px"
+		}, "fast");
+})
+ $(".li_style_2 li").hover(function(){
+           	 $(this).attr("class","on")
+           	       .siblings().attr("class","off");
+           	  $(this).parent().siblings().children("li").attr("class","on")
+           	  $(this).parent().siblings().children("li").siblings().attr("class","off")
+           	       
+           },function(){
+           	$(this).parent().children().attr("class","on");
+           	$(this).parent().siblings().children().attr("class","on");
+             }
+           )

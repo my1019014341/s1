@@ -1087,7 +1087,7 @@ a:hover {
 #movie,#tel,#Ani,#Fun{
 	width: 920px;
 	height: 100%;
-	overflow: hidden;
+	
 }
 #Ani2,
 #Ani3,
@@ -1271,4 +1271,13 @@ a:hover {
 
 .qixiu .beauty li {
 	margin-right: 7px;
+}
+.on {
+	opacity: 1;
+	transition: all 1s ease 0s;
+}
+
+.off {
+	opacity: 0.3;
+	transition: all 1s ease 0s;
 }

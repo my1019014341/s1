@@ -216,3 +216,66 @@ $(function() {
 
 	})
 })
+//************************cookie***********************
+
+$(function() {
+	var his_cookie = $.cookie("HIS_COOKIE");
+	if(his_cookie != null) { //如果cookie中有值，绑定到历史上
+		var his = his_cookie.split(",");
+		var html = '';
+		for(var i = 0; i < his.length; i++) {
+			html += '<li><a href="">'+his[i]+'</a> </li>';
+		}
+		$(".cookie ul").html(html);
+	}
+	$(".a .d .d1").focus(function() {
+		$(".cookie").show();
+	});
+
+	$(".a .d .d1").blur(function() {
+		$(".cookie").hide();
+	});
+
+	//点击搜索
+	$(".a .d .d2").click(function() {
+		var searchText = $(this).prev().val().trim();
+		//追加cookie数据
+		if(his_cookie != null) {
+			his_cookie = searchText + "," + his_cookie;
+		} else {
+			his_cookie = searchText;
+		}
+		//设置cookie数据
+		if(searchText.length > 1) {
+			$.cookie("HIS_COOKIE", his_cookie);
+		}
+	});
+});
+//********************li效果******************
+$(".li_style_1 li").hover(function(){
+	$(this).animate({
+			"top": "-15px"
+		}, 300);
+		
+},function(){
+	$(this).animate({
+			"top": "15px"
+		}, 300);
+		$(this).animate({
+			"top": "-5px"
+		}, "fast");
+		$(this).animate({
+			"top": "0px"
+		}, "fast");
+})
+ $(".li_style_2 li").hover(function(){
+           	 $(this).attr("class","on")
+           	       .siblings().attr("class","off");
+           	  $(this).parent().siblings().children("li").attr("class","on")
+           	  $(this).parent().siblings().children("li").siblings().attr("class","off")
+           	       
+           },function(){
+           	$(this).parent().children().attr("class","on");
+           	$(this).parent().siblings().children().attr("class","on");
+             }
+           )

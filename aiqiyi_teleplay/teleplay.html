@@ -5,9 +5,13 @@
 		<meta charset="UTF-8">
 		<title>Teleplay</title>
 		<link rel="stylesheet" type="text/css" href="css/utils.css" />
+		<link rel="stylesheet" type="text/css" href="css/3D.css"/>
+		
 		<link rel="stylesheet" type="text/css" href="css/Teleplay.css"/>
-		<style>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
 
+		<style>
+			
 		</style>
 	</head>
 
@@ -16,19 +20,29 @@
 		<div class="a">
 			<div class="b">
 				<div class="c">
-					<a href="https://cbjbbcb.github.io/aiqiyimain/main/main"><img src="img/a.png" /></a>
+					<a href="#"><img src="img/a.png" /></a>
 				</div>
 				<div class="d">
-					<input class="d1" type="search" placeholder="那年花开月正圆">
+					<form>
+						<input class="d1" type="search" placeholder="那年花开月正圆">
 					<input class="d2" type="image" src="img/search.png">
+						<div class="cookie">
+							<p>历史搜索</p>
+							<ul>
+								<!--<li><a href="">123</a> </li>
+								<li><a href="">123</a> </li>
+								<li><a href="">123</a> </li>-->
+							</ul>
+						</div>
+					</form>
 				</div>
 				<div class="e">
 					<ul>
 						<li>
-							<a href="">登录</a>
+							<a href="" id="login_start" onclick="openLogin()">登录</a>
 						</li>
 						<li>
-							<a href="">注册</a>
+							<a href="" id="login_start" onclick="openZhuce()">注册</a>
 						</li>
 						<li>
 							<a href="">开通VIP</a>
@@ -56,8 +70,18 @@
 					<a href="#"><img src="img/a.png" /></a>
 				</div>
 				<div class="d">
-					<input class="d1" type="search" placeholder="那年花开月正圆">
+					<form>
+						<input class="d1" type="search" placeholder="那年花开月正圆">
 					<input class="d2" type="image" src="img/search.png">
+						<div class="cookie">
+							<p>历史搜索</p>
+							<ul>
+								<!--<li><a href="">123</a> </li>
+								<li><a href="">123</a> </li>
+								<li><a href="">123</a> </li>-->
+							</ul>
+						</div>
+					</form>
 				</div>
 				<div class="e">
 					<ul>
@@ -153,7 +177,7 @@
 		</div>
 		
 		<!--最近追剧 同步热播-->
-		<div class="tel_content">
+		<div class="tel_content li_style_1">
 			<div class="title_box">
 				<div class="con_title">
 					<span>最近追剧</span>
@@ -273,8 +297,22 @@
 			
 		</div>
 		
+		<!--3d轮播图-->
+		<div class="adver_box ">
+			<div class="th_d_adver">
+				<p>私人专属影院</p>
+			<div class="box">
+	  			<div class="box-con"> <span class="prev"></span> <span class="next"></span>
+   		 			<ul class="list">
+   	 				</ul>
+ 	 			</div>
+			</div>
+			
+			</div>
+		</div>
+		
 		<!--爱奇艺自制剧-->
-		<div class="tel_content">
+		<div class="tel_content li_style_1">
 			<div class="title_box">
 				<div class="con_title">
 					<span>爱奇艺自制剧</span>
@@ -348,7 +386,7 @@
 		</div>
 		
 		<!--热门网剧-->
-		<div class="tel_content">
+		<div class="tel_content li_style_2">
 			<div class="title_box">
 				<div class="con_title">
 					<span>热门网剧</span>
@@ -413,7 +451,7 @@
 		</div>
 	
 		<!--独家策划 围观剧透社-->
-		<div class="tel_content">
+		<div class="tel_content li_style_1">
 			<div  style="width: 1220px;height: 100%;overflow: hidden;">
 				<!--独家策划-->
 			<div class="exclusive">
@@ -508,7 +546,7 @@
 		</div>
 		
 		<!--全球剧场-->
-		<div class="tel_content">
+		<div class="tel_content li_style_2">
 			<div class="title_box">
 					<div class="con_title">
 						<span>围观剧透社</span>
@@ -559,7 +597,7 @@
 		</div>
 		
 		<!--超自然题材的电视剧-->
-		<div class="tel_content">
+		<div class="tel_content li_style_1">
 			<div class="title_box">
 				<div class="con_title">
 					<span>超自然题材的电视剧</span>
@@ -625,7 +663,7 @@
 		</div>
 	
 		<!--关于职场的电视剧-->
-		<div class="tel_content">
+		<div class="tel_content li_style_2">
 			<div class="title_box">
 				<div class="con_title">
 					<span>关于职场的电视剧</span>
@@ -717,9 +755,16 @@
 			</div>
 			
 		</footer>
+		
+		
+		
 		<a href="#top" class="toTop"></a>
 		<script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
 		<script type="text/javascript" src="js/Teleplay.js" ></script>
+		<script type="text/javascript" src="js/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="js/canvas.js"></script> 
+		<script src="js/3Ddata.js"></script> 
+		<script src="js/3D.js"></script>
 		<script>
 
 		</script>
