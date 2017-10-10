@@ -172,6 +172,7 @@
 }
 .adver_box{
 	width: 100%;
+	min-width: 1200px;
 	height: 400px;
 	overflow: hidden;
 	position: relative;
