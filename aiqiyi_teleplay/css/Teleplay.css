@@ -54,6 +54,9 @@ body>.a {
 .a a {
 	color: white;
 }
+.a a:hover{
+	color: #699f00;
+}
 
 .b {
 	width: 1200px;

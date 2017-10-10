@@ -16,6 +16,138 @@
 	</head>
 
 	<body>
+		
+		<div id="login_background">
+			<div id="login">
+				<div class="login_top">
+					<div class="login_top_img"></div>
+					<span>手机扫码登陆</span>
+					<button type="button" class="close" onclick="closeLogin()"></button>
+				</div>
+				<div class="login_middle">
+					<div class="login_middle_1">
+						<div id="login_middle_right">
+							<div id="login_middle_right_top">
+								打开
+								<a href="">· 爱奇艺手机APP</a>
+								<p>扫描二维码登陆</p>
+							</div>
+							<div id="login_middle_right_bottom" onmouseenter="changeToRight()" onmouseleave="changeToleft()">
+								<img src="img/login/QQ图片20170920084103.png" />
+							</div>
+						</div>
+						<div id="login_middle_left">
+							<img src="img/login/QQ图片20170920084459.png" />
+						</div>
+					</div>
+					<div class="login_middle_2">
+						<div class="login_middle_2_top">其他方式登陆</div>
+						<div class="login_middle_2_middle">
+							<ul class="login_middle_2_ul">
+								<li>
+									<a href="https://graph.qq.com/oauth/show?which=Login&display=pc&response_type=code&client_id=100234077&redirect_uri=https://passport.yhd.com/qq/callback.do&scope=get_user_info&state=09b0987bb35356c95a4ccc16e594266b" target="_blank"><img src="img/login/QQ.png" /></a>
+								</li>
+								<li>
+									<a href="https://open.weixin.qq.com/connect/qrconnect?appid=wxbdc5610cc59c1631&redirect_uri=https%3A%2F%2Fpassport.yhd.com%2Fwechat%2Fcallback.do&response_type=code&scope=snsapi_login&state=aa687158acbbd5c3b79520fb221ad69d#wechat_redirect " target="_blank "><img src="img/login/微信.png" /></a>
+								</li>
+								<li>
+									<a href="https://api.weibo.com/oauth2/authorize?client_id=2794712645&redirect_uri=https%3A%2F%2Fpassport.yhd.com%2Fsina%2Fcallback.do&state=700263a5269043f958c03c09bd961730&display=default&response_type=code " target="_blank "><img src="img/login/新浪微博.png" /></a>
+								</li>
+								<li>
+									<a href="https://openapi.baidu.com/oauth/2.0/authorize?client_id=kYGyYj9HePPBbpKqGvpZgpMS&scope=basic&response_type=code&state=50ad213f8b5e5c426465a7d9354d1fc0&redirect_uri=https%3A%2F%2Fpassport.yhd.com%2Fbaidu%2Fcallback.do" target="_blank"><img src="img/login/百度.png" /></a>
+								</li>
+							</ul>
+							<ul class="login_middle_2_ul">
+								<li>
+									<a href="http://t.qq.com/" target="_blank"><img src="img/login/腾讯微博.png" /></a>
+								</li>
+								<li>
+									<a href="http://graph.renren.com/oauth/grant?client_id=34dbd204cebc423baeeed4bcbf0f1af9&redirect_uri=https%3A%2F%2Fpassport.yhd.com%2Frenren%2Fcallback.do&response_type=code&display=page&state=80aa63bec6e915cdbbb2167ba7a7969a&secure=true&origin=00000&x_renew=true" target="_blank"><img src="img/login/人人网.png" /> </a>
+								</li>
+							</ul>
+						</div>
+						<div class="login_middle_2_bottom">
+							<a href="http://www.iqiyi.com/iframe/smslogin?from_url=http%3A%2F%2Fwww.iqiyi.com%2F" target="_blank">短信登陆</a>
+						</div>
+					</div>
+					<div class="login_middle_3">
+						<form>
+							<div class="login_middle_3_top">
+								<div class="login_middle_3_top_left">
+									<select>
+										<option selected="selected">中国大陆</option>
+										<option>美国/加拉大</option>
+										<option>德国</option>
+										<option>法国</option>
+									</select>
+								</div>
+								<div class="login_middle_3_top_right">
+
+									<input class="login_middle_3_input" type="text" />
+									<p>请输入手机号或邮箱</p>
+								</div>
+							</div>
+							<div id="login_middle_3_middle">
+								<input type="password" class="login_middle_3_input" id="login_middle_3_password" onkeyup="submitColorChange(this)" />
+								<p>请输入密码</p>
+								<div id="login_middle_3_middle_change"></div>
+								<div class="login_middle_3_forget">
+									<a href="javascript:;">忘记密码</a>
+									<div class="login_middle_3_hidden">
+										<span>忘记密码了?</span><br />
+										<a href="http://passport.iqiyi.com/pages/secure/password/find_pwd_index.action" target="_blank">找回密码</a><br />
+										<a href="http://127.0.0.1:8020/my_aiqiyi/login.html?__hbt=1506310118628" target="_blank">短信登陆</a>
+									</div>
+								</div>
+							</div>
+							<div id="login_middle_3_bottom">
+								<input type="submit" value="登陆" />
+							</div>
+						</form>
+
+					</div>
+					<div class="login_middle_4">
+						<form>
+							<div class="login_middle_3_top">
+								<div class="login_middle_3_top_left">
+									<select>
+										<option selected="selected">中国大陆</option>
+										<option>美国/加拉大</option>
+										<option>德国</option>
+										<option>法国</option>
+									</select>
+								</div>
+								<div class="login_middle_3_top_right">
+									<input class="login_middle_3_input" type="text" onkeyup="submitColorChange(this)" />
+									<p>请输入手机号</p>
+								</div>
+							</div>
+							<div id="login_middle_4_bottom">
+								<span>点击注册即表示您同意</span>
+								<a href="http://www.iqiyi.com/user/register/protocol.html" target="_blank">
+									<<爱奇艺 用户服务协议>></爱奇艺>
+								</a>
+								<input type="submit" value="注册" />
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="login_bottom">
+					<a href="javascript:;" id="login_zhuce">注册</a>
+					<div id="login_bottom_char">
+						<a id="login_zhanghao">账号密码登陆</a>
+						<a id="login_saoma1">手机扫码登陆</a>
+						<span>|</span>
+						<a id="login_other" href="javascript:;">其他登陆</a>
+						<a id="login_saoma2" href="javascript:;">手机扫码登陆</a>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!--**********************************************************登陆注册引用结束**********************************-->
+		
 		<a name="top"></a>
 		<div class="a">
 			<div class="b">
@@ -39,10 +171,10 @@
 				<div class="e">
 					<ul>
 						<li>
-							<a href="" id="login_start" onclick="openLogin()">登录</a>
+							<a href="javascript:;" id="login_start" onclick="openLogin()">登陆</a>
 						</li>
 						<li>
-							<a href="" id="login_start" onclick="openZhuce()">注册</a>
+							<a href="javascript:;" id="login_start" onclick="openZhuce()">注册</a>
 						</li>
 						<li>
 							<a href="">开通VIP</a>
@@ -761,6 +893,7 @@
 		<a href="#top" class="toTop"></a>
 		<script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
 		<script type="text/javascript" src="js/Teleplay.js" ></script>
+		<script type="text/javascript" src="js/login.js" ></script>
 		<script type="text/javascript" src="js/jquery.cookie.js" ></script>
 		<script type="text/javascript" src="js/canvas.js"></script> 
 		<script src="js/3Ddata.js"></script> 

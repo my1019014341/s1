@@ -80,7 +80,9 @@
 	}
 	/*头部end*/
 	/*中部 start*/
-
+	.glyphicon-remove:before {
+	content: "\e014"
+}
 .close{
 	width:32px ;
 	height: 32px;
