@@ -61,7 +61,7 @@ $(function() {
 		$(this).css("background", "#699f00");
 		$(this).siblings().css("background", "#B3B3B3");
 	})
-	setInterval(function() {
+	function nextFun() {
 		flog++;
 		if(flog == 10) {
 			flog = 0;
@@ -71,8 +71,17 @@ $(function() {
 		$(".adv_title a:eq(1)").text(str[flog]);
 		$(".bottom_title li:eq(" + flog + ")").css("background", "#699f00");
 		$(".bottom_title li:eq(" + flog + ")").siblings().css("background", "#B3B3B3");
-	}, 5000)
+	}
+	
+	$(".top_adver")[0].onmouseover = function(){
+	clearInterval(timer);
+};
 
+$(".top_adver")[0].onmouseout = function(){
+	timer = setInterval(nextFun,5000);
+};
+	
+	
 	$(".search_list ul:eq(0) li:lt(3) div").css("background", "#699f00");
 	$(".search_list ul:eq(0) li:eq(2) a:eq(0)").css("color", "#fff");
 	$(".search_list ul:eq(0) li:eq(1) a:eq(0)").css("color", "#fff");

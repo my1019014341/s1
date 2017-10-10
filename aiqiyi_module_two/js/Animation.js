@@ -15,8 +15,7 @@ $(function() {
 	var flog = 0;
 	var str = new Array("航海王 第805集", "龙珠超 第107集", "名侦探柯南 第928集", "迪士尼公主娃娃派对", "次元二Bi治：痴汉幻想 娇羞少女清纯..", "Princess Principal 第11集", "数码宝贝宇宙 应用怪兽 第50集", "Re:CREATORS 第22集", "带着智慧型手机闯荡异世界 第11集")
 
-	setInterval(
-		function() {
+	function nextFun() {
 
 			flog++;
 			if(flog == 9) {
@@ -27,8 +26,18 @@ $(function() {
 			$(".top_adver").css("background", "url(img/bg" + flog + ".jpg)");
 			$(".adv_title span").text(str[flog]);
 			$(".top_adver>a").attr("href",bghref[flog]);
-		}, 5000
-	)
+		}
+	
+		$(".top_adver")[0].onmouseover = function(){
+	clearInterval(timer);
+};
+
+$(".top_adver")[0].onmouseout = function(){
+	timer = setInterval(nextFun,5000);
+};
+	
+	
+	
 	$(".adv_img li").mouseover(
 		function() {
 			var index = $(this).index();

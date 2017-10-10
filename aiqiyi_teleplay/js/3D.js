@@ -7,6 +7,7 @@
 	
     $(function(){
     	var box_ul=$(".box-con ul");
+    	
     	creatLi(data.letv,0)//根据数据生成li
     	function creatLi(newData,start){//根据数据生成li
     		var html='';

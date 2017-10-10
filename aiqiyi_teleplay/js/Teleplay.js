@@ -64,7 +64,8 @@ $(function() {
 		$(this).css("background", "#699f00");
 		$(this).siblings().css("background", "#B3B3B3");
 	})
-	setInterval(function() {
+	
+	function nextFun(){
 		flog++;
 		if(flog == 9) {
 			flog = 0;
@@ -75,7 +76,15 @@ $(function() {
 		$(".adv_title p").text(str[flog]);
 		$(".top_adver>ul li:eq(" + flog + ")").css("background", "#699f00");
 		$(".top_adver>ul li:eq(" + flog + ")").siblings().css("background", "#B3B3B3");
-	}, 5000)
+	}
+	
+$(".top_adver")[0].onmouseover = function(){
+	clearInterval(timer);
+};
+
+$(".top_adver")[0].onmouseout = function(){
+	timer = setInterval(nextFun,5000);
+};
 })
 //********************li效果******************
 $(".li_style_1 li").hover(function(){
