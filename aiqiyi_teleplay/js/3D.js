@@ -175,49 +175,49 @@ $(".box-con")[0].onmouseout = function(){
 // 封装一个弹出层；
 
 
-//var listA = $(".list li a");
-//
-//console.log(listA);
-//
-//for(var i = 0;i<listA.length;i++){
-//	listAclick(i);
-//}
-//
-//function listAclick(i){
-//	listA[i].onclick = function(){
-//		console.log(i);
-//		letvIfraem(data.letv[i].ul);
-//		
-//		
-//	}
-//}
+var listA = $(".list li a");
+
+console.log(listA);
+
+for(var i = 0;i<listA.length;i++){
+	listAclick(i);
+}
+
+function listAclick(i){
+	listA[i].onclick = function(){
+		console.log(i);
+		letvIfraem(data.letv[i].ul);
+		
+		
+	}
+}
 
 
-//function letvIfraem(ul){
-//	
-//	var letv3D =  document.createElement("div");
-//	letv3D.className ="letvIframe";
-//	
-//	var body = document.getElementsByTagName("body")[0];
-//	
-//	body.appendChild(letv3D);
-//	letv3D.innerHTML ='<span class="letvclose cursor poA">退出</span><iframe src="'+ul+'" width="100%" height="100%"></iframe>';
-//
-//	var letvclose = document.querySelector(".letvIframe .letvclose");
-//	
-//	//console.log(document.parentNode);
-//	//var quit3D = document.querySelector(".div3D .quit3D");
-//
-//	//window.parent.document.querySelector(".div3D .quit3D").style.display ="none";//获取iframe父级的元素
-//	
-//	letvclose.onclick = function(){
-//		body.removeChild(letv3D);
-////		window.parent.document.querySelector(".div3D .quit3D").style.display ="block";
-//	}
-//	
-//	
-//	
-//}
+function letvIfraem(ul){
+	
+	var letv3D =  document.createElement("div");
+	letv3D.className ="letvIframe";
+	
+	var body = document.getElementsByTagName("body")[0];
+	
+	body.appendChild(letv3D);
+	letv3D.innerHTML ='<span class="letvclose cursor poA">退出</span><iframe src="'+ul+'" width="100%" height="100%"></iframe>';
+
+	var letvclose = document.querySelector(".letvIframe .letvclose");
+	
+	//console.log(document.parentNode);
+	//var quit3D = document.querySelector(".div3D .quit3D");
+
+	//window.parent.document.querySelector(".div3D .quit3D").style.display ="none";//获取iframe父级的元素
+	
+	letvclose.onclick = function(){
+		body.removeChild(letv3D);
+//		window.parent.document.querySelector(".div3D .quit3D").style.display ="block";
+	}
+	
+	
+	
+}
 
 
 //滑动

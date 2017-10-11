@@ -1,0 +1,436 @@
+	body {
+		z-index: 0;
+	}
+	
+	#login_background {
+		position: fixed;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(128, 128, 128, 0.8);
+		z-index: 1000;
+		visibility: hidden;
+	}
+	
+	#login {
+		width: 460px;
+		height: 420px;
+		background: white;
+		position: fixed;
+		margin: auto;
+		font-size: 12px;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		overflow: hidden;
+	}
+	
+	#login input,
+	#login select {
+		border: none;
+		outline: none;
+	}
+	
+	#login a:hover {
+		text-decoration: none;
+	}
+	/*头部 begin*/
+	
+	.login_top {
+		width: 460px;
+		height: 50px;
+		background: linear-gradient(180deg, #EBEBEB, white);
+		overflow: hidden;
+	}
+	
+	.login_top_img {
+		width: 110px;
+		height: 50px;
+		float: left;
+		background: url(../img/login/site-icons-qyIndex_v2.png)0px -368px;
+		transform: scale(0.7);
+		position: relative;
+		bottom: 3px;
+	}
+	
+	.login_top span {
+		float: left;
+		line-height: 50px;
+		color: #77B62D;
+		font-weight: 700;
+	}
+	
+	.login_top button {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		height: 23px;
+		width: 23px;
+		border: 0;
+		
+		color: #666;
+		border-radius: 50%;
+	}
+	
+	.login_top button:hover {
+		border-radius: 50%;
+		background: url(../img/close_after.png) -1px -1px no-repeat;
+		border-radius: 50%;
+		color: white;
+	}
+	/*头部end*/
+	/*中部 start*/
+	.glyphicon-remove:before {
+	content: "\e014"
+}
+.close{
+	width:32px ;
+	height: 32px;
+	background: url(../img/close.png) no-repeat -1px -1px;
+}
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+	.login_middle {
+		height: 316px;
+		width: 460px;
+		position: relative;
+	}
+	/*中部第一层，手机扫码登陆 start*/
+	
+	.login_middle_1 {
+		display: none;
+	}
+	
+	#login_middle_right {
+		width: 152px;
+		height: 283px;
+		position: absolute;
+		top: 20px;
+		left: 164px;
+		z-index: 1001;
+		animation-fill-mode: forwards;
+	}
+	
+	#login_middle_left {
+		width: 232px;
+		height: 274px;
+		position: absolute;
+		top: 20px;
+		left: -232px;
+		z-index: 1000;
+		animation-fill-mode: forwards;
+	}
+	
+	#login_middle_right_top {
+		width: 152px;
+		height: 88px;
+		color: #A2A2A2;
+		text-align: center;
+	}
+	
+	#login_middle_right_top a {
+		color: #77B62D;
+	}
+	
+	#login_middle_right_bottom {
+		width: 147px;
+		height: 147px;
+		text-align: center;
+	}
+	
+	#login_middle_right_bottom img {
+		width: 125px;
+		height: 125px;
+	}
+	
+	@keyframes toright1 {
+		from {
+			transform: translate(0);
+		}
+		to {
+			transform: translate(100px);
+		}
+	}
+	
+	@keyframes toleft1 {
+		from {
+			transform: translate(100px);
+		}
+		to {
+			transform: translate(0);
+		}
+	}
+	
+	@keyframes toright2 {
+		0 {
+			transform: translate(0);
+		}
+		50% {
+			transform: translate(300px);
+		}
+		75% {
+			transform: translate(350px);
+		}
+		100% {
+			transform: translate(300px);
+		}
+	}
+	
+	@keyframes toleft2 {
+		from {
+			opacity: 1;
+			transform: translate(300px);
+		}
+		75% {
+			opacity: 0;
+			transform: translate(75px);
+		}
+		to {
+			opacity: 0;
+			transform: translate(0);
+		}
+	}
+	/*
+			中部第一层，手机扫码登陆 end
+			 */
+	/*
+			中部第二层，其他方式登陆start
+			 */
+	
+	.login_middle_2 {
+		display: none;
+	}
+	
+	.login_middle_2_top {
+		width: 360px;
+		height: 21px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	
+	.login_middle_2_middle {
+		width: 364px;
+		height: 171px;
+		margin: 0 auto;
+	}
+	
+	.login_middle_2_middle .login_middle_2_ul {
+		list-style: none;
+	}
+	
+	.login_middle_2_middle .login_middle_2_ul li {
+		float: left;
+		padding: 28.5px 34px 0 0;
+	}
+	
+	.login_middle_2_middle .login_middle_2_ul li img {
+		height: 57px;
+	}
+	
+	.login_middle_2_bottom a {
+		color: #5AA700;
+		position: relative;
+		left: 330px;
+		top: 40px;
+		text-decoration: none;
+	}
+	/*
+			中部第二层，其他方式登陆end
+			 */
+	/*
+			中部第三层，账号密码登陆start
+			 */
+	
+	.login_middle_3,
+	.login_middle_4 {
+		color: #AAA;
+	}
+	
+	.login_middle_3_top {
+		width: 370px;
+		height: 40px;
+		border-bottom: 1px solid #DDD;
+		position: relative;
+		margin: 45px auto 30px;
+	}
+	
+	.login_middle_3_top_right p {
+		position: absolute;
+		bottom: 0px;
+		left: 4px;
+		margin: 0;
+		font-size: 16px
+	}
+	
+	.login_middle_3_top_left {
+		color: black;
+	}
+	
+	.login_middle_3_top_right {
+		width: 300px;
+		position: absolute;
+		top: 0;
+		left: 80px;
+	}
+	
+	#login_middle_3_middle {
+		width: 370px;
+		height: 90px;
+		border-bottom: 1px solid #DDD;
+		margin: 40px auto;
+		position: relative;
+		bottom: 50px;
+	}
+	
+	#login_middle_3_middle input {
+		position: absolute;
+		bottom: 0;
+	}
+	
+	#login_middle_3_middle p {
+		position: absolute;
+		bottom: 0;
+		margin: 0;
+	}
+	
+	#login_middle_3_middle_change {
+		height: 30px;
+		width: 30px;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		background: url(../img/login/QQ图片20170923161555.png);
+	}
+	
+	#login_middle_3_middle .login_middle_3_forget {
+		position: absolute;
+		width: 90px;
+		height: 30px;
+		bottom: -40px;
+		right: -30px;
+	}
+	
+	#login_middle_3_middle .login_middle_3_forget a {
+		color: #666;
+	}
+	
+	#login_middle_3_middle .login_middle_3_forget a:hover {
+		color: #77B62D;
+	}
+	
+	.login_middle_3_forget .login_middle_3_hidden {
+		position: relative;
+		height: 110px;
+		width: 110px;
+		background-color: whitesmoke;
+		bottom: 130px;
+		right: 40px;
+		display: none;
+		text-align: center;
+		line-height: 20px;
+	}
+	
+	.login_middle_3_forget .login_middle_3_hidden span {
+		display: inline-block;
+		height: 20px;
+		width: 90px;
+		margin: 10px 0;
+	}
+	
+	.login_middle_3_forget .login_middle_3_hidden a {
+		display: block;
+		height: 20px;
+		width: 90px;
+		margin: 4px 10px 0;
+		background: #5AA700;
+		color: white !important;
+	}
+	
+	.login_middle_3_forget:hover .login_middle_3_hidden {
+		display: block;
+	}
+	
+	.login_middle_3_forget:hover .login_middle_3_hidden a:hover {
+		background: #63B504;
+	}
+	
+	#login_middle_3_bottom {
+		position: absolute;
+		bottom: 0;
+		width: 460px;
+		height: 110px;
+	}
+	
+	#login_middle_3_bottom input[type=submit],
+	.login_middle_4 input[type=submit] {
+		width: 360px;
+		height: 50px;
+		background: #BCDD98;
+		color: white;
+		text-align: center;
+		line-height: 50px;
+		position: relative;
+		left: 50px;
+	}
+	/*
+			中部第三层，账号密码登陆end
+			 */
+	/*
+			中部第四层，注册start
+			 */
+	
+	.login_middle_4 {
+		display: none;
+	}
+	
+	.login_middle_4 a {
+		color: #5AA700;
+	}
+	
+	.login_middle_4 #login_middle_4_bottom {
+		margin-top: 50px;
+		width: 460px;
+		text-align: center;
+	}
+	
+	#login_middle_4_bottom input {
+		left: 0;
+		margin-top: 20px;
+	}
+	/*
+			中部第四层，注册end
+			 */
+	/*中部end */
+	/*底部 start*/
+	
+	.login_bottom {
+		width: 460px;
+		height: 54px;
+		position: absolute;
+		bottom: 0;
+		padding: 0 20px;
+	}
+	
+	.login_bottom a {
+		line-height: 54px;
+		color: #666;
+	}
+	
+	.login_bottom a:hover {
+		color: #77B62D;
+	}
+	
+	.login_bottom div {
+		float: right;
+		margin-right:35px;
+	}
+	/*底部end*/

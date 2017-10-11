@@ -1,0 +1,4924 @@
+@charset "utf-8";
+.topFlash {
+	overflow: hidden;
+	position: relative;
+	background-color: #010101;
+	z-index: 40
+}
+
+.focusOne-wrapper {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 460px;
+	background-color: #000
+}
+
+.focusOne-scroll_subList_wrapperbg {
+	float: left;
+	padding: 7px 26px;
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#75000000', endColorstr='#75000000');
+	background: rgba(0, 0, 0, .7);
+	overflow: hidden
+}
+
+:root .focusOne-scroll_subList_wrapperbg {
+	filter: none\9
+}
+
+.focusOne-wrapper a:hover {
+	text-decoration: none
+}
+
+.focus_threeImg {
+	height: 410px;
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto
+}
+
+.focus_threeImg .s-none {
+	display: none
+}
+
+.focus_threeImg .first,
+.focus_threeImg .second,
+.focus_threeImg .third {
+	width: 872px;
+	height: 410px;
+	overflow: hidden;
+	display: block
+}
+
+.focus_threeImg .first a,
+.focus_threeImg .second a,
+.focus_threeImg .third a {
+	width: 100%;
+	height: 100%;
+	display: block
+}
+
+.focus_threeImg .first {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 872px;
+	height: 410px
+}
+
+.focus_threeImg .second {
+	position: absolute;
+	left: 50%;
+	margin-left: -436px;
+	top: 0;
+	width: 872px;
+	height: 410px;
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+	z-index: 2
+}
+
+.focus_threeImg .third {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 872px;
+	height: 410px
+}
+
+.focus_threeImg .first img,
+.focus_threeImg .third img {
+	opacity: .4;
+	filter: alpha(opacity=40)
+}
+
+.position-focusOne-scroll_subList {
+	position: absolute;
+	width: 1218px;
+	height: 64px;
+	margin-left: -590px;
+	bottom: 14px;
+	left: 50%;
+	z-index: 3;
+	overflow: hidden
+}
+
+.qypage-980 .position-focusOne-scroll_subList {
+	width: 954px;
+	margin-left: -477px
+}
+
+.qypage-1180 .position-focusOne-scroll_subList,
+.qypage-1380 .position-focusOne-scroll_subList {
+	width: 1052px;
+	margin-left: -526px
+}
+
+.focusOne_btn {
+	display: inline;
+	float: left;
+	width: 32px;
+	height: 27px;
+	margin: 10px 10px 0 0;
+	background: url(//www.qiyipic.com/common/fix/site/index-playBtn.png) no-repeat;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='//www.qiyipic.com/common/fix/site/index-playBtn.png');
+	_background: 0;
+	cursor: pointer
+}
+
+.focusOne-scroll_title {
+	position: absolute;
+	width: 480px;
+	margin-left: -240px;
+	color: #fff;
+	font-size: 16px;
+	left: 50%;
+	bottom: 88px;
+	z-index: 30
+}
+
+.focusOne-scroll_title .focusOne_title_bg {
+	display: block;
+	width: 100%;
+	height: 48px;
+	padding: 18px 0 0 20px;
+	cursor: pointer;
+	color: #fff;
+	background: url(//www.qiyipic.com/common/fix/focus_oneClick/focus-oneClick_titleBg.png) no-repeat left center;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='//www.qiyipic.com/common/fix/focus_oneClick/focus-oneClick_titleBg.png');
+	_background: 0
+}
+
+.focusOne-scroll_title h2 {
+	margin-bottom: 5px
+}
+
+.focusOne-scroll_title h2 .title {
+	display: inline;
+	float: left;
+	width: 432px;
+	color: #fff;
+	font-size: 22px;
+	line-height: 48px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis
+}
+
+.focusOne-scroll_title .desc {
+	color: #fff;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis
+}
+
+.focusOne-scroll_title .desc a,
+.focusOne-scroll_title .desc a:hover {
+	color: #fff
+}
+
+.focusOne-scroll_subList_wrapper {
+	*position: relative;
+	overflow: hidden;
+	display: inline;
+	float: left;
+	width: 1124px;
+	height: 50px
+}
+
+.qypage-980 .focusOne-scroll_subList_wrapper {
+	width: 770px
+}
+
+.qypage-1180 .focusOne-scroll_subList_wrapper,
+.qypage-1380 .focusOne-scroll_subList_wrapper {
+	width: 868px
+}
+
+.qypage-980 .focusOne_title {
+	width: 915px
+}
+
+.qypage-980 .focusOne_title {
+	margin-left: -457px
+}
+
+.qypage-1180 .focusOne_title {
+	width: 1100px
+}
+
+.qypage-1180 .focusOne_title {
+	margin-left: -550px
+}
+
+.qypage-1380 .focusOne_title {
+	width: 1285px
+}
+
+.qypage-1380 .focusOne_title {
+	margin-left: -640px
+}
+
+.focusOne-scroll_subList {
+	overflow: hidden;
+	display: inline;
+	float: left;
+	height: 50px;
+	white-space: nowrap
+}
+
+.focusOne-scroll_subList li {
+	position: relative;
+	display: inline;
+	float: left;
+	width: 84px;
+	margin-right: 14px
+}
+
+.focusOne-scroll_subList li a {
+	display: inline;
+	float: left;
+	width: 84px;
+	height: 50px;
+	background: #000;
+	cursor: pointer
+}
+
+.focusOne-scroll_subList li img {
+	display: inline;
+	float: left;
+	width: 84px;
+	height: 50px;
+	opacity: .5;
+	filter: alpha(opacity=50)
+}
+
+.focusOne-scroll_subList li.selected img {
+	opacity: 1;
+	filter: alpha(opacity=100)
+}
+
+.focusOne-scroll_subList .sublist_wrap {
+	display: none;
+	position: absolute;
+	width: 84px;
+	height: 50px;
+	top: 0;
+	left: 0;
+	background: url(//www.qiyipic.com/common/fix/site/focus-cover-8450.png) no-repeat
+}
+
+.focusOne-scroll_subList li.selected .sublist_wrap {
+	display: inline-block
+}
+
+.focusOne-scroll_leftArrow,
+.focusOne-scroll_rightArrow {
+	display: inline;
+	float: left;
+	width: 64px;
+	height: 64px;
+	cursor: pointer
+}
+
+.focusOne-scroll_leftArrow {
+	margin-right: 2px;
+	background: url(//www.qiyipic.com/common/fix/focus_oneClick/site-focus-btnLeft6464.png) no-repeat center left;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='//www.qiyipic.com/common/fix/focus_oneClick/site-focus-btnLeft6464.png');
+	_background: 0
+}
+
+.focusOne-scroll_rightArrow {
+	margin-left: 2px;
+	background: url(//www.qiyipic.com/common/fix/focus_oneClick/site-focus-btnRight6464.png) no-repeat center right;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='//www.qiyipic.com/common/fix/focus_oneClick/site-focus-btnRight6464.png');
+	_background: 0
+}
+
+.focusOne-scroll_leftArrow:hover {
+	background: url(//www.qiyipic.com/common/fix/focus_oneClick/site-focus-btnLeft6464-hover.png) no-repeat center left;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='//www.qiyipic.com/common/fix/focus_oneClick/site-focus-btnLeft6464-hover.png');
+	_background: 0
+}
+
+.focusOne-scroll_rightArrow:hover {
+	background: url(//www.qiyipic.com/common/fix/focus_oneClick/site-focus-btnRight6464-hover.png) no-repeat center right;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='//www.qiyipic.com/common/fix/focus_oneClick/site-focus-btnRight6464-hover.png');
+	_background: 0
+}
+
+.focusOne-wrapper-alignCenter .focusOne_mainList {
+	width: 980px;
+	margin: 0 auto
+}
+
+.focusOne-wrapper-alignCenter .focusOne_subList li.selected a {
+	border-color: #6db506
+}
+
+.focusOne-wrapper-alignCenter .focusOne_leftArrow {
+	background: url(//www.qiyipic.com/common/fix/site/focus-leftArrow.png) no-repeat center left;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='//www.qiyipic.com/common/fix/site/focus-leftArrow.png');
+	_background: 0
+}
+
+.focusOne-wrapper-alignCenter .focusOne_rightArrow {
+	background: url(//www.qiyipic.com/common/fix/site/focus-rightArrow.png) no-repeat center right;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='//www.qiyipic.com/common/fix/site/focus-rightArrow.png');
+	_background: 0
+}
+
+:root .focusOne-wrapper-alignCenter .focusOne_leftArrow,
+:root .focusOne-wrapper-alignCenter .focusOne_rightArrow {
+	filter: none
+}
+
+.focusOne-wrapper-npt {
+	padding-top: 0
+}
+
+.focus_threeImg .wrapper-pro-icon {
+	position: absolute;
+	left: 10px;
+	top: 54px
+}
+
+.focus_threeImg .pro-icon {
+	display: block;
+	width: 35px;
+	height: 20px;
+	background-color: rgba(0, 0, 0, 0.4);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#40000000", endColorstr="#40000000");
+	font-size: 12px;
+	line-height: 20px;
+	text-align: center;
+	color: #fff
+}
+
+.focus_title_wrapper {
+	position: relative;
+	width: 480px;
+	height: 48px;
+	color: #fff;
+	z-index: 5;
+	text-align: left;
+	margin-top: -136px
+}
+
+.focus_title_wrapper .focus_title_bg {
+	display: block;
+	width: 100%;
+	height: 48px;
+	cursor: pointer;
+	background: url(//www.qiyipic.com/common/fix/site/focus-titleBg-48048.png) no-repeat left center;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='//www.qiyipic.com/common/fix/site/focus-titleBg-48048.png');
+	_background: 0
+}
+
+.focus_title_wrapper .focus_title {
+	position: relative;
+	width: 380px;
+	color: #fff;
+	font-size: 22px;
+	line-height: 48px;
+	height: 48px;
+	white-space: nowrap;
+	overflow: hidden;
+	*zoom: 1;
+	text-overflow: ellipsis;
+	margin-top: 0;
+	z-index: 5
+}
+
+.focus_btn {
+	display: inline;
+	float: left;
+	width: 32px;
+	height: 27px;
+	margin: 11px 10px 10px;
+	cursor: pointer;
+	background: url(//www.qiyipic.com/common/fix/site/index-playBtn.png) no-repeat;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='//www.qiyipic.com/common/fix/site/index-playBtn.png');
+	_background: 0
+}
+
+.focusBannerCon-wrap {
+	width: 1052px;
+	height: 460px;
+	margin: 0 auto
+}
+
+.qypage-980 .focusBannerCon-wrap {
+	width: 954px
+}
+
+.qiyiNiangWrap {
+	position: absolute;
+	right: 0;
+	top: 74px
+}
+
+.focus_img_list {
+	width: 100%;
+	height: 460px;
+	overflow: hidden
+}
+
+.focus_img_list li {
+	width: 100%;
+	height: 100%;
+	background-position: center top;
+	background-repeat: no-repeat
+}
+
+.focus_img_list li a {
+	display: block;
+	height: 100%
+}
+
+.wrap-pindao-classes {
+	background: #f0f0f0;
+	padding: 19px 0 12px 0;
+	margin-bottom: 25px
+}
+
+.mod-classes-blcoks {
+	width: 100%;
+	min-height: 73px;
+	_height: auto;
+	overflow: hidden
+}
+
+.classes-blcoks_wrapper {
+	*width: 1000px
+}
+
+.qypage-1180 .classes-blcoks_wrapper {
+	*width: 1200px
+}
+
+.qypage-1380 .classes-blcoks_wrapper {
+	*width: 1400px
+}
+
+.classes-blcoks_item1,
+.classes-blcoks_item2,
+.classes-blcoks_item2-5,
+.classes-blcoks_item3,
+.classes-blcoks_item3-3,
+.classes-blcoks_item4,
+.classes-blcoks_item5,
+.classes-blcoks_itemSort {
+	float: left;
+	height: 100%;
+	overflow: hidden
+}
+
+.classes-blcoks,
+.classes-blcoks_wrapper .pl0 .classes-blcoks {
+	padding: 0 20px 0 40px
+}
+
+.classes-blcoks,
+.classes-blcoks_itemSort {
+	background: url(//www.qiyipic.com/common/fix/cartoon/bgline_03.png) no-repeat left center
+}
+
+.pl0 .classes-blcoks {
+	padding-left: 0
+}
+
+.classes-blcoks dt {
+	height: 30px
+}
+
+.classes-blcoks .link-more {
+	color: #699f00;
+	float: right;
+	padding-top: 6px
+}
+
+.classes-blcoks dt h4 {
+	height: 30px;
+	overflow: hidden;
+	font-size: 16px;
+	color: #999;
+	line-height: 30px;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	*position: relative
+}
+
+.classes-blcoks dd {
+	height: 56px;
+	margin-left: -25px;
+	line-height: 22px;
+	padding-top: 13px;
+	*zoom: 1;
+	font-size: 0;
+	overflow: hidden
+}
+
+.classes-blcoks dd:after {
+	content: '\0020';
+	display: block;
+	height: 0;
+	clear: both;
+	font-size: 0;
+	visibility: hidden
+}
+
+.classes-blcoks dd a {
+	margin-left: 25px;
+	white-space: nowrap;
+	display: inline-block;
+	font-size: 14px
+}
+
+.classes-blcoks_item2 {
+	width: 213px;
+	margin-left: -10px
+}
+
+.classes-blcoks_item3 {
+	width: 30%
+}
+
+.classes-blcoks_item2-5 {
+	width: 25%
+}
+
+.classes-blcoks_item3-3 {
+	width: 33.3%
+}
+
+.classes-blcoks_item4 {
+	width: 248px
+}
+
+.qypage-980 .classes-blcoks_item5 {
+	width: 410px
+}
+
+.qypage-1180 .classes-blcoks_item5 {
+	width: 610px
+}
+
+.qypage-1380 .classes-blcoks_item5 {
+	width: 820px
+}
+
+.classes-blcoks_itemSort {
+	width: 109px
+}
+
+.cartoonYan {
+	display: inline-block;
+	margin-left: 10px;
+	background: url(//www.qiyipic.com/common/fix/cartoon/cartoon.png) no-repeat;
+	vertical-align: middle;
+	overflow: hidden;
+	line-height: 1px
+}
+
+.cartoon-pos {
+	width: 26px;
+	height: 11px;
+	background-position: -120px -220px
+}
+
+.cartoon-type {
+	width: 35px;
+	height: 12px;
+	background-position: -160px -220px
+}
+
+.cartoon-style {
+	width: 35px;
+	height: 12px;
+	background-position: -200px -220px
+}
+
+.itemSort-link {
+	display: block;
+	width: 56px;
+	margin: 20px auto 0;
+	text-align: center
+}
+
+.itemSort-allSort {
+	display: block;
+	width: 42px;
+	height: 39px;
+	margin: 0 auto 11px;
+	background: url(//www.qiyipic.com/common/fix/cartoon/cartoon.png) no-repeat;
+	background-position: -180px -120px
+}
+
+.site-title {
+	padding-left: 20px;
+	padding-top: 15px
+}
+
+.site-title_left {
+	height: 45px;
+	overflow: hidden;
+	*zoom: 1
+}
+
+.site-title_right {
+	float: right
+}
+
+.site-title h3 {
+	color: #699f00;
+	float: left;
+	padding-right: 7px;
+	height: 45px;
+	white-space: nowrap;
+	background: url(//www.qiyipic.com/common/fix/site/tit-playBtn.png) no-repeat 0 10px
+}
+
+.site-main-side-visible {
+	overflow: visible
+}
+
+.site-main-side .site-title h3 {
+	padding-right: 0;
+	font-size: 0
+}
+
+.site-main-side .site-title_right {
+	font-size: 0
+}
+
+.site-title h3 a,
+.site-title h3 a:hover {
+	color: #699f00;
+	display: inline-block;
+	overflow: visible;
+	cursor: pointer
+}
+
+.site-title h3 a span,
+.site-title h3 span {
+	font-size: 28px;
+	padding-left: 20px;
+	white-space: nowrap;
+	*display: inline-block
+}
+
+.site-title h3 strong {
+	font-size: 28px;
+	padding-left: 20px;
+	white-space: nowrap;
+	*display: inline-block
+}
+
+.site-title h3.today-focus a span,
+.site-title h3.today-focus span {
+	font-size: 24px;
+	padding-left: 0
+}
+
+.site-title h3.today-focus a span.icon-more {
+	font-size: 14px
+}
+
+.site-title h3 .title-index {
+	font-size: 24px;
+	color: #699f00
+}
+
+.site-title .icon-more {
+	font-family: "\5FAE\8F6F\96C5\9ED1", "\9ED1\4F53", "CourierNewPSMT";
+	font-size: 14px;
+	display: inline-block;
+	padding-left: 8px;
+	padding-right: 5px;
+	color: #699f00;
+	cursor: pointer
+}
+
+.site-title .icon-more em {
+	font-family: "\9ED1\4F53", "CourierNewPSMT";
+	margin-left: 1px;
+	cursor: pointer
+}
+
+.site-title h3.title-noIcon {
+	background: 0
+}
+
+.site-title h3.title-noIcon a span {
+	padding-left: 0
+}
+
+.title-subLinks {
+	font-size: 0;
+	padding-top: 18px;
+	height: 27px;
+	overflow: hidden
+}
+
+.title-subLinks li {
+	padding: 0 8px 0 22px;
+	line-height: 20px;
+	margin-bottom: 5px;
+	font-size: 14px;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	background: url(//www.qiyipic.com/common/fix/site/divide-i.png) no-repeat left 4px
+}
+
+.title-subLinks li.firstItem {
+	background: 0
+}
+
+.title-subLinks li a {
+	white-space: nowrap
+}
+
+.qypage-980 .qy980-w-col-1 .site-title .icon-more,
+.qypage-1180 .qy1180-w-col-1 .site-title .icon-more,
+.qypage-1380 .qy1380-w-col-1 .site-title .icon-more {
+	padding-left: 5px
+}
+
+.title-subLinks_child {
+	height: 27px;
+	padding-top: 10px
+}
+
+.title-subLinks_child li {
+	background: 0;
+	padding: 0;
+	margin-bottom: 8px
+}
+
+.divide-v-dotted {
+	border-left: 1px dotted #ccc;
+	overflow: hidden
+}
+
+.tit-bgLine {
+	border-bottom: 2px solid #8ac024;
+	margin-bottom: 25px
+}
+
+.tit-bgLine-r {
+	border-bottom: 2px solid #8ac024;
+	margin-bottom: 25px;
+	padding-left: 20px
+}
+
+.site-tit-play h2 {
+	font-size: 18px;
+	color: #333;
+	height: 38px;
+	padding-top: 8px
+}
+
+.aqgy4 {
+	vertical-align: 8px;
+	*vertical-align: 5px
+}
+
+.site-subTitle {
+	padding-top: 0;
+	margin-top: -10px
+}
+
+.site-subTitle .site-title_left {
+	height: 40px
+}
+
+.site-subTitle .title-subLinks {
+	padding-top: 10px
+}
+
+.site-subTitle .tit-bgLine {
+	border-bottom: 1px solid #e1e1e1;
+	margin-bottom: 15px
+}
+
+.site-subTitle h3 {
+	background: 0;
+	line-height: 36px;
+	_line-height: 40px
+}
+
+.site-subTitle h3 a span {
+	padding-left: 0;
+	font-size: 22px
+}
+
+.site-subTitle h3 .icon-more {
+	font-size: 14px;
+	padding-left: 8px
+}
+
+.site-subTitle h3 a,
+.site-subTitle h3 a img {
+	vertical-align: top
+}
+
+.site-title_right .change-item {
+	float: left;
+	margin-top: 16px
+}
+
+.site-title_right .change-item span {
+	font-size: 14px;
+	line-height: 22px;
+	vertical-align: middle
+}
+
+.footer-shareBox {
+	background: #f2f2f2;
+	height: 286px;
+	padding: 0;
+	border-bottom: 1px solid #ebebeb;
+	overflow: hidden
+}
+
+.footer-shareBox_iframe {
+	font-size: 0;
+	width: 380px;
+	height: 174px;
+	overflow: hidden
+}
+
+.footer-shareBox_QR {
+	text-align: center;
+	font-size: 0;
+	margin: 0 20px 15px;
+	border-top: 1px dotted #ccc
+}
+
+.footer-shareBox_QR a {
+	display: inline-block;
+	margin-top: 20px
+}
+
+.footer-shareBox_QR a.shareBox_QR_firstItem {
+	margin-right: 100px
+}
+
+.footer-shareBox_QR img {
+	border: 2px solid #699f00
+}
+
+.footer-shareBox-large {
+	height: 324px
+}
+
+.footer-shareBox-large .footer-shareBox_iframe {
+	height: 174px
+}
+
+.footer-shareBox-236 {
+	height: 235px
+}
+
+.footer-shareBox-236 .footer-shareBox_iframe {
+	height: 140px
+}
+
+.footer-shareBox-236 .footer-shareBox_QR {
+	border: 0
+}
+
+.footer-shareBox-236 .footer-shareBox_QR a {
+	margin-top: 6px
+}
+
+.footer-shareBox-236-line2 {
+	height: 289px
+}
+
+.footer-shareBox-fit {
+	width: 100%;
+	height: 155px
+}
+
+.footer-shareBox-fit .footer-shareBox_iframe {
+	float: left;
+	width: 760px;
+	height: 100%;
+	border: 0
+}
+
+.footer-shareBox-fit .footer-shareBox_QR {
+	margin: 0;
+	overflow: hidden;
+	*zoom: 1;
+	border: 0;
+	width: 220px;
+	*float: left
+}
+
+.footer-shareBox-fit .footer-shareBox_QR a.shareBox_QR_firstItem {
+	margin-right: 20px
+}
+
+.footer-shareBox-fit .footer-shareBox_QR_img {
+	height: 120px
+}
+
+.footer-shareBox-fit .footer-shareBox_QR_tx {
+	text-align: center;
+	font-size: 14px;
+	color: #999
+}
+
+.qypage-1380 .footer-shareBox-fit .footer-shareBox_iframe {
+	width: 1160px
+}
+
+.qypage-1180 .footer-shareBox-fit .footer-shareBox_iframe {
+	width: 960px
+}
+
+.mod-pindao-iqyDownlaod {
+	background: #f7f7f7;
+	border: 1px solid #e6e6e6;
+	text-align: center
+}
+
+.mod-pindao-iqyDownlaod .icon-iqyDownlaod {
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	margin-top: 15px;
+	background: url(//www.qiyipic.com/common/fix/site/iqy-dl-pindao.png) no-repeat 0 0
+}
+
+.mod-pindao-iqyDownlaod .iqyDownlaod_title {
+	font-size: 16px;
+	color: #333;
+	line-height: 30px
+}
+
+.mod-pindao-iqyDownlaod .iqyDownlaod_desc {
+	font-size: 14px;
+	color: #699f00;
+	word-spacing: 5px
+}
+
+.site-piclist-180101-describe .mod-pindao-iqyDownlaod {
+	height: 153px
+}
+
+.mod-download-flow {
+	width: 100%;
+	height: 70px;
+	margin-bottom: 20px;
+	color: #fff;
+	font-size: 30px;
+	background: #5c9700 url(//www.qiyipic.com/common/fix/site/iqiyi-download-flow_v2.png) no-repeat right top;
+	position: relative
+}
+
+.mod-download-flow .download-flow_desc {
+	line-height: 70px;
+	margin-left: 30px;
+	width: 350px
+}
+
+.qypage-1180 .mod-download-flow .download-flow_desc {
+	margin-left: 60px
+}
+
+.qypage-1380 .mod-download-flow .download-flow_desc {
+	margin-left: 125px
+}
+
+.mod-download-flow .download-flow_desc .desc_em {
+	font-size: 48px;
+	color: #ff3;
+	vertical-align: top;
+	*vertical-align: middle;
+	margin-left: 2px;
+	margin-right: 2px
+}
+
+.mod-download-flow .download-flow_v {
+	position: absolute;
+	right: 225px;
+	top: 12px;
+	width: 289px
+}
+
+.mod-download-flow .download-flow_link {
+	width: 140px;
+	height: 40px;
+	overflow: hidden;
+	border-radius: 7px;
+	position: absolute;
+	right: 70px;
+	top: 12px;
+	border: 3px solid #4e7a00;
+	border: 3px solid rgba(0, 0, 0, .2)
+}
+
+.mod-download-flow .download-flow_link a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	text-align: center;
+	color: #fff;
+	font-size: 26px;
+	line-height: 35px;
+	*line-height: 39px;
+	background: #f90
+}
+
+.mod-download-flow .download-flow_link a:hover {
+	background: #ff8a00;
+	color: #fff
+}
+
+.mod-download-flow .bdownload-flow_close {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	font-size: 18px;
+	line-height: 24px;
+	position: absolute;
+	top: 5px;
+	right: 8px;
+	color: #fff
+}
+
+.mod-download-flow .bdownload-flow_close:hover {
+	text-shadow: 0 0 2px rgba(0, 0, 0, .5);
+	color: #fff
+}
+
+.mod-download-flow_v2 {
+	position: relative;
+	width: 100%;
+	height: 70px;
+	margin-bottom: 20px;
+	color: #fff;
+	background: url(//www.qiyipic.com/common/fix/site/iqiyi-download-flow_v3.png) no-repeat 0 0;
+	cursor: pointer
+}
+
+.qypage-1180 .mod-download-flow_v2 {
+	background-position: 0 -70px
+}
+
+.qypage-1380 .mod-download-flow_v2 {
+	background-position: 0 -140px
+}
+
+.df_close_v2 {
+	position: absolute;
+	top: 2px;
+	right: 1px;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 24px;
+	color: #fff
+}
+
+.df_close_v2:hover {
+	color: #fff
+}
+
+.wrapper-cols {
+	margin-bottom: 10px
+}
+
+.wrapper-piclist {
+	width: 100%;
+	overflow: hidden;
+	*position: relative
+}
+
+.site-piclist:before,
+.site-piclist:after {
+	content: '\0020';
+	display: table
+}
+
+.site-piclist:after {
+	clear: both
+}
+
+.site-piclist {
+	*zoom: 1;
+	overflow: hidden;
+	*position: relative
+}
+
+.site-piclist li {
+	float: left;
+	padding-left: 20px;
+	height: 100%
+}
+
+.site-piclist-nfl .site-main-side .site-piclist li {
+	float: none
+}
+
+.site-piclist_pic {
+	position: relative;
+	width: 100%;
+	_overflow: hidden
+}
+
+.site-piclist_pic_link {
+	display: block;
+	width: 100%;
+	height: 100%
+}
+
+.site-piclist_pic_link img {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background: #f2f2f2 url(//www.qiyipic.com/common/fix/site/site-nopic.png) no-repeat center center
+}
+
+.wrapper-listTitle {
+	cursor: pointer;
+	position: relative;
+	margin-top: -24px
+}
+
+.mod-listTitle {
+	line-height: 24px;
+	color: #fff;
+	white-space: nowrap;
+	text-overflow: ellipsis
+}
+
+.mod-listTitle_left,
+.mod-listTitle_right,
+.mod-listTitle_describe {
+	*zoom: 1;
+	_float: left;
+	line-height: 24px;
+	padding: 0 5px;
+	background: rgba(0, 0, 0, .5);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#75000000', endColorstr='#75000000')
+}
+
+:root .mod-listTitle_left,
+.mod-listTitle_right,
+.mod-listTitle_describe {
+	filter: none\9;
+	*filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#75000000', endColorstr='#75000000')
+}
+
+.mod-listTitle_left {
+	overflow: hidden;
+	text-overflow: ellipsis
+}
+
+.mod-listTitle_right {
+	float: right;
+	border-radius: 3px;
+	height: 16px;
+	font: 12px/15px Tahoma, Helvetica, Arial, "\5FAE\8F6F\96C5\9ED1", sans-serif;
+	margin-right: 4px;
+	margin-top: 4px;
+	padding: 0 5px;
+	background: rgba(0, 0, 0, .6);
+	overflow: hidden
+}
+
+.mod-listTitle_describe {
+	font-size: 12px
+}
+
+.site-piclist_info {
+	line-height: 20px;
+	padding: 7px 5px 0;
+	height: 27px;
+	background: #f2f2f2;
+	border-bottom: 1px solid #ebebeb;
+	margin-bottom: 15px
+}
+
+.site-piclist_info_title,
+.site-piclist_info_describe {
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis
+}
+
+.site-piclist_info_describe {
+	color: #999;
+	font-size: 12px
+}
+
+.site-piclist_info_describe a:hover {
+	color: #699f00
+}
+
+.site-piclist_info_describe .icon-user {
+	background: url(//www.qiyipic.com/common/fix/site/icon-user.png) no-repeat 0 0;
+	width: 11px;
+	height: 11px;
+	margin-right: 5px;
+	display: inline-block;
+	vertical-align: middle;
+	_margin-top: 5px
+}
+
+.wrapper-listTitle-row2 {
+	height: 50px;
+	margin-top: -50px
+}
+
+.wrapper-listTitle-row2 .mod-listTitle_left,
+.wrapper-listTitle-row2 .mod-listTitle_right {
+	padding-top: 4px;
+	line-height: 22px
+}
+
+.wrapper-listTitle-row2 .mod-listTitle_describe {
+	line-height: 22px;
+	padding-bottom: 2px
+}
+
+.site-piclist-auto,
+.wrapper-piclist-auto,
+.wrapper-piclist-auto .site-piclist,
+.wrapper-piclist-auto .site-piclist li {
+	height: auto!important;
+	overflow: visible
+}
+
+.site-piclist-mix li .site-piclist_info,
+.site-piclist li.site-piclist-mix .site-piclist_info {
+	line-height: 21px;
+	*line-height: 22px;
+	height: 41px;
+	overflow: hidden;
+	padding: 6px 5px
+}
+
+.site-piclist-mix li .site-piclist_info_title,
+.site-piclist li.site-piclist-mix .site-piclist_info_title {
+	text-overflow: normal;
+	white-space: normal;
+	max-height: 41px
+}
+
+.site-piclist-mix li .site-piclist_info_describe,
+.site-piclist li.site-piclist-mix .site-piclist_info_describe {
+	margin-top: 1px;
+	*margin-top: 2px
+}
+
+.popularize .site-piclist_info {
+	line-height: 21px;
+	*line-height: 22px;
+	height: 41px;
+	overflow: hidden;
+	padding: 6px 5px
+}
+
+.popularize .site-piclist_info_title {
+	overflow: visible;
+	text-overflow: normal;
+	white-space: normal
+}
+
+.popularize .site-piclist_info_describe {
+	margin-top: 1px;
+	*margin-top: 2px
+}
+
+.greenArea {
+	background-color: #85ba4d
+}
+
+.greenArea:hover {
+	background-color: #6dac2a;
+	color: #fff
+}
+
+.orangeArea {
+	background-color: #ff9156
+}
+
+.orangeArea:hover {
+	background-color: #ff7e38;
+	color: #fff
+}
+
+.ad-wrapper {
+	padding: 25px 0
+}
+
+.mt36-adv {
+	margin-top: 36px
+}
+
+.site-piclist-16090-bor .site-piclist_info {
+	margin-bottom: 0
+}
+
+.mod-cover-myRecords {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 180px;
+	height: 101px
+}
+
+.mod-cover-myRecords .icon-myRecords {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: url(//www.qiyipic.com/common/fix/site/cover-record.png) no-repeat 0 0;
+	_background: 0;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//www.qiyipic.com/common/fix/site/cover-record.png')
+}
+
+.mod-cover-myRecords .icon-myRecords:hover {
+	background: url(//www.qiyipic.com/common/fix/site/cover-record-hover.png) no-repeat 0 0;
+	_background: 0;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//www.qiyipic.com/common/fix/site/cover-record-hover.png')
+}
+
+.mod-cover-myRecords .myRecords_bar {
+	width: 92%;
+	height: 5px;
+	line-height: 0;
+	font-size: 0;
+	background: #cbcbcb;
+	border-radius: 3px;
+	margin: -10px auto 0;
+	overflow: hidden
+}
+
+.myRecords_percent {
+	height: 5px;
+	background: #699f00
+}
+
+.wrapper-listTitle-notify {
+	height: 58px;
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#75000000', endColorstr='#75000000');
+	background: rgba(0, 0, 0, .5);
+	font-size: 12px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%
+}
+
+.wrapper-listTitle-notify .mod-listTitle {
+	line-height: 17px
+}
+
+.album-notify-pic .notify-main {
+	color: #fff;
+	font-size: 12px;
+	text-align: left;
+	padding: 0 0 0 5px;
+	padding-top: 3px
+}
+
+.album-notify-pic .notify-content {
+	width: 145px;
+	color: #fff;
+	white-space: normal
+}
+
+.album-notify-pic .notify-join {
+	position: absolute;
+	right: 6px;
+	bottom: 4px;
+	display: inline-block;
+	vertical-align: middle
+}
+
+.album-notify-pic .notify-join a {
+	color: #ff921d
+}
+
+.notify-msgIco,
+.notify-succIco {
+	background: url(//www.qiyipic.com/common/fix/site/notify_ico_def.png) no-repeat;
+	_background: 0;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//www.qiyipic.com/common/fix/site/notify_ico_def.png');
+	width: 11px;
+	height: 11px;
+	display: inline-block;
+	vertical-align: middle;
+	vertical-align: -2px;
+	margin-right: 2px
+}
+
+.album-notify-pic .notify-succIco {
+	padding-top: 10px;
+	background: url(//www.qiyipic.com/common/fix/site/notify_ico_suc.png) no-repeat;
+	_background: 0;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//www.qiyipic.com/common/fix/site/notify_ico_suc.png');
+	width: 21px;
+	height: 16px;
+	float: left;
+	margin: 18px 8px 0 6px
+}
+
+.album-notify-pic .notify-main-over .notify-join {
+	color: #999
+}
+
+.album-notify-pic .notify-main-succ .notify-content {
+	float: left;
+	width: 125px;
+	padding-top: 6px;
+	line-height: 19px
+}
+
+.site-piclist-180101 .wrapper-listTitle-notify {
+	width: 180px
+}
+
+.wrapper-listTitle-oneNotify {
+	font-size: 12px
+}
+
+.wrapper-listTitle-oneNotify .mod-listTitle_left {
+	*height: 14px;
+	*padding: 5px
+}
+
+.wrapper-listTitle-notifyTit {
+	height: 85px
+}
+
+.wrapper-listTitle-notifyTit .mod-listTitle_left {
+	background: 0;
+	font-size: 14px;
+	_filter: none;
+	filter: none\9
+}
+
+:root .wrapper-listTitle-notifyTit .mod-listTitle_left {
+	filter: none\9;
+	_filter: none
+}
+
+.wrapper-listTitle-notifyTit .album-notify-pic .notify-content {
+	line-height: 18px
+}
+
+.wrapper-listTitle-notifyTit .album-notify-pic .notify-main-succ .notify-content {
+	width: 140px
+}
+
+.site-piclist-180236 .wrapper-listTitle-notifyTit {
+	width: 180px
+}
+
+.wrapper-listTitle-notify-large {
+	height: 42px;
+	width: 380px
+}
+
+.wrapper-listTitle-notify-large .notify-main-succ .notify-content {
+	width: 335px;
+	padding-top: 8px
+}
+
+.wrapper-listTitle-notify-large .album-notify-pic .notify-succIco {
+	margin: 10px 8px 0 6px
+}
+
+.wrapper-listTitle-notify-large .album-notify-pic .notify-main {
+	padding: 3px 3px 0 5px
+}
+
+.site-piclist .site-title_score,
+.mod-listTitle_left,
+.mod-piclist-ft {
+	position: relative
+}
+
+.site-piclist .site-title_score .score,
+.mod-listTitle_left .score,
+.mod-piclist-ft .score {
+	float: right;
+	font-family: Georgia;
+	font-size: 14px;
+	color: #ff722c;
+	display: inline-block;
+	vertical-align: middle
+}
+
+.site-piclist .site-title_score .score .num,
+.mod-listTitle_left .score .num,
+.mod-piclist-ft .score .num {
+	font-size: 18px
+}
+
+.site-piclist .site-title_score .title,
+.mod-listTitle_left .title,
+.mod-piclist-ft .title {
+	overflow: hidden;
+	*zoom: 1
+}
+
+.subscription_alternately {
+	position: relative;
+	height: 22px
+}
+
+.dy_txt {
+	display: inline-block;
+	vertical-align: middle
+}
+
+.subscription_alternately .dy_txt {
+	font-size: 12px;
+	width: 114px;
+	line-height: 15px;
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+.title_v {
+	display: inline-block;
+	vertical-align: middle
+}
+
+.subscription_alternately .title_v {
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 95px;
+	font-size: 12px
+}
+
+.site-piclist_info_describe .btn-care {
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 100;
+	border-radius: 3px;
+	width: 54px;
+	height: 18px;
+	line-height: 18px;
+	padding: 0;
+	text-align: center
+}
+
+.subscription_alternately .btn-care-tocare {
+	border: 1px solid #699f00
+}
+
+.subscription_alternately .btn-care:hover {
+	background: #7db718;
+	border: 1px solid #7db718;
+	color: #fff
+}
+
+.subscription_alternately .btn-care-cared:hover {
+	background: #b1b1b1;
+	color: #fff;
+	border: 1px solid #b1b1b1
+}
+
+.subscription_alternately .btn-care-update {
+	background: #f2f2f2;
+	border: 1px solid #dfdfdf;
+	color: #699f00
+}
+
+.subscription_alternately .btn-care-update:hover {
+	background: #f2f2f2;
+	border: 1px solid #dfdfdf;
+	color: #699f00
+}
+
+.site-piclist-380270-describe .subscription_alternately .title_v {
+	width: auto
+}
+
+.title-ugc-x .ugc-mark-x {
+	float: right;
+	display: inline-block;
+	height: 18px;
+	line-height: 17px;
+	font-size: 12px;
+	background: #fff;
+	color: #64a002;
+	border: 1px solid #e7e7e7;
+	padding: 0 5px;
+	margin-top: 1px
+}
+
+.subscription-careUptate {
+	position: relative;
+	height: 22px
+}
+
+.subscription-careUptate .careUpdate-user {
+	display: inline-block;
+	width: 72px;
+	height: 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis
+}
+
+.subscription-careUptate .careUpdate-time {
+	font-size: 12px;
+	position: absolute;
+	top: 2px;
+	right: 0
+}
+
+.site-piclist_icons-rb {
+	position: absolute;
+	right: 4px;
+	bottom: 4px
+}
+
+.collect-star-icon {
+	display: none;
+	width: 22px;
+	height: 22px;
+	background: url('//www.qiyipic.com/common/fix/site/site-icons-collect.png') no-repeat;
+	background-position: 0 0;
+	cursor: pointer
+}
+
+.site-piclist_pic.toggle-collect {
+	display: inline-block;
+	-webkit-filter: saturate(1);
+	transition: -webkit-filter .5s
+}
+
+.site-piclist_pic.toggle-collect:hover {
+	-webkit-filter: saturate(1.4)
+}
+
+.site-piclist_pic.toggle-collect:hover .mod-listTitle_right {
+	display: none
+}
+
+.site-piclist_pic.toggle-collect:hover .collect-star-icon {
+	display: block
+}
+
+.site-piclist_pic.toggle-collect .collect-star-icon:hover {
+	background-position: -40px 0
+}
+
+.site-piclist_pic.toggle-collect.collected .collect-star-icon {
+	display: block;
+	background-position: -80px 0
+}
+
+.site-piclist_pic.toggle-collect.collected .mod-listTitle_right {
+	display: none
+}
+
+.site-piclist-192108 {
+	height: 170px
+}
+
+.site-piclist-192108 li {
+	width: 192px
+}
+
+.site-piclist-192108 .site-piclist_pic {
+	height: 108px
+}
+
+.site-piclist-192108-describe {
+	height: 177px
+}
+
+.site-piclist-192108-describe .site-piclist_info {
+	height: 46px
+}
+
+.mod-picList-192108 .site-piclist_pic {
+	width: 180px;
+	height: 101px;
+	margin: 0
+}
+
+.site-piclist-192108-noTitle {
+	height: 115px
+}
+
+.rm-only-icon {
+	position: relative;
+	top: 10px
+}
+
+.rm-classify-link {
+	height: 20px;
+	font-size: 12px;
+	text-align: center
+}
+
+.rm-classify-icon {
+	height: 13px;
+	text-align: center;
+	border: 1px solid #e7e7e7;
+	background-color: #fff;
+	color: #699f00;
+	padding: 3px;
+	line-height: 14px;
+	overflow: hidden;
+	display: block;
+	float: left;
+	margin-right: 3px
+}
+
+.rm-new .site-piclist_info {
+	padding: 6px 10px
+}
+
+.rm-new .rm-only-icon img {
+	vertical-align: top
+}
+
+.rm-new .site-title h3 span {
+	padding-left: 0;
+	font-size: 22px
+}
+
+.rm-new .site-subTitle h3 .icon-more {
+	font-size: 14px;
+	padding-left: 8px
+}
+
+.rm-new .site-piclist_info_title {
+	text-overflow: clip
+}
+
+.site-piclist-192108-describeTr {
+	height: 340px;
+	position: relative
+}
+
+.site-piclist-192108-describeTr li {
+	height: auto
+}
+
+.site-piclist-192108-describeTr .mod-personal {
+	position: absolute;
+	right: 0;
+	bottom: 15px
+}
+
+.wrapper-cols {
+	margin-left: -26px
+}
+
+.qypage-1380 .site-main-inner {
+	margin-right: 316px
+}
+
+.qypage-1180 .site-main-inner {
+	margin-right: 334px
+}
+
+.qypage-980 .site-main-inner {
+	margin-right: 352px
+}
+
+.qypage-1380 .site-main-side {
+	width: 316px;
+	margin-left: -316px
+}
+
+.qypage-1180 .site-main-side {
+	width: 334px;
+	margin-left: -334px
+}
+
+.qypage-980 .site-main-side {
+	width: 352px;
+	margin-left: -352px
+}
+
+.site-piclist li {
+	padding-left: 26px
+}
+
+.site-piclist-8080 {
+	height: 130px;
+	font-size: 14px;
+	margin-left: -20px
+}
+
+.site-piclist-8080 li {
+	width: 80px
+}
+
+.site-piclist-8080 .site-piclist_pic {
+	height: 80px
+}
+
+.site-piclist-8080-describe {
+	height: 149px
+}
+
+.site-piclist-8080-describe .site-piclist_info {
+	height: 46px
+}
+
+.mod-picList-8080 .site-piclist_pic {
+	width: 80px;
+	height: 80px;
+	margin: 0
+}
+
+.mod-collaborate {
+	background: #f2f2f2;
+	border-top: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+	padding-top: 19px;
+	margin-left: 20px
+}
+
+.mod-collaborate .site-piclist-8080 {
+	margin-left: 0;
+	height: 122px
+}
+
+.mod-collaborate .site-piclist-8080 li {
+	padding-left: 17px
+}
+
+.mod-collaborate .site-piclist-8080 .site-piclist_pic_link {
+	width: 78px;
+	height: 78px;
+	border: 1px solid #e1e1e1
+}
+
+.mod-collaborate .site-piclist-8080 .site-piclist_info {
+	text-align: center;
+	border: 0;
+	padding: 7px 0 0
+}
+
+.qypage-980 .mod-collaborate .site-piclist-8080 {
+	margin-left: -3px
+}
+
+.qypage-1180 .mod-collaborate .site-piclist-8080 {
+	margin-left: -1px
+}
+
+.qypage-1380 .mod-collaborate .site-piclist-8080 {
+	margin-left: 3px
+}
+
+.topList-yc-6666 {
+	overflow: hidden;
+	background: #f2f2f2;
+	border-top: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+	padding: 10px 0 0 10px
+}
+
+.topList-yc-6666 .top-yc li {
+	clear: both;
+	height: 66px;
+	margin-bottom: 12px
+}
+
+.topList-yc-6666 .top-yc_headImg {
+	width: 64px;
+	height: 64px;
+	border: 1px solid #d8d8d8;
+	position: relative;
+	float: left;
+	margin-right: 8px
+}
+
+.topList-yc-6666 .top-yc_headImg img {
+	width: 64px;
+	height: 64px
+}
+
+.topList-yc-6666 .top-yc_userName {
+	line-height: 20px;
+	height: 20px;
+	overflow: hidden;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	margin-top: 0
+}
+
+.topList-yc-6666 .top-yc_userCare .btn-care {
+	width: 66px;
+	height: 20px;
+	line-height: 20px;
+	padding: 0;
+	border: 1px solid #679e00;
+	background: #699f00;
+	color: #fff;
+	border-radius: 3px
+}
+
+.topList-yc-6666 .top-yc_userCare .btn-care .btn-care_tx {
+	font-size: 12px
+}
+
+.topList-yc-6666 .top-yc_userCare .btn-care:hover {
+	background: #7db718;
+	border: 1px solid #7db718;
+	color: #fff
+}
+
+.topList-yc-6666 .top-yc_userCare .btn-care:active {
+	background: #5c8c13;
+	border: 1px solid #5c8c13;
+	color: #fff
+}
+
+.topList-yc-6666 .top-yc_userCare .btn-care-cared {
+	background: #b1b1b1;
+	color: #fff;
+	border: 1px solid #b1b1b1
+}
+
+.topList-yc-6666 .top-yc_userCare .btn-care-cancel,
+.topList-yc-6666 .top-yc_userCare .btn-care-cared:hover,
+.topList-yc-6666 .top-yc_userCare .btn-care-cared:active {
+	background: #f5f5f5;
+	color: #699f00;
+	border: 1px solid #f5f5f5
+}
+
+.topList-yc-6666 .top-yc_userCare .btn-care-cancel .btn-care_tx-cancel {
+	display: inline-block
+}
+
+.topList-yc-6666 .top-yc_userCare .btn-care-update,
+.topList-yc-6666 .top-yc_userCare .btn-care-update:hover,
+.topList-yc-6666 .top-yc_userCare .btn-care-update:active {
+	background: #f5f5f5;
+	color: #699f00;
+	border: 1px solid #f5f5f5
+}
+
+.topList-yc-6666 .topList-yc-3 {
+	height: 240px;
+	overflow: hidden;
+	*position: relative
+}
+
+.topList-yc-6666 .topList-yc-3 .top-yc li {
+	height: 77px;
+	margin-bottom: 7px
+}
+
+.topList-yc-6666 .dy-num {
+	line-height: 20px;
+	height: 22px;
+	overflow: hidden;
+	margin-bottom: 0;
+	font-size: 12px;
+	color: #999
+}
+
+.topList-yc-6666 .dy-num a {
+	color: #999
+}
+
+.topList-yc-6666 .dy-num a:hover {
+	color: #699f00
+}
+
+.topList-yc-6666 .daren_dyBtn .btn-care-cared:hover {
+	background: #b1b1b1;
+	color: #fff;
+	border: 1px solid #b1b1b1
+}
+
+.topList-yc-6666 .daren_dyBtn .btn-care-update {
+	background: #f2f2f2;
+	border: 1px solid #dfdfdf;
+	color: #699f00
+}
+
+.topList-yc-6666 .daren_dyBtn .btn-care-update:hover {
+	background: #f2f2f2;
+	border: 1px solid #dfdfdf;
+	color: #699f00
+}
+
+.site-piclist .site-piclist_zbz {
+	position: absolute;
+	top: 0;
+	left: 53px;
+	font-size: 0
+}
+
+.site-piclist .site-piclist_zbz .icon-viedo-self {
+	width: 48px;
+	height: 20px;
+	background: url(//pic3.qiyipic.com/common/20150529/zbz-play.png) no-repeat;
+	background-position: 0 0;
+	margin-left: 4px;
+	margin-top: 4px
+}
+
+.site-piclist .mod-listTitle .mod-listTitle-ht {
+	height: 20px;
+	font-size: 12px;
+	margin: 0 0 4px 0;
+	line-height: 20px
+}
+
+.ad-piclist-18075 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 75px;
+	background-color: #f2f2f2
+}
+
+.mod-topList .ad-piclist-18075 {
+	padding-top: 10px
+}
+
+.ad-piclist-18075 a {
+	display: block;
+	width: 180px;
+	height: 75px
+}
+
+.ad-piclist-18075 img {
+	width: 100%;
+	height: 100%
+}
+
+.adList_adImg {
+	float: right
+}
+
+.adList_adImg img {
+	margin: 0;
+	padding: 0;
+	vertical-align: top
+}
+
+.adList_adContent {
+	overflow: hidden;
+	*zoom: 1
+}
+
+.adList_adContent a {
+	display: inline-block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 100%
+}
+
+.site-piclist-180101 .sideAdPo .sideAdWrap .site-piclist_pic,
+.site-piclist-180101 .sideAdPo .sideAdWrap .site-piclist_info,
+.site-piclist-180236 .sideAdPo .sideAdWrap .site-piclist_pic,
+.site-piclist-180236 .sideAdPo .sideAdWrap .site-piclist_info {
+	width: 180px
+}
+
+.mod-txtList {
+	position: relative
+}
+
+.txtList {
+	line-height: 34px;
+	overflow: hidden
+}
+
+.txtList li {
+	height: 34px
+}
+
+.txtList li .square-icon {
+	_margin: 14px 5px 14px 0;
+	cursor: default
+}
+
+.txtList li,
+.txt-item li {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	width: 100%
+}
+
+.fs-square {
+	margin-right: 5px;
+	*font-size: 9px
+}
+
+.num-ordinary {
+	background: #e6e6e6;
+	border: 1px solid #cfcfcf;
+	width: 17px;
+	height: 17px;
+	float: left;
+	text-align: center;
+	line-height: 17px;
+	margin: 1px 6px 0 0
+}
+
+.tit-ordinary {
+	float: left;
+	width: 230px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis
+}
+
+.txtList-picTxt {
+	background: #f2f2f2
+}
+
+.txtList-picTxt .txtList {
+	height: 169px;
+	padding: 4px 10px 13px;
+	border-bottom: 1px solid #ebebeb
+}
+
+.txtList-picTxt .txtList-desc {
+	height: 300px
+}
+
+.txtList-picTxt .txtList-desc .desc {
+	line-height: 14px;
+	padding-left: 8px;
+	padding-bottom: 6px;
+	color: #999
+}
+
+.txtList-picTxt .mod-picList-180101 .site-piclist_info {
+	border: 0;
+	margin-bottom: 0;
+	height: 30px
+}
+
+.txtList-picTxt .mod-picList-180101 .site-piclist_info_title {
+	border-bottom: 1px dotted #ccc;
+	height: 30px;
+	line-height: 22px;
+	text-indent: 5px
+}
+
+.mod-txtList-4 .txtList {
+	height: 133px;
+	padding: 0 10px;
+	border-top: 1px solid #ebebeb
+}
+
+.mod-txtList-4 .txtList li {
+	height: 32px
+}
+
+.mod-txtList-6 .txtList {
+	height: 187px;
+	padding: 0 10px;
+	border-top: 1px solid #ebebeb
+}
+
+.mod-txtList-6 .txtList li {
+	height: 30px
+}
+
+.txtList-dotted {
+	background: 0;
+	margin-top: -10px
+}
+
+.txtList-dotted .txtList {
+	height: 284px
+}
+
+.txtList-dotted .txtList li {
+	border-bottom: 1px dotted #ccc;
+	height: 36px
+}
+
+.txtList-dotted .txtList {
+	border-bottom: 0;
+	padding: 0 0 13px
+}
+
+@charset "utf-8";
+@charset "utf-8";
+.pc-btn {
+	display: inline-block
+}
+
+.pc-care-small .btn-care-tocare:hover,
+.pc-care-large .btn-care-tocare:hover {
+	border: 1px solid #60a700
+}
+
+.pc-btn-small,
+.pc-care-small .btn-care {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 0 15px;
+	font-size: 12px
+}
+
+.pc-btn-small,
+.btn-care-tocare {
+	line-height: 20px
+}
+
+.pc-btn-large,
+.pc-care-large .btn-care {
+	font-size: 14px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	height: 32px;
+	line-height: 32px;
+	width: 150px
+}
+
+.pc-care-small .pc-btn-tocare em {
+	font-size: 16px
+}
+
+.pc-care-large .pc-btn-tocare em {
+	font-size: 18px
+}
+
+.btn-care,
+.pc-btn-allPlay {
+	margin-right: 0;
+	background-color: #699f00
+}
+
+.btn-care .pc-icon,
+.btn-care .icon-loading,
+.btn-care span {
+	display: none
+}
+
+.btn-care-tocare .pc-btn-tocare,
+.btn-care-caredEachother .pc-icon-eachother,
+.btn-care-caredEachother .pc-btn-eachother,
+.btn-care-normal .pc-btn-cared,
+.btn-care-cared .pc-btn-cared,
+.btn-care-cared .pc-btn-disable,
+.btn-care-update .pc-btn-update {
+	display: inline-block
+}
+
+.btn-care-tocare,
+.pc-btn-allPlay {
+	color: #fff
+}
+
+.btn-care-tocare:hover,
+.pc-btn-allPlay:hover,
+.btn-care-update:hover {
+	color: #fff;
+	background-color: #7db718
+}
+
+.btn-care-tocare:active,
+.pc-btn-allPlay:active,
+.btn-care-update:active {
+	color: #fff;
+	background-color: #5b8d00
+}
+
+.btn-care-tocare .pc-btn-tocare em {
+	color: #fff;
+	display: inline-block;
+	font-weight: bold
+}
+
+.btn-care-caredEachother,
+.btn-care-caredEachother:hover,
+.pc-btn .btn-care-caredEachother,
+.pc-btn .btn-care-caredEachother:hover {
+	background-color: #ececec;
+	border: 1px solid #d1d1d1;
+	color: #60a700;
+	cursor: default
+}
+
+.pc-btn .btn-care-normal {
+	background-color: #ececec;
+	border: 1px solid #d1d1d1;
+	color: #60a700
+}
+
+.btn-care-caredEachother .pc-btn-eachother i,
+.btn-care-normal .pc-btn-cared i,
+.pc-btn-reset .btn-care-cared i {
+	cursor: pointer
+}
+
+.pc-btn-care .pc-icon,
+.btn-care-caredEachother,
+.btn-care-normal,
+.pc-btn-reset .btn-care-cared {
+	cursor: default
+}
+
+.btn-care-cared,
+.btn-care-cared:hover,
+.btn-care-cared:active,
+.pc-btn .btn-care-cared,
+.pc-btn .btn-care-cared:hover,
+.pc-btn .btn-care-cared:active {
+	background-color: #b1b1b1;
+	color: #fff;
+	cursor: default
+}
+
+.pc-title a.btn-care-tocare {
+	color: #fff
+}
+
+.pc-btn-gray {
+	background-color: #b1b1b1
+}
+
+.pc-btn-gray:hover {
+	background-color: #f2f2f2;
+	color: #60a700
+}
+
+.pc-btn-green,
+.site-btn-green {
+	background-color: #699f00;
+	color: #fff
+}
+
+.pc-btn-green:hover,
+.site-btn-green:hover {
+	background-color: #7db718;
+	color: #fff
+}
+
+.pc-care-small .btn-care-update {
+	width: 72px;
+	padding: 0;
+	text-align: center
+}
+
+.banner-save .pc-btn-gray {
+	background-color: #f2f2f2
+}
+
+.banner-save .pc-btn-green {
+	background-color: #7cc516
+}
+
+.banner-save .pc-btn-green:hover {
+	background-color: #60a700
+}
+
+.pp_account_form_item .pc-btn-gray {
+	background-color: #f2f2f2
+}
+
+.pp_account_form_item .pc-btn-gray:hover {
+	color: #699f00
+}
+
+.pp_account_form_item .pc-btn-gray:active {
+	color: #699f00
+}
+
+.btn-care-cancel {
+	background: #f5f5f5;
+	color: #699f00;
+	border: 1px solid #f5f5f5
+}
+
+.btn-care-cancel .btn-care_tx-cancel {
+	display: inline-block
+}
+
+.pc-care-large .btn-care-cared,
+.pc-care-large .btn-care-cared:hover,
+.pc-care-large .btn-care-cared:active,
+.pc-care-large .btn-care-cared {
+	background-color: #ececec;
+	border: 1px solid #d1d1d1;
+	color: #60a700
+}
+
+@charset "utf-8";
+.pk_pop_con .btn-care {
+	width: 66px;
+	height: 20px;
+	line-height: 20px;
+	padding: 0;
+	border: 1px solid #679e00;
+	background: #699f00;
+	color: #fff;
+	border-radius: 3px;
+	*padding-top: -9px
+}
+
+.pk_pop_con .btn-care .btn-care_tx {
+	font-size: 12px
+}
+
+.pk_pop_con .btn-care:hover {
+	background: #7db718;
+	border: 1px solid #7db718;
+	color: #fff
+}
+
+.pk_pop_con .btn-care:active {
+	background: #5c8c13;
+	border: 1px solid #5c8c13;
+	color: #fff
+}
+
+.btn-care-cared,
+.pk_pop_con .btn-care-cared {
+	background: #b1b1b1;
+	color: #fff;
+	border: 1px solid #b1b1b1
+}
+
+.pk_pop_con .btn-care-cancel,
+.btn-care-update,
+.btn-care-update:hover,
+.top-title-care .btn-care-update,
+.top-title-care .btn-care-update:hover,
+.people .detail_care .btn-care-update,
+.people .detail_care .btn-care-update:hover,
+.pk_pop_con .btn-care-update,
+.pk_pop_con .btn-care-update:hover,
+.pk_pop_con .btn-care-update:active,
+.pk_pop_con .btn-care-cared:hover,
+.pk_pop_con .btn-care-cared:active {
+	background: #f5f5f5;
+	color: #699f00;
+	border: 1px solid #f5f5f5
+}
+
+.pk_pop_con .btn-care-caredEachother,
+.pk_pop_con .btn-care-caredEachother:hover {
+	background-color: #ececec;
+	border: 1px solid #d1d1d1;
+	color: #60a700;
+	cursor: default
+}
+
+.btn-care-loading .icon-loading {
+	display: inline-block
+}
+
+.btn-care-loading .pc-btn-care_tx,
+.pk_pop_con .btn-care-loading .pc-btn-care_tx {
+	display: none
+}
+
+.subscription_pop {
+	position: absolute;
+	z-index: 9;
+	left: 0;
+	top: 0;
+	*zoom: 1
+}
+
+.subscription_pop .no-login1116 {
+	padding-top: 7px;
+	font-family: "\5FAE\8F6F\96C5\9ED1", "\9ED1\4F53";
+	top: 22px;
+	left: -2px
+}
+
+.subscription_pop .no-login1116pop {
+	width: 185px;
+	border: #f7bf8d 1px solid;
+	background: #fdf5ee;
+	border-radius: 4px;
+	position: relative;
+	padding: 0 10px;
+	line-height: 28px
+}
+
+.subscription_pop .no-login1116pop .no-loginarrow {
+	background: url(//www.qiyipic.com/common/fix/integral_images/arrow.png) no-repeat;
+	width: 12px;
+	height: 7px;
+	position: absolute;
+	top: -7px;
+	left: 27px;
+	right: 39px
+}
+
+.subscription_pop .no-login1116pop .shut-btn {
+	background: url(//www.qiyipic.com/common/fix/integral_images/shut-btn.png) no-repeat;
+	width: 17px;
+	height: 16px;
+	display: block;
+	position: absolute;
+	right: 10px;
+	top: 6px
+}
+
+.subscription_pop .no-login1116pop p {
+	color: #494949;
+	font-size: 12px
+}
+
+.subscription_pop .no-login1116pop p a {
+	color: #518900;
+	font-size: 12px
+}
+
+.subscription_pop .continuLookPop-bd {
+	color: #333
+}
+
+.subscription_pop .btn-subscription_play .btn-care {
+	height: 18px;
+	line-height: 18px
+}
+
+.subscription_pop .continuLookPop-bd a {
+	color: #699f00
+}
+
+.subscription_pop .no-login1116pop .narrow-r {
+	left: 167px
+}
+
+.mod-cover {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: .5;
+	filter: alpha(opacity="50");
+	top: 0;
+	left: 0;
+	z-index: 4300
+}
+
+.mod-popupWrap {
+	z-index: 4301
+}
+
+.popup_vm {
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%
+}
+
+.mod-popup {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle
+}
+
+.popup_inner {
+	border: 4px solid #ccc;
+	background-color: #fff;
+	z-index: 11
+}
+
+.popup_inner_closeBtn {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	z-index: 12
+}
+
+.btn-close-popup {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 32px;
+	_font-size: 22px;
+	line-height: 26px;
+	color: #999
+}
+
+.btn-close-popup:hover {
+	color: #333;
+	text-decoration: none
+}
+
+.popup_title {
+	height: 30px;
+	min-width: 232px;
+	_width: 232px
+}
+
+.popup-item {
+	color: #333;
+	padding: 0 20px 20px
+}
+
+.popup-item .fs14 {
+	font-size: 14px
+}
+
+.popup-item .fs16 {
+	font-size: 16px
+}
+
+.popup-item .btnWrap {
+	margin-top: 20px;
+	text-align: right
+}
+
+.popup-item .btnWrap .btn-link {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 30px;
+	*float: left;
+	*margin-left: 31px
+}
+
+.plr60 {
+	padding: 0 60px
+}
+
+.plr140 {
+	padding: 0 140px
+}
+
+.tips-row1 {
+	display: inline-block;
+	padding: 4px 10px;
+	position: absolute;
+	background: #fff;
+	border: 1px solid #ccc;
+	color: #666
+}
+
+.frameLayer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: transparent
+}
+
+.popupFrame {
+	width: 100%;
+	height: 100%;
+	z-index: -1
+}
+
+.mod-pop-upload {
+	width: 314px;
+	position: absolute;
+	background-color: #fff;
+	color: #666;
+	font-size: 14px;
+	line-height: 1.5;
+	z-index: 4300;
+	-moz-box-shadow: -1px 1px 8px #ccc;
+	-webkit-box-shadow: -1px 1px 8px #ccc;
+	box-shadow: -1px 1px 8px #ccc;
+	left: 200px
+}
+
+.mod-pop-upload .pop-upload_inner {
+	border: 1px solid #d7d7d7;
+	padding: 0
+}
+
+.pk_pop {
+	width: 312px;
+	height: 195px
+}
+
+.pk_pop_pic_bg {
+	width: 100%;
+	height: 73px;
+	background: url(//www.qiyipic.com/common/fix/pop_subscription_bg/pop_bg.png);
+	position: relative;
+	overflow: hidden;
+	z-index: 3
+}
+
+.pk_pop_pic {
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	top: 13px;
+	left: 20px
+}
+
+.pk_pop_pic img {
+	width: 48px;
+	height: 48px
+}
+
+.pk_pop_con {
+	padding: 8px 16px
+}
+
+.pk_pop_tit {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 14px;
+	color: #333;
+	max-width: 160px
+}
+
+.pk_pop_tit a {
+	color: #333
+}
+
+.pk_pop_tit a:hover {
+	color: #699f00
+}
+
+.pk_pop_num {
+	font-size: 12px;
+	color: #999
+}
+
+.line_one {
+	vertical-align: middle;
+	display: inline-block
+}
+
+.line_one .mr10 {
+	margin-right: 5px
+}
+
+.line_two {
+	margin-top: 10px
+}
+
+.line_two .top-title-care {
+	float: left
+}
+
+.line_three {
+	margin-top: 14px;
+	height: 32px;
+	line-height: 16px;
+	overflow: hidden
+}
+
+.frameLayer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: transparent
+}
+
+.pop-upload_arrow {
+	position: absolute
+}
+
+.arrow-lt {
+	left: 25px;
+	top: -12px
+}
+
+.arrow-rt {
+	right: 40px;
+	top: -12px
+}
+
+.arrow-lb {
+	left: 25px;
+	bottom: -12px
+}
+
+.arrow-rb {
+	right: 40px;
+	bottom: -12px
+}
+
+.arrow-inner,
+.arrow-outer {
+	position: absolute;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	border: 8px dashed transparent;
+	line-height: 0;
+	font-size: 0
+}
+
+.arrow-lb .arrow-inner,
+.arrow-rb .arrow-inner {
+	border-top: 8px solid #fff;
+	bottom: -1px;
+	z-index: 2
+}
+
+.arrow-lb .arrow-outer,
+.arrow-rb .arrow-outer {
+	border-top: 8px solid #d7d7d7;
+	bottom: -3px;
+	z-index: 1
+}
+
+.arrow-lt .arrow-inner,
+.arrow-rt .arrow-inner {
+	border-bottom: 8px solid #fff;
+	top: -1px;
+	z-index: 2
+}
+
+.arrow-lt .arrow-outer,
+.arrow-rt .arrow-outer {
+	border-bottom: 8px solid #d7d7d7;
+	top: -3px;
+	z-index: 1
+}
+
+.ugc-frameLayer {
+	background: transparent;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	z-index: -1
+}
+
+.pop-upload_inner .moreTxts {
+	color: #666
+}
+
+.pop-upload_inner .moreTxts:hover {
+	color: #699f00;
+	text-decoration: none
+}
+
+.pop-upload_inner em.moreIco {
+	cursor: pointer;
+	font-family: "黑体", "CourierNewPSMT";
+	margin-left: 3px
+}
+
+.position_lt {
+	top: 230px
+}
+
+.position_loading {
+	top: 500px
+}
+
+.position_loading .pop-upload_inner {
+	height: 66px
+}
+
+.loading_con {
+	width: 312px;
+	height: 48px;
+	padding-top: 20px;
+	text-align: center
+}
+
+.loading_con .ml10 {
+	margin-left: 10px
+}
+
+.position_loading_lt {
+	top: 600px
+}
+
+.short-userCare-ud {
+	margin-top: 0
+}
+
+.mod-jiemu-msg .jiemu-people .short-userCare-ud a {
+	margin: 0
+}
+
+.short-userCare-ml {
+	margin-left: 46px
+}
+
+.short-userCare-ud .short-userCare-peo p {
+	padding: 0
+}
+
+.short-userCare .btn-care {
+	width: 48px;
+	height: 20px;
+	line-height: 21px;
+	border-radius: 3px 0 0 3px;
+	margin-right: 0;
+	background: #6a9e1b;
+	border: 1px solid #6a9e1b;
+	padding: 0;
+	vertical-align: top
+}
+
+.short-userCare .btn-care:hover {
+	background: #7fb52b;
+	border: 1px solid #7fb52b;
+	color: #fff
+}
+
+.short-userCare-radius .btn-care {
+	border-radius: 3px
+}
+
+.short-userCare-peo {
+	border: 1px solid #ddd;
+	border-left: none;
+	border-radius: 0 3px 3px 0;
+	height: 20px;
+	line-height: 20px;
+	background: #fff;
+	padding: 0 10px
+}
+
+.short-userCare .btn-care-cared,
+.short-userCare .btn-care-cared:hover,
+.short-userCare .btn-care-cared:active,
+.short-userCare .btn-care-caredEachother,
+.short-userCare .btn-care-caredEachother:hover,
+.short-userCare .btn-care-caredEachother:active {
+	background-color: #b1b1b1;
+	border: 1px solid #a6a6a6;
+	color: #fff;
+	cursor: default
+}
+
+.short-userCare .btn-care-update,
+.short-userCare .btn-care-update:hover {
+	background: #f2f2f2;
+	color: #699f00;
+	border: 1px solid #dfdfdf
+}
+
+.mod-page {
+	padding: 20px 0;
+	text-align: center;
+	height: 30px;
+	zoom: normal;
+	font-size: 0
+}
+
+.mod-page a,
+.mod-page span {
+	display: inline-block;
+	min-width: 33px;
+	_width: 33px;
+	height: 28px;
+	color: #333;
+	line-height: 27px;
+	font-size: 14px;
+	margin: 0 5px;
+	vertical-align: middle;
+	border-radius: 2px;
+	border: 1px solid #e3e3e3;
+	background: #fff
+}
+
+.mod-page a:hover {
+	background: #f2f2f2;
+	color: #333;
+	text-decoration: none
+}
+
+.mod-page .curPage {
+	background: #699e00;
+	border: 1px solid #5f9000;
+	color: #fff;
+	cursor: default
+}
+
+.mod-page a.a1,
+.mod-page .noPage {
+	width: 58px
+}
+
+.mod-page .noPage {
+	color: #999;
+	cursor: default
+}
+
+@charset "utf-8";
+.nubImg_rankList {
+	margin-top: 16px
+}
+
+.nubImg_txt {
+	height: 20px;
+	margin-bottom: 15px
+}
+
+.nub20_icon {
+	display: block;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	background: #b2b8c2;
+	font-size: 12px;
+	color: #fff;
+	float: left;
+	margin-right: 9px
+}
+
+.nub20_iconRed {
+	background: #ff2533
+}
+
+.nub20_iconOrange {
+	background: #fd8912
+}
+
+.nub20_iconYellow {
+	background: #fec300
+}
+
+.nubImg_info {
+	font-size: 14px;
+	color: #333;
+	display: block;
+	width: 260px;
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	vertical-align: middle
+}
+
+.nubImg_imgTxt {
+	height: 54px;
+	margin-bottom: 14px
+}
+
+.nubImg_picBox {
+	float: left;
+	width: 84px;
+	height: 54px;
+	margin-right: 9px
+}
+
+.nubImg_picLink,
+.nubImg_picLink img {
+	display: block;
+	width: 100%;
+	height: 100%
+}
+
+.nubImg_right {
+	float: left;
+	width: 168px
+}
+
+.nubImg_right .nubImg_info {
+	height: 32px;
+	line-height: 16px;
+	margin-bottom: 6px;
+	white-space: normal;
+	width: 168px
+}
+
+.nubImg_score {
+	font-size: 12px;
+	color: #999
+}
+
+body {
+	font-size: 14px
+}
+
+a:hover {
+	text-decoration: none
+}
+
+a:hover,
+a:active {
+	color: #5aa700
+}
+
+.site-main-side .site-title h3 {
+	letter-spacing: -1px
+}
+
+.week-updateList {
+	height: 525px;
+	overflow: hidden;
+	width: 175px;
+	float: left
+}
+
+.week-list_title {
+	font-size: 14px;
+	color: #fff;
+	height: 45px;
+	line-height: 35px;
+	padding-left: 15px;
+	background: url(//www.qiyipic.com/common/fix/dongman-icons/weekupdate-title.png) no-repeat;
+	background-position: 0 -75px
+}
+
+.week-updateList .selected {
+	background: url(//www.qiyipic.com/common/fix/dongman-icons/weekupdate-title.png) no-repeat;
+	background-position: 0 -30px
+}
+
+.week-updateList_each li {
+	height: 40px;
+	padding-bottom: 15px;
+	_padding-bottom: 0
+}
+
+.week-list_cont {
+	background: url(//www.qiyipic.com/common/fix/dongman-icons/weekupdate.png) no-repeat;
+	_background: url(//www.qiyipic.com/common/fix/dongman-icons/weekupdate_ie6.png) no-repeat;
+	padding-left: 20px;
+	margin-left: 7px;
+	padding-bottom: 15px;
+	display: block
+}
+
+.week-list_cont:hover {
+	background: url(//www.qiyipic.com/common/fix/dongman-icons/weekupdate-hover.png) no-repeat;
+	_background: url(//www.qiyipic.com/common/fix/dongman-icons/weekupdate_hover_ie6.png) no-repeat;
+	margin-left: 3px;
+	padding-left: 24px;
+	cursor: pointer;
+	color: #5fb11f
+}
+
+.week-cont_title {
+	display: block;
+	padding-bottom: 5px;
+	height: 20px;
+	width: 140px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis
+}
+
+.week-cont_info {
+	font-size: 12px;
+	color: #999;
+	height: 20px;
+	width: 140px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis
+}
+
+.weekList-scroll {
+	background-color: #e7e7e7;
+	width: 5px;
+	height: 525px;
+	float: left
+}
+
+.week-scroll_btn {
+	background-color: #999;
+	width: 5px;
+	display: block
+}
+
+.week-scroll_btn:hover,
+.week-scroll_btn:active {
+	background-color: #5fb11f
+}
+
+.txtList li {
+	height: 35px
+}
+
+.ad-piclist-18048 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 48px;
+	background-color: #f2f2f2
+}
+
+.txtList-picTxt .dongmandujia {
+	height: 163px
+}
+
+.txtList-picTxt .dongmandujia li {
+	height: 28px
+}
+
+.dongmanhezuo {
+	border-bottom: 1px dashed #ccc
+}
+
+.mod-pindao-partners {
+	padding: 10px 20px 20px
+}
+
+.pindao-partners_list {
+	margin-right: -20px;
+	margin-top: 10px
+}
+
+.pindao-partners_list li {
+	display: inline;
+	float: left;
+	font-size: 12px;
+	line-height: 25px;
+	white-space: nowrap;
+	width: 84px;
+	overflow: hidden;
+	text-align: left
+}
+
+.qypage-980 .pindao-partners_list li {
+	margin-right: 36px;
+	*margin-right: 33px
+}
+
+.qypage-1180 .pindao-partners_list li {
+	margin-right: 32px;
+	*margin-right: 30px
+}
+
+.qypage-1380 .pindao-partners_list li {
+	margin-right: 39px;
+	*margin-right: 37px
+}
+
+.mod-download-flow {
+	margin-bottom: 30px
+}
+
+body {
+	overflow-x: hidden;
+	*position: relative
+}
+
+body.qypage-980 {
+	overflow-x: visible;
+	*position: static
+}
+
+.dm-legao {
+	position: relative;
+	margin-top: 48px
+}
+
+.dm-legao .link-legao {
+	display: block;
+	position: absolute;
+	height: 218px;
+	left: -65px;
+	top: -34px;
+	background: url(//www.qiyipic.com/common/fix/lego_1027/lego_pic.jpg) no-repeat
+}
+
+.qypage-1380 .dm-legao .link-legao {
+	background-position: 0 0;
+	width: 1540px
+}
+
+.qypage-1180 .dm-legao .link-legao {
+	background-position: 0 -213px;
+	width: 1340px
+}
+
+.qypage-980 .dm-legao .link-legao {
+	background-position: 0 -433px;
+	width: 1140px
+}
+
+.dm-legao .site-title {
+	position: relative;
+	z-index: 10;
+	top: -14px;
+	width: 240px
+}
+
+.dm-legao .wrapper-piclist {
+	position: relative
+}
+
+@media only screen and (max-width:1024px) {
+	.wrapper-content {
+		overflow-x: hidden;
+		overflow-y: hidden
+	}
+}
+
+.piclist_btnLeft,
+.piclist_btnRight {
+	width: 48px;
+	height: 74px;
+	display: block;
+	position: absolute;
+	top: 70px;
+	z-index: 100
+}
+
+.piclist_btnRight {
+	right: -2px
+}
+
+.piclist_btnLeft {
+	left: -2px
+}
+
+.piclist_btnLeft a,
+.piclist_btnRight a {
+	width: 48px;
+	height: 74px;
+	display: block;
+	position: absolute;
+	z-index: 100
+}
+
+.piclist_btnLeft a {
+	_cursor: pointer;
+	background: url(//www.qiyipic.com/common/fix/dongman-icons/p_arrLt.png) no-repeat
+}
+
+.piclist_btnRight a {
+	_cursor: pointer;
+	background: url(//www.qiyipic.com/common/fix/dongman-icons/p_arrRt.png) no-repeat
+}
+
+.piclist_btnLeft a:hover {
+	_cursor: pointer;
+	background: url(//www.qiyipic.com/common/fix/dongman-icons/p_arrLt_hover.png)
+}
+
+.piclist_btnRight a:hover {
+	_cursor: pointer;
+	background: url(//www.qiyipic.com/common/fix/dongman-icons/p_arrRt_hover.png)
+}
+
+.site-wrap_out {
+	padding-left: 20px;
+	overflow: hidden
+}
+
+.site-wrap_in {
+	margin-left: -20px
+}
+
+.mr0 {
+	margin-right: 0
+}
+
+.adflash_style-normal {
+	height: 460px
+}
+
+.adflash_style-fix {
+	height: 460px
+}
+
+.disabled,
+.disabled:hover {
+	background: url(//www.qiyipic.com/common/fix/dongman-icons/p_arrLt.png) no-repeat;
+	visibility: hidden;
+	cursor: default
+}
+
+.footer-shareBox-large {
+	height: 286px
+}
+
+.dm-legao .site-title {
+	padding-top: 4px
+}
+
+.v_name {
+	top: 1.5px;
+	*top: 0;
+	_padding: 0
+}
+
+.mod-listTitle {
+	overflow: hidden;
+	height: 24px
+}
+
+.mod-listTitle_left {
+	display: inline-block;
+	*display: inline;
+	_zoom: 1;
+	height: 16px;
+	border-radius: 3px;
+	line-height: 16px;
+	margin: 4px 0 0 4px;
+	background: rgba(0, 0, 0, .6);
+	font-size: 0
+}
+
+.mod-listTitle_left .textOverflow {
+	display: inline-block;
+	*display: inline;
+	_zoom: 1;
+	width: auto;
+	height: 16px
+}
+
+.mod-listTitle_left span {
+	font-size: 12px
+}
+
+.site-item_l {
+	overflow: hidden;
+	padding-left: 20px
+}
+
+.site-wrap_lout {
+	margin-left: -20px
+}
+
+.site-wrap_lin {
+	width: 100%;
+	overflow: hidden
+}
+
+.baseNmq {
+	position: fixed;
+	_position: absolute;
+	z-index: 40
+}
+
+.wrapper-cols {
+	margin-bottom: 0
+}
+
+.tit-bgLine {
+	margin-bottom: 13px
+}
+
+.site-title {
+	padding-left: 26px
+}
+
+.site-title_left,
+.site-title h3 {
+	height: 50px;
+	line-height: 50px;
+	background: 0
+}
+
+.site-title h3 a span,
+.site-title h3 span {
+	padding-left: 10px;
+	font-size: 24px;
+	color: #333
+}
+
+.site-title h3 a:hover span {
+	color: #5aa700
+}
+
+.site-main-side .site-title h3 a span,
+.site-main-side .site-title h3 span {
+	padding-left: 0;
+	font-size: 20px
+}
+
+.cartoonTitleBg {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: url(//www.qiyipic.com/common/fix/cartoon/cartoon.png) no-repeat;
+	vertical-align: top
+}
+
+.cartoonOfficial {
+	background-position: 0 0
+}
+
+.cartoonChase {
+	background-position: -60px 0
+}
+
+.cartoonJapan {
+	background-position: -120px 0
+}
+
+.cartoonChina {
+	background-position: -180px 0
+}
+
+.cartoonMusic {
+	background-position: -240px 0
+}
+
+.cartoonJapanOver {
+	background-position: 0 -60px
+}
+
+.cartoonChinaOver {
+	background-position: -60px -60px
+}
+
+.cartoonEurope {
+	background-position: -120px -60px
+}
+
+.cartoonClassics {
+	background-position: -180px -60px
+}
+
+.cartoonMovie {
+	background-position: -240px -60px
+}
+
+.cartoonTokusatsu {
+	background-position: 0 -120px
+}
+
+.cartoonPuppet {
+	background-position: -60px -120px
+}
+
+.cartoonPartner {
+	background-position: -120px -120px
+}
+
+.cartoonVip {
+	background: url(//www.qiyipic.com/common/fix/cartoon/cartoonVip_icon.png) no-repeat
+}
+
+.tit-bgLine {
+	border-bottom: 0
+}
+
+.cartoonSide {
+	padding: 78px 0 0 26px;
+	margin-bottom: 25px
+}
+
+.cartoonSide-recommend {
+	width: 290px;
+	height: 162px;
+	overflow: hidden
+}
+
+.qypage-980 .cartoonSide-recommend {
+	width: 326px
+}
+
+.qypage-1180 .cartoonSide-recommend {
+	width: 308px
+}
+
+.cartoonRecommend-left {
+	width: 140px;
+	height: 162px;
+	margin-right: 10px
+}
+
+.cartoonRecommend-left .cartoonRecommendLink {
+	height: 100%;
+	background: #fe8f00;
+	background: -moz-linear-gradient(top, #fe8f00 0, #f8ed3d 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fe8f00), color-stop(100%, #f8ed3d));
+	background: -webkit-linear-gradient(top, #fe8f00 0, #f8ed3d 100%);
+	background: -o-linear-gradient(top, #fe8f00 0, #f8ed3d 100%);
+	background: -ms-linear-gradient(top, #fe8f00 0, #f8ed3d 100%);
+	background: linear-gradient(to bottom, #fe8f00 0, #f8ed3d 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fe8f00", endColorstr="#f8ed3d", GradientType=0)
+}
+
+.qypage-980 .cartoonRecommend-left {
+	width: 158px
+}
+
+.qypage-1180 .cartoonRecommend-left {
+	width: 149px
+}
+
+.cartoonRecommend-right {
+	width: 140px;
+	height: 76px
+}
+
+.qypage-980 .cartoonRecommend-right {
+	width: 158px
+}
+
+.qypage-1180 .cartoonRecommend-right {
+	width: 149px
+}
+
+.cartoonRecommendLink,
+.cartoonRecommendLink2,
+.cartoonRecommendLink img {
+	display: block
+}
+
+.cartoonRecommend-left .cartoonRecommendLink img {
+	width: 140px;
+	height: 162px
+}
+
+.qypage-980 .cartoonRecommend-left .cartoonRecommendLink {
+	padding-right: 18px
+}
+
+.qypage-980 .cartoonRecommend-right .cartoonRecommendLink,
+.qypage-980 .cartoonRecommend-right .cartoonRecommendLink2 {
+	padding-left: 18px
+}
+
+.qypage-1180 .cartoonRecommend-left .cartoonRecommendLink {
+	padding-right: 9px
+}
+
+.qypage-1180 .cartoonRecommend-right .cartoonRecommendLink,
+.qypage-1180 .cartoonRecommend-right .cartoonRecommendLink2 {
+	padding-left: 9px
+}
+
+.cartoonRecommend-right .cartoonRecommendLink {
+	height: 100%;
+	background: #d64299;
+	background: -moz-linear-gradient(top, #d64299 0, #fa8fd0 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d64299), color-stop(100%, #fa8fd0));
+	background: -webkit-linear-gradient(top, #d64299 0, #fa8fd0 100%);
+	background: -o-linear-gradient(top, #d64299 0, #fa8fd0 100%);
+	background: -ms-linear-gradient(top, #d64299 0, #fa8fd0 100%);
+	background: linear-gradient(to bottom, #d64299 0, #fa8fd0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d64299", endColorstr="#fa8fd0", GradientType=0)
+}
+
+.cartoonRecommend-right .cartoonRecommendLink2 {
+	height: 100%;
+	background: #3d88d5;
+	background: -moz-linear-gradient(top, #3d88d5 0, #90c5fc 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3d88d5), color-stop(100%, #90c5fc));
+	background: -webkit-linear-gradient(top, #3d88d5 0, #90c5fc 100%);
+	background: -o-linear-gradient(top, #3d88d5 0, #90c5fc 100%);
+	background: -ms-linear-gradient(top, #3d88d5 0, #90c5fc 100%);
+	background: linear-gradient(to bottom, #3d88d5 0, #90c5fc 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3d88d5", endColorstr="#90c5fc", GradientType=0)
+}
+
+.cartoonRecommend-right .cartoonRecommendLink img,
+.cartoonRecommend-right .cartoonRecommendLink2 img {
+	width: 140px;
+	height: 76px
+}
+
+.cartoonRecommendLink,
+.cartoonRecommendLink2 {
+	position: relative;
+	overflow: hidden
+}
+
+.cartoonRecommendLink {
+	margin-bottom: 10px
+}
+
+.cartoonSide-recommend img {
+	position: absolute;
+	top: 0
+}
+
+.cartoonRecommend-left img {
+	left: 0
+}
+
+.cartoonRecommend-right img {
+	right: 0
+}
+
+.cartoonRecommend-left .cartoonRecommendLink:hover img {
+	width: 168px;
+	height: 194px;
+	left: -14px;
+	top: -16px
+}
+
+.cartoonRecommend-right a:hover img {
+	width: 168px;
+	height: 91px;
+	right: -14px;
+	top: -8px
+}
+
+.cartoonSide_box {
+	width: 290px;
+	height: 162px;
+	overflow: hidden
+}
+
+.cartoonSide_left {
+	width: 146px;
+	height: 162px;
+	overflow: hidden;
+	margin-right: 6px
+}
+
+.cartoonSide_right {
+	width: 138px;
+	height: 162px
+}
+
+.cartoonLink {
+	width: 146px;
+	height: 50px;
+	display: block
+}
+
+.mb6 {
+	margin-bottom: 6px
+}
+
+.cartoonLink img {
+	width: 146px;
+	height: 50px
+}
+
+.cartoonLinkR {
+	display: block
+}
+
+.cartoonLinkR img {
+	width: 138px;
+	height: 162px
+}
+
+.cartoonLinkR01,
+.cartoonLinkR02 {
+	display: block
+}
+
+.cartoonLinkR01 img,
+.cartoonLinkR02 img {
+	width: 138px;
+	height: 78px
+}
+
+.site-piclist-192108 li:hover .site-piclist_info .site-piclist_info_title a {
+	color: #5aa700
+}
+
+.qy-col436 {
+	width: 436px
+}
+
+.cartoon-col-2 {
+	height: 314px;
+	padding-left: 26px
+}
+
+.cartoonMod-listTitle {
+	position: relative;
+	height: 54px;
+	line-height: 54px;
+	margin-top: -54px;
+	color: #fff;
+	cursor: pointer;
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled="true", startColorstr="#75000000", endColorstr="#75000000");
+	background: rgba(0, 0, 0, .5)
+}
+
+:root .cartoonMod-listTitle {
+	filter: none \9
+}
+
+.cartoonMod-left {
+	float: left;
+	height: 47px;
+	width: 158px;
+	padding: 7px 0 0 64px;
+	background: url(//www.qiyipic.com/common/fix/cartoon/playicon_07_07.png) no-repeat
+}
+
+.cartoonPlayIcon-wrap {
+	width: 51px;
+	height: 16px;
+	background:
+}
+
+.cartoonPlayIcon {
+	display: inline-block;
+	width: 9px;
+	height: 10px;
+	margin: 3px 4px 0 0;
+	background: url(//www.qiyipic.com/common/fix/cartoon/smallPlayIcon_07.png) no-repeat;
+	vertical-align: top;
+	overflow: hidden
+}
+
+.cartoonMod-num .cartoonPlayIcon {
+	margin-top: 5px;
+	*margin-top: 3px
+}
+
+.cartoonMod-num em {
+	margin-left: 15px
+}
+
+.cartoonMod-left p {
+	line-height: 20px
+}
+
+.cartoonMod-con {
+	font-size: 12px;
+	color: #b9b9b9
+}
+
+.cartoonMod-right {
+	float: right
+}
+
+.cartoonMod-num {
+	padding: 7px 9px 0 0;
+	line-height: 20px;
+	font-size: 12px
+}
+
+.cartoonMoreBtn {
+	display: inline-block;
+	width: 62px;
+	height: 22px;
+	border: 1px solid #ccd0d7;
+	border-radius: 20px;
+	margin-top: 13px;
+	line-height: 22px;
+	text-align: center;
+	font-size: 0
+}
+
+.cartoonMoreBtn span {
+	font-size: 12px;
+	vertical-align: middle
+}
+
+.cartoonMoreBtn-ico {
+	display: inline-block;
+	width: 17px;
+	height: 10px;
+	margin: 6px 0 6px 4px;
+	background: url(//www.qiyipic.com/common/fix/cartoon/cartoon.png) no-repeat;
+	background-position: -240px -220px;
+	vertical-align: middle
+}
+
+.cartoonMoreBtn:hover {
+	background-color: #e3e7ee;
+	border-color: #e3e7ee;
+	color: #333
+}
+
+.cartoonMoreBtn:hover .cartoonMoreBtn-ico {
+	background-position: -260px -220px
+}
+
+.mod-collaborate {
+	margin-left: 26px
+}
+
+.aminePiclist-scroll-wrapper {
+	padding-left: 26px
+}
+
+.aminePiclist-scroll {
+	overflow: hidden;
+	position: relative;
+	width: 100%
+}
+
+.aminePiclist-scroll-pic {
+	margin-left: -26px
+}
+
+.aminePiclist-scroll-wrapper .wrapper-piclist {
+	position: relative
+}
+
+.aminePiclist_btnRight,
+.aminePiclist_btnLeft {
+	position: absolute;
+	top: 36px;
+	z-index: 99;
+	cursor: pointer
+}
+
+.aminePiclist_btnLeft {
+	left: 26px
+}
+
+.aminePiclist_btnRight {
+	right: 0
+}
+
+.aminePiclist_btnRight a,
+.aminePiclist_btnLeft a {
+	display: inline-block;
+	width: 28px;
+	height: 50px;
+	cursor: pointer
+}
+
+.aminePiclist_btnLeft a {
+	background: url(//www.qiyipic.com/common/fix/cartoon/aminePiclist_btnLeft-icon.png) no-repeat
+}
+
+.aminePiclist_btnRight a {
+	background: url(//www.qiyipic.com/common/fix/cartoon/aminePiclist_btnRight-icon.png) no-repeat
+}
+
+.cartoonDisc {
+	display: inline-block;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	margin: 0 9px;
+	background: #000;
+	vertical-align: middle;
+	overflow: hidden
+}
+
+.focus-wrapper {
+	height: 460px;
+	overflow: hidden
+}
+
+.topList-yc-6666 .top-yc_userCare .btn-care:hover {
+	background: #6cc900;
+	border: 1px solid #6cc900
+}
+
+.dm_cszlBanner {
+	background: url(//www.qiyipic.com/common/fix/dm_img/dm_cszlBanner.jpg) no-repeat top center;
+	width: 100%;
+	height: 200px
+}
+
+.dm_cszlTab {
+	height: 73px;
+	border-bottom: 1px solid #ebebeb;
+	width: 100%;
+	position: relative
+}
+
+.dm_cszlTab_ul {
+	margin-top: 3px;
+	margin-left: -70px
+}
+
+.dm_cszlTab_ul li {
+	float: left;
+	width: 60px;
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	margin-left: 70px;
+	position: relative
+}
+
+.dm_cszlTab_link {
+	font-size: 20px;
+	color: #333;
+	display: block
+}
+
+.dmCszl_botIcon {
+	width: 26px;
+	height: 4px;
+	border-radius: 2px;
+	background: #77b400;
+	display: none;
+	position: absolute;
+	bottom: -3px;
+	left: 15px
+}
+
+.dm_cszlTab_ul li.selected .dm_cszlTab_link,
+.dm_cszlTab_link:hover {
+	color: #539902
+}
+
+.dm_cszlTab_ul li.selected .dmCszl_botIcon,
+.dm_cszlTab_link:hover .dmCszl_botIcon {
+	display: block
+}
+
+.dm_cszlBtn {
+	position: absolute;
+	right: -5px;
+	top: 14px;
+	background: url(//www.qiyipic.com/common/fix/dm_img/dm_cszlBtn.png) no-repeat;
+	width: 166px;
+	height: 50px;
+	display: block;
+	font-size: 0
+}
+
+.dm_cszlBtn:hover {
+	background: url(//www.qiyipic.com/common/fix/dm_img/dm_cszlBtnH.png) no-repeat
+}
+
+.dm_cszl_title {
+	height: 50px;
+	line-height: 50px;
+	margin-bottom: 17px
+}
+
+.cszl_titleL {
+	float: left
+}
+
+.cszl_titleLink {
+	font-size: 24px;
+	color: #333;
+	display: block;
+	vertical-align: middle
+}
+
+.cszl_titleIcon {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	vertical-align: middle;
+	float: left
+}
+
+.titleIcon_gc {
+	background: url(//www.qiyipic.com/common/fix/dm_img/dm_cszlGcIcon.png) no-repeat
+}
+
+.titleIcon_zw {
+	background: url(//www.qiyipic.com/common/fix/dm_img/dm_cszlZwIcon.png) no-repeat
+}
+
+.titleIcon_dh {
+	background: url(//www.qiyipic.com/common/fix/dm_img/dm_cszlDhIcon.png) no-repeat
+}
+
+.titleIcon_music {
+	background: url(//www.qiyipic.com/common/fix/dm_img/dm_cszlYyIcon.png) no-repeat
+}
+
+.cszl_titleTxt {
+	display: inline-block;
+	vertical-align: middle;
+	float: left;
+	padding-left: 15px
+}
+
+.cszl_titleR {
+	float: right;
+	font-size: 0
+}
+
+.cszl_refsh {
+	width: 77px;
+	height: 22px;
+	line-height: 22px;
+	border: 1px solid #ccd0d7;
+	border-radius: 11px;
+	display: inline-block;
+	text-align: center;
+	font-size: 12px;
+	vertical-align: middle
+}
+
+.cszlRefshIcon {
+	display: inline-block;
+	width: 17px;
+	height: 13px;
+	vertical-align: -2px;
+	margin-right: 7px;
+	background: url(//www.qiyipic.com/common/fix/dm_img/dm_cszlRefshIcon.png) no-repeat
+}
+
+.cszl_refsh:hover {
+	background-color: #e3e7ee;
+	border-color: #e3e7ee;
+	color: #333
+}
+
+.cszl_titleR .cartoonMoreBtn {
+	margin-top: 0;
+	vertical-align: middle;
+	margin-left: 15px
+}
+
+.qypage-980 .site-piclist-192108_dm {
+	margin-left: -60px
+}
+
+.qypage-980 .site-piclist-192108_dm li {
+	width: 460px;
+	padding-left: 60px
+}
+
+.cszl_pageChick_box {
+	position: relative
+}
+
+.dm_pageBotL {
+	width: 32px;
+	height: 53px;
+	background: url(//www.qiyipic.com/common/fix/dm_img/cszl_footerL.png) no-repeat;
+	position: absolute;
+	left: -75px;
+	bottom: -50px
+}
+
+.dm_pageBotC {
+	width: 111px;
+	height: 33px;
+	background: url(//www.qiyipic.com/common/fix/dm_img/cszl_footerC.png) no-repeat;
+	position: absolute;
+	left: 50%;
+	margin-left: -55px;
+	bottom: -42px
+}
+
+.dm_sortingBox {
+	height: 18px;
+	line-height: 18px;
+	padding: 32px 0
+}
+
+.sorting_txt {
+	font-size: 16px;
+	color: #999;
+	margin-right: 20px;
+	display: inline-block;
+	float: left
+}
+
+.dm_sorting_link {
+	float: left;
+	margin-right: 25px;
+	font-size: 16px;
+	color: #333
+}
+
+.dm_cheboxIcon {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	background: url(//www.qiyipic.com/common/fix/dm_img/cszl_cheboxIcon.png) no-repeat;
+	float: left;
+	cursor: pointer;
+	margin-right: 7px
+}
+
+.dm_sortingBox a.selected .dm_cheboxIcon {
+	background: url(//www.qiyipic.com/common/fix/dm_img/cszl_cheboxIconS.png) no-repeat
+}
+
+.dm_sortingBox a.selected,
+.dm_sorting_link:hover {
+	color: #6a9e1b
+}
+
+.dm_cszl_page {
+	margin-top: 25px;
+	margin-bottom: 110px
+}
+
+.mb40 {
+	margin-bottom: 40px
+}
+
+.qy-col218 {
+	width: 218px
+}
+
+.followVideos {
+	padding-left: 26px
+}
+
+.followVideos ul {
+	height: 315px;
+	border-bottom: 1px solid #e4e4e4
+}
+
+.followVideos-link {
+	display: block;
+	height: 44px;
+	border: 1px solid #e4e4e4;
+	border-bottom: 0;
+	font-size: 0;
+	text-align: center;
+	line-height: 44px
+}
+
+.selected .followVideos-link {
+	position: relative;
+	height: 42px;
+	line-height: 42px;
+	margin-bottom: -2px;
+	border: 2px solid #5aa700;
+	background: #eef6e5;
+	overflow: hidden
+}
+
+.followVideos-link span {
+	font-size: 16px;
+	vertical-align: middle
+}
+
+.followVideos-icon {
+	display: none;
+	width: 28px;
+	height: 28px;
+	margin: 8px 10px 8px 0;
+	background: url(//www.qiyipic.com/common/fix/cartoon/cartoon.png) no-repeat;
+	vertical-align: middle
+}
+
+li.selected .followVideos-icon {
+	display: inline-block
+}
+
+.followVideos-icon01 {
+	background-position: 0 -180px
+}
+
+.followVideos-icon02 {
+	background-position: -40px -180px
+}
+
+.followVideos-icon03 {
+	background-position: -80px -180px
+}
+
+.followVideos-icon04 {
+	background-position: -120px -180px
+}
+
+.followVideos-icon05 {
+	background-position: -160px -180px
+}
+
+.followVideos-icon06 {
+	background-position: -200px -180px
+}
+
+.followVideos-icon07 {
+	background-position: -240px -180px
+}
+
+.sideAdPocartoon-Wrap {
+	padding: 78px 0 0 26px;
+	width: 290px;
+	height: 313px
+}
+
+.qypage-980 .sideAdPocartoon-Wrap {
+	padding-left: 61px
+}
+
+.qypage-1180 .sideAdPocartoon-Wrap {
+	padding-left: 44px
+}
+
+.sideAdPocartoon-Wrap object {
+	width: 290px;
+	height: 313px
+}
+
+.sideAdPoNew {
+	position: static;
+	width: 100%;
+	height: 100%
+}
+
+.sideAdPoNew .ad-flash-index_layout {
+	position: static;
+	width: 100%;
+	height: 100%
+}
+
+.sideAdPoNew-link,
+.sideAdPoNew-link img {
+	display: block;
+	width: 100%;
+	height: 100%
+}
+
+.cartoonHotList-wrap {
+	padding-left: 26px
+}
+
+.cartoonHotList-wrap li {
+	position: relative;
+	margin-bottom: 14px;
+	font-size: 0
+}
+
+.cartoonHotList-wrap li.changeLiBtm {
+	margin-bottom: 17px
+}
+
+.cartoonHotList-wrap dl {
+	padding-left: 30px;
+	font-size: 14px
+}
+
+.cartoonHotList-wrap dl dt {
+	float: left;
+	width: 84px;
+	height: 54px;
+	margin-right: 8px
+}
+
+.cartoonHotList-wrap dt a,
+.cartoonHotList-wrap dt a img {
+	display: block;
+	width: 100%;
+	height: 100%
+}
+
+.cartoonHotList-wrap dl dd {
+	line-height: 16px;
+	float: left
+}
+
+.cartoonHotList-wrap .cartoonHotList-score-dd {
+	height: 16px
+}
+
+.cartoonHotListNum {
+	position: absolute;
+	top: 0;
+	width: 22px;
+	height: 28px;
+	background: url(//www.qiyipic.com/common/fix/cartoon/cartoon.png) no-repeat;
+	background-position: 0 -220px;
+	text-align: center;
+	font-size: 14px;
+	color: #5ea906
+}
+
+.cartoonHotListNum-gray {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-right: 9px;
+	background: #b2b8c2;
+	text-align: center;
+	color: #fff;
+	vertical-align: middle;
+	font-size: 12px
+}
+
+.cartoonHotList-title {
+	display: block;
+	width: 168px;
+	_width: 165px;
+	height: 38px;
+	line-height: 18px;
+	overflow: hidden
+}
+
+.qypage-980 .cartoonHotList-title {
+	width: 204px;
+	_width: 201px
+}
+
+.qypage-1180 .cartoonHotList-title {
+	width: 186px;
+	_width: 183px
+}
+
+.cartoonHotList-titleBtm {
+	display: inline-block;
+	width: 260px;
+	height: 20px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	vertical-align: middle;
+	font-size: 14px
+}
+
+.qypage-980 .cartoonHotList-titleBtm {
+	width: 296px
+}
+
+.qypage-1180 .cartoonHotList-titleBtm {
+	width: 278px
+}
+
+.cartoonHotList-score {
+	font-size: 12px;
+	color: #999
+}
+
+.cartoonHotList-score em {
+	color: #f15a24;
+	font-weight: bold
+}
+
+.topList-yc-6666 {
+	border: 0;
+	background: 0;
+	padding: 0
+}
+
+.cartoonUp-wrap {
+	padding-left: 26px
+}
+
+.cartoonUp-tab li {
+	float: left;
+	width: 143px;
+	height: 32px;
+	line-height: 32px;
+	border: 1px solid #cfcfcf;
+	background: #f7f7f7;
+	text-align: center;
+	color: #333;
+	cursor: pointer;
+	font-size: 12px
+}
+
+.cartoonHotList-wrap .cartoonUp-tab li {
+	margin-bottom: 0;
+	font-size: 12px
+}
+
+.qypage-980 .cartoonUp-tab li {
+	width: 161px
+}
+
+.qypage-1180 .cartoonUp-tab li {
+	width: 152px
+}
+
+.cartoonUp-tab li.item2 {
+	width: 144px;
+	margin-left: -1px
+}
+
+.qypage-980 .cartoonUp-tab li.item2 {
+	width: 162px
+}
+
+.qypage-1180 .cartoonUp-tab li.item2 {
+	width: 153px
+}
+
+.cartoonUp-tab li.selected {
+	position: relative;
+	border-color: #5aa700;
+	color: #5aa700;
+	z-index: 10
+}
+
+.cartoonUp-list {
+	padding-top: 17px
+}
+
+.cartoonUp-list li {
+	position: relative;
+	border-bottom: 1px solid #ecebeb;
+	margin-bottom: 15px;
+	padding-bottom: 16px;
+	vertical-align: top
+}
+
+.cartoonUp-list dl {
+	padding-left: 30px
+}
+
+.cartoonUp-list dl dt {
+	float: left;
+	width: 60px;
+	height: 60px;
+	margin-right: 10px;
+	overflow: hidden
+}
+
+.cartoonUp-list dt a,
+.cartoonUp-list dt img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%
+}
+
+.upAdminInfo {
+	float: left;
+	display: table;
+	*position: relative;
+	height: 60px;
+	width: 96px;
+	overflow: hidden
+}
+
+.upAdmins-inner {
+	*position: relative;
+	*top: -50%
+}
+
+.upAdmins {
+	display: table-cell;
+	vertical-align: middle;
+	*position: absolute;
+	*top: 50%
+}
+
+.upAdminName {
+	display: block;
+	width: 96px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis
+}
+
+.upAdminOrderNum {
+	font-size: 12px;
+	color: #999
+}
+
+.cartoonUp-list .cartoonHotListNum {
+	top: 16px
+}
+
+.cartoonUp-list .top-yc_userCare {
+	position: absolute;
+	right: 0;
+	top: 16px
+}
+
+.cartoonUp-list .top-yc_userCare .btn-care {
+	width: 58px;
+	height: 22px;
+	line-height: 22px
+}
+
+..cartoonUp-list .top-yc_userCare .btn-care:hover {
+	background: #6cc900;
+	border-color: #6cc900
+}
+
+..cartoonUp-list .top-yc_userCare .btn-care-cancel,
+..cartoonUp-list .top-yc_userCare .btn-care-cared:hover,
+..cartoonUp-list .top-yc_userCare .btn-care-cared:active {
+	background-color: #f5f5f5;
+	border-color: #f5f5f5
+}
+
+.cartoonHotList_ul {
+	margin-top: 15px
+}
+
+.anchorNav-wrapper {
+	position: fixed;
+	_position: absolute;
+	bottom: 110px;
+	right: 10px;
+	z-index: 100
+}
+
+.anchorNav-icon {
+	display: block;
+	width: 65px;
+	height: 46px;
+	background: url(//www.qiyipic.com/common/fix/cartoon/cartoon-fix_03.png) no-repeat;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled="true", sizingMethod="scale", src="//www.qiyipic.com/common/fix/cartoon/cartoon-fix_03.png");
+	_background: 0
+}
+
+.anchorNavList li {
+	width: 78px;
+	height: 39px;
+	border: 1px solid #dbdbdb;
+	margin-bottom: -1px;
+	text-align: center;
+	line-height: 39px;
+	background: #fff;
+	font-size: 12px
+}
+
+.anchorNavList a {
+	display: inline-block;
+	width: 100%;
+	height: 100%
+}
+
+.anchorNavList li.selected a {
+	background: #5aa700;
+	color: #fff
+}
+
+.backToTop {
+	width: 78px;
+	height: 54px;
+	border: 1px solid #dbdbdb;
+	margin-top: 10px;
+	text-align: center;
+	line-height: 54px;
+	cursor: pointer;
+	background: #fff
+}
+
+.backToTop-icon {
+	display: block;
+	width: 25px;
+	height: 14px;
+	margin: 20px auto 0;
+	background: url(//www.qiyipic.com/common/fix/cartoon/cartoon.png) no-repeat;
+	background-position: -260px -260px
+}
+
+@charset "utf-8";
+.dm_ldyBanner {
+	width: 100%;
+	height: 200px;
+	background: url(//www.qiyipic.com/common/fix/dm_img/dm_wjOrxf_banner.jpg) no-repeat top center
+}
+
+.dm_ldyTab {
+	background: #f7f7f7;
+	height: 49px;
+	border-bottom: 1px solid #e4e4e4
+}
+
+.dm_ldyTab_ul li {
+	width: 226px;
+	height: 49px;
+	line-height: 49px;
+	text-align: center;
+	float: left;
+	border-left: 1px solid #e4e4e4;
+	border-right: 1px solid #e4e4e4
+}
+
+.dm_ldy_liItem2 {
+	margin-left: -1px
+}
+
+.dm_ldyTab_ul li.selected {
+	background: #fff;
+	height: 50px
+}
+
+.dm_ldyTab_link {
+	font-size: 16px;
+	color: #333
+}
+
+.dm_ldyTab_ul li.selected .dm_ldyTab_link {
+	color: #539902
+}
+
+.dm_ldyTab_link i {
+	display: inline-block;
+	width: 30px;
+	margin-right: 14px
+}
+
+.dm_xfIcon {
+	height: 26px;
+	background: url(//www.qiyipic.com/common/fix/dm_img/dm_xfIcon.png) no-repeat;
+	vertical-align: -6px
+}
+
+.dm_wjIcon {
+	height: 30px;
+	background: url(//www.qiyipic.com/common/fix/dm_img/dm_wjIcon.png) no-repeat;
+	vertical-align: -8px
+}
+
+.dm_ldyMbx {
+	margin-top: 37px;
+	font-size: 12px;
+	color: #333
+}
+
+.dm_ldyMbx_link {
+	margin-right: 5px
+}
+
+.dm_ldyCont {
+	padding-top: 15px
+}
+
+.dm_ldyCont_ul li {
+	margin-bottom: 15px
+}
+
+.dm_list_link {
+	display: block
+}
+
+.dm_ldyList_L {
+	width: 212px;
+	height: 109px;
+	float: left
+}
+
+.dm_listL_inner {
+	width: 192px;
+	height: 109px;
+	overflow: hidden
+}
+
+.dm_ldyList_R {
+	height: 123px;
+	overflow: hidden;
+	border-bottom: 1px solid #e4e4e4;
+	width: 768px;
+	float: left;
+	margin-bottom: 15px
+}
+
+.qypage-1180 .dm_ldyList_R {
+	width: 968px
+}
+
+.qypage-1380 .dm_ldyList_R {
+	width: 1168px
+}
+
+.dm_listTitle {
+	font-size: 16px;
+	color: #333;
+	line-height: 26px
+}
+
+.dm_listTitle_time {
+	font-size: 12px;
+	color: #999;
+	margin-left: 15px
+}
+
+.dm_list_subBox {
+	font-size: 0;
+	height: 55px
+}
+
+.dm_subLink {
+	display: inline-block;
+	font-size: 12px;
+	color: #999;
+	padding: 0 8px;
+	height: 18px;
+	line-height: 18px;
+	border: 1px solid #e7e7e7;
+	margin-right: 10px;
+	margin-top: 8px
+}
+
+.dm_list_jj {
+	height: 28px;
+	line-height: 28px;
+	font-size: 12px;
+	color: #333;
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis
+}
+
+.dm_list_jj span {
+	color: #999
+}
+
+.dm_list_more {
+	text-align: center
+}
+
+.dm_list_moreLink {
+	width: 318px;
+	height: 48px;
+	line-height: 48px;
+	border: 1px solid #e4e4e4;
+	background: #f5f5f5;
+	border-radius: 3px;
+	display: inline-block;
+	font-size: 14px;
+	color: #333
+}
+
+.dm_moreIcon {
+	display: inline-block;
+	width: 9px;
+	height: 5px;
+	background: url(//www.qiyipic.com/common/fix/dm_img/dm_moreIcon.png) no-repeat;
+	margin-left: 8px;
+	vertical-align: middle
+}
+
+.site-piclist-192108_dm {
+	margin-left: -65px
+}
+
+.site-piclist-192108_dm li {
+	width: 415px;
+	padding-left: 65px;
+	margin-bottom: 30px
+}
+
+.site-piclist-192108_dm li .cszl_item {
+	height: 108px;
+	display: block
+}
+
+.cszl_picL {
+	width: 192px;
+	height: 100%;
+	float: left;
+	margin-right: 15px
+}
+
+.cszl_picL img {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background: #f2f2f2 url(//www.qiyipic.com/common/fix/site/site-nopic.png) no-repeat center center
+}
+
+.cszl_picTitle {
+	font-size: 16px;
+	color: #333;
+	height: 26px;
+	line-height: 26px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis
+}
+
+.cszl_picInfo {
+	font-size: 12px;
+	color: #999;
+	height: 30px;
+	line-height: 15px;
+	overflow: hidden;
+	margin-top: 6px;
+	margin-bottom: 25px
+}
+
+.cszl_picBot {
+	font-size: 0
+}
+
+.cszl_picPlay,
+.cszl_picTime {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	height: 12px;
+	line-height: 12px;
+	font-size: 12px;
+	color: #999
+}
+
+.cszl_picPlay {
+	margin-right: 30px
+}
+
+.cszl_picPlay_icon {
+	width: 11px;
+	height: 12px;
+	display: inline-block;
+	background: url(//www.qiyipic.com/common/fix/dm_img/dm_cszlPlayIcon.png) no-repeat;
+	vertical-align: -1px;
+	margin-right: 5px
+}
+
+.cszl_picTime_icon {
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	background: url(//www.qiyipic.com/common/fix/dm_img/dm_cszlTimeIcon.png) no-repeat;
+	vertical-align: -1px;
+	margin-right: 5px
+}

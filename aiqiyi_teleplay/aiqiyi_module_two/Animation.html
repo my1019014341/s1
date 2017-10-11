@@ -1,0 +1,2180 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Animation</title>
+		<link rel="stylesheet" type="text/css" href="pargin/bootstrap-3.3.7/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/utils.css" />
+		<link rel="stylesheet" type="text/css" href="css/Animation.css" />
+		<link href="css/main.css" rel="stylesheet" type="text/css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<link href="css/sim-prev-anim.css" rel="stylesheet" type="text/css" />
+		<style></style>
+	</head>
+
+	<body>
+		
+		<div id="login_background">
+			<div id="login">
+				<div class="login_top">
+					<div class="login_top_img"></div>
+					<span>手机扫码登陆</span>
+					<button type="button" class="close" onclick="closeLogin()"></button>
+				</div>
+				<div class="login_middle">
+					<div class="login_middle_1">
+						<div id="login_middle_right">
+							<div id="login_middle_right_top">
+								打开
+								<a href="">· 爱奇艺手机APP</a>
+								<p>扫描二维码登陆</p>
+							</div>
+							<div id="login_middle_right_bottom" onmouseenter="changeToRight()" onmouseleave="changeToleft()">
+								<img src="img/login/QQ图片20170920084103.png" />
+							</div>
+						</div>
+						<div id="login_middle_left">
+							<img src="img/login/QQ图片20170920084459.png" />
+						</div>
+					</div>
+					<div class="login_middle_2">
+						<div class="login_middle_2_top">其他方式登陆</div>
+						<div class="login_middle_2_middle">
+							<ul class="login_middle_2_ul">
+								<li>
+									<a href="https://graph.qq.com/oauth/show?which=Login&display=pc&response_type=code&client_id=100234077&redirect_uri=https://passport.yhd.com/qq/callback.do&scope=get_user_info&state=09b0987bb35356c95a4ccc16e594266b" target="_blank"><img src="img/login/QQ.png" /></a>
+								</li>
+								<li>
+									<a href="https://open.weixin.qq.com/connect/qrconnect?appid=wxbdc5610cc59c1631&redirect_uri=https%3A%2F%2Fpassport.yhd.com%2Fwechat%2Fcallback.do&response_type=code&scope=snsapi_login&state=aa687158acbbd5c3b79520fb221ad69d#wechat_redirect " target="_blank "><img src="img/login/微信.png" /></a>
+								</li>
+								<li>
+									<a href="https://api.weibo.com/oauth2/authorize?client_id=2794712645&redirect_uri=https%3A%2F%2Fpassport.yhd.com%2Fsina%2Fcallback.do&state=700263a5269043f958c03c09bd961730&display=default&response_type=code " target="_blank "><img src="img/login/新浪微博.png" /></a>
+								</li>
+								<li>
+									<a href="https://openapi.baidu.com/oauth/2.0/authorize?client_id=kYGyYj9HePPBbpKqGvpZgpMS&scope=basic&response_type=code&state=50ad213f8b5e5c426465a7d9354d1fc0&redirect_uri=https%3A%2F%2Fpassport.yhd.com%2Fbaidu%2Fcallback.do" target="_blank"><img src="img/login/百度.png" /></a>
+								</li>
+							</ul>
+							<ul class="login_middle_2_ul">
+								<li>
+									<a href="http://t.qq.com/" target="_blank"><img src="img/login/腾讯微博.png" /></a>
+								</li>
+								<li>
+									<a href="http://graph.renren.com/oauth/grant?client_id=34dbd204cebc423baeeed4bcbf0f1af9&redirect_uri=https%3A%2F%2Fpassport.yhd.com%2Frenren%2Fcallback.do&response_type=code&display=page&state=80aa63bec6e915cdbbb2167ba7a7969a&secure=true&origin=00000&x_renew=true" target="_blank"><img src="img/login/人人网.png" /> </a>
+								</li>
+							</ul>
+						</div>
+						<div class="login_middle_2_bottom">
+							<a href="http://www.iqiyi.com/iframe/smslogin?from_url=http%3A%2F%2Fwww.iqiyi.com%2F" target="_blank">短信登陆</a>
+						</div>
+					</div>
+					<div class="login_middle_3">
+						<form>
+							<div class="login_middle_3_top">
+								<div class="login_middle_3_top_left">
+									<select>
+										<option selected="selected">中国大陆</option>
+										<option>美国/加拉大</option>
+										<option>德国</option>
+										<option>法国</option>
+									</select>
+								</div>
+								<div class="login_middle_3_top_right">
+
+									<input class="login_middle_3_input" type="text" />
+									<p>请输入手机号或邮箱</p>
+								</div>
+							</div>
+							<div id="login_middle_3_middle">
+								<input type="password" class="login_middle_3_input" id="login_middle_3_password" onkeyup="submitColorChange(this)" />
+								<p>请输入密码</p>
+								<div id="login_middle_3_middle_change"></div>
+								<div class="login_middle_3_forget">
+									<a href="javascript:;">忘记密码</a>
+									<div class="login_middle_3_hidden">
+										<span>忘记密码了?</span><br />
+										<a href="http://passport.iqiyi.com/pages/secure/password/find_pwd_index.action" target="_blank">找回密码</a><br />
+										<a href="http://127.0.0.1:8020/my_aiqiyi/login.html?__hbt=1506310118628" target="_blank">短信登陆</a>
+									</div>
+								</div>
+							</div>
+							<div id="login_middle_3_bottom">
+								<input type="submit" value="登陆" />
+							</div>
+						</form>
+
+					</div>
+					<div class="login_middle_4">
+						<form>
+							<div class="login_middle_3_top">
+								<div class="login_middle_3_top_left">
+									<select>
+										<option selected="selected">中国大陆</option>
+										<option>美国/加拉大</option>
+										<option>德国</option>
+										<option>法国</option>
+									</select>
+								</div>
+								<div class="login_middle_3_top_right">
+									<input class="login_middle_3_input" type="text" onkeyup="submitColorChange(this)" />
+									<p>请输入手机号</p>
+								</div>
+							</div>
+							<div id="login_middle_4_bottom">
+								<span>点击注册即表示您同意</span>
+								<a href="http://www.iqiyi.com/user/register/protocol.html" target="_blank">
+									<<爱奇艺 用户服务协议>></爱奇艺>
+								</a>
+								<input type="submit" value="注册" />
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="login_bottom">
+					<a href="javascript:;" id="login_zhuce">注册</a>
+					<div id="login_bottom_char">
+						<a id="login_zhanghao">账号密码登陆</a>
+						<a id="login_saoma1">手机扫码登陆</a>
+						<span>|</span>
+						<a id="login_other" href="javascript:;">其他登陆</a>
+						<a id="login_saoma2" href="javascript:;">手机扫码登陆</a>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!--**********************************************************登陆注册引用结束**********************************-->
+		<a name="top"></a>
+		<a name="top"></a>
+		<div class="a">
+			<div class="b">
+				<div class="c">
+					<a href="#"><img src="img/a.png" /></a>
+				</div>
+				<div class="d">
+					<form>
+						<input class="d1" type="search" placeholder="那年花开月正圆">
+					<input class="d2" type="image" src="img/search.png">
+						<div class="cookie">
+							<p>历史搜索</p>
+							<ul>
+								<!--<li><a href="">123</a> </li>
+								<li><a href="">123</a> </li>
+								<li><a href="">123</a> </li>-->
+							</ul>
+						</div>
+					</form>
+				</div>
+				<div class="e">
+					<ul>
+						<li>
+							<a href="javascript:;" id="login_start" onclick="openLogin()">登陆</a>
+						</li>
+						<li>
+							<a href="javascript:;" id="login_start" onclick="openZhuce()">注册</a>
+						</li>
+						<li>
+							<a href="">开通VIP</a>
+						</li>
+						<li>
+							<a href="">上传</a>
+						</li>
+						<li>
+							<a href="">下载客户端</a>
+						</li>
+						<li>
+							<a href="">消息</a>
+						</li>
+						<li>
+							<a href="">播放记录</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="a fix">
+			<div class="b">
+				<div class="c">
+					<a href="#"><img src="img/a.png" /></a>
+				</div>
+				<div class="d">
+					<form>
+						<input class="d1" type="search" placeholder="那年花开月正圆">
+					<input class="d2" type="image" src="img/search.png">
+						<div class="cookie">
+							<p>历史搜索</p>
+							<ul>
+								<!--<li><a href="">123</a> </li>
+								<li><a href="">123</a> </li>
+								<li><a href="">123</a> </li>-->
+							</ul>
+						</div>
+					</form>
+				</div>
+				<div class="e">
+					<ul>
+						<li>
+							<a href="">登录</a>
+						</li>
+						<li>
+							<a href="">注册</a>
+						</li>
+						<li>
+							<a href="">开通VIP</a>
+						</li>
+						<li>
+							<a href="">上传</a>
+						</li>
+						<li>
+							<a href="">下载客户端</a>
+						</li>
+						<li>
+							<a href="">消息</a>
+						</li>
+						<li>
+							<a href="">播放记录</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+			
+		<!--头部轮播图-->
+		<div class="top_adver">
+			<a href=""></a>
+			<div class="bottm_adver">
+				<div class="button_left"></div>
+				<div class="button_right"></div>
+				<div class="adv_img">
+					<ul>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr8o2ajo.html"><img src="http://pic0.qiyipic.com/common/lego/20170409/b78dbe80ebe342d8a902c7c1ec0a47d1.jpg" /></a>
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr8o1d8s.html"><img src="http://pic9.qiyipic.com/common/lego/20170228/71fe39697c1b42feb6764d06a123d75b.jpg" /></a>
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr8p1xww.html"><img src="http://pic9.qiyipic.com/common/lego/20170812/f32ea8e226ec4a85bfb605dae4e30cd4.jpg" /></a>
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/a_19rrhdogml.html"><img src="http://pic1.qiyipic.com/common/lego/20170912/3aa769ad2ba242bcb0de9451e43c40bd.jpg" /></a>
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr919h7k.html?list=19rrlcw1xa"><img src="http://pic2.qiyipic.com/common/lego/20170915/35824163ba2e45089b5be54b7e484ebb.jpg" /></a>
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr8oa3y0.html"><img src="http://pic5.qiyipic.com/common/lego/20170813/55ba30512d734edea5bdd860932271fd.jpg" /></a>
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr8op1ck.html"><img src="http://pic5.qiyipic.com/common/lego/20170826/44e4a8d312f140f0995d695a4dbe220a.jpg" /></a>
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr8p01h4.html"><img src="http://pic2.qiyipic.com/common/lego/20170909/be7957c36d604cf49536b8fe578be331.jpg" /></a>
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr8mzyns.html"><img src="http://pic9.qiyipic.com/common/lego/20170711/44e4684da1fb47fa986f189c672d67bd.jpg" /></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="adv_title">
+				<div><img src="http://www.qiyipic.com/common/fix/site/index-playBtn.png" /></div> <span>海贼王 第805集</span>
+			</div>
+		</div>
+		
+		<!--各种分类-->
+		<div class="Ani_kind">
+			<div class="area_kind">
+				<p>按地区&nbsp;&nbsp;&nbsp;
+					<div></div>
+				</p>
+				<ul>
+					<li>
+						<a href="http://list.iqiyi.com/www/4/-------------4-1-1-iqiyi--.html">全部</a>
+					</li>
+					<li>
+						<a href="http://list.iqiyi.com/www/4/37-------------4-1-1-iqiyi--.html">国产</a>
+					</li>
+					<li>
+						<a href="http://list.iqiyi.com/www/4/38-------------4-1-1-iqiyi--.html">日本</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="http://list.iqiyi.com/www/4/1106-------------4-1-1-iqiyi--.html">韩国</a>
+					</li>
+					<li>
+						<a href="http://list.iqiyi.com/www/4/30218-------------4-1-1-iqiyi--.html">欧美</a>
+					</li>
+					<li>
+						<a href="http://www.iqiyi.com/zhuanti/dmzthz.html">专题</a>
+					</li>
+				</ul>
+			</div>
+			<div class="type_kind">
+				<p>按类型&nbsp;&nbsp;&nbsp;
+					<div></div>
+				</p>
+				<ul>
+					<li>
+						<a href="http://list.iqiyi.com/www/4/----30220---------4-1-1-iqiyi--.html">动画</a>
+					</li>
+					<li>
+						<a href="http://list.iqiyi.com/www/4/----30223---------4-1-1-iqiyi--.html">特摄</a>
+					</li>
+					<li>
+						<a href="http://www.iqiyi.com/dongman/ycpd.html">原创频道</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="http://list.iqiyi.com/www/4/-----30226--------4-1-1-iqiyi--.html">轻小说改编</a>
+					</li>
+					<li>
+						<a href="http://list.iqiyi.com/www/4/-----30227--------4-1-1-iqiyi--.html">漫画改编</a>
+					</li>
+
+				</ul>
+			</div>
+			<div class="style_kind">
+				<p>按风格&nbsp;&nbsp;&nbsp;
+					<div></div>
+				</p>
+				<ul>
+					<li>
+						<a href="http://list.iqiyi.com/www/4/-----30232--------4-1-1-iqiyi--.html">热血</a>
+					</li>
+					<li>
+						<a href="http://list.iqiyi.com/www/4/-----30233--------4-1-1-iqiyi--.html">催泪</a>
+					</li>
+					<li>
+						<a href="http://list.iqiyi.com/www/4/-----30240--------4-1-1-iqiyi--.html">后宫</a>
+					</li>
+					<li>
+						<a href="http://list.iqiyi.com/www/4/-----30243--------4-1-1-iqiyi--.html">恋爱</a>
+					</li>
+					<li>
+						<a href="http://list.iqiyi.com/www/4/-----30261--------4-1-1-iqiyi--.html">美少女</a>
+					</li>
+					<li>
+						<a href="http://list.iqiyi.com/www/4/-----30241--------4-1-1-iqiyi--.html">机战</a>
+					</li>
+					<li>
+						<a href="http://list.iqiyi.com/www/4/-----30242--------4-1-1-iqiyi--.html">基腐</a>
+					</li>
+					<li>
+						<a href="http://list.iqiyi.com/www/4/-----30257--------4-1-1-iqiyi--.html">神魔</a>
+					</li>
+					<li>
+						<a href="http://list.iqiyi.com/www/4/-----30268--------4-1-1-iqiyi--.html">竞技</a>
+					</li>
+					<li>
+						<a href="http://list.iqiyi.com/www/4/-----30234--------4-1-1-iqiyi--.html">治愈</a>
+					</li>
+
+				</ul>
+				<ul>
+					<li>
+						<a href="http://list.iqiyi.com/www/4/-----30235--------4-1-1-iqiyi--.html">猎奇</a>
+					</li>
+					<li>
+						<a href="http://list.iqiyi.com/www/4/-----30239--------4-1-1-iqiyi--.html">战斗</a>
+					</li>
+					<li>
+						<a href="http://list.iqiyi.com/www/4/-----30245--------4-1-1-iqiyi--.html">科幻</a>
+					</li>
+					<li>
+						<a href="http://list.iqiyi.com/www/4/-----30248--------4-1-1-iqiyi--.html">推理</a>
+					</li>
+					<li>
+						<a href="http://list.iqiyi.com/www/4/-----30252--------4-1-1-iqiyi--.html">日常</a>
+					</li>
+					<li>
+						<a href="http://list.iqiyi.com/www/4/-----30254--------4-1-1-iqiyi--.html">历史</a>
+					</li>
+					<li>
+						<a href="http://list.iqiyi.com/www/4/-----30255--------4-1-1-iqiyi--.html">美食</a>
+					</li>
+					<li>
+						<a href="http://list.iqiyi.com/www/4/-----30258--------4-1-1-iqiyi--.html">偶像</a>
+					</li>
+					<li>
+						<a href="http://list.iqiyi.com/www/4/-----30260--------4-1-1-iqiyi--.html">伪娘</a>
+					</li>
+					<li>
+						<a href="http://list.iqiyi.com/www/4/-----30231--------4-1-1-iqiyi--.html">经典</a>
+					</li>
+
+				</ul>
+			</div>
+			<div class="all_kind">
+				<a class="all_kind_img" href="http://list.iqiyi.com/www/4/----------------iqiyi--.html"></a>
+				<a href="http://list.iqiyi.com/www/4/----------------iqiyi--.html">全部分类</a>
+			</div>
+		</div>
+		
+		<!--官方推荐-->
+		<div class="recommend li_style_1">
+			<div class="rec_title">
+				<div class="title_img">
+
+				</div><span>官方推荐</span>
+			</div>
+			<ul class="img_list">
+				<li>
+					<a href="http://www.iqiyi.com/v_19rroopiy0.html"><img src="http://pic1.qiyipic.com/image/20170205/76/18/a_100013208_m_601_m8_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rroopiy0.html">龙珠超</a>
+					<div class="pos_vip"></div>
+					<div class="pos_left_show">24.4亿</div>
+					<div class="pos_right_show">更新至107集</div>
+					<p>新的敌人即将来袭</p>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rr7ya6ew.html"><img src="http://pic2.qiyipic.com/image/20170831/d6/fc/a_100058440_m_601_m1_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rr7ya6ew.html">捷德奥特曼</a>
+					<div class="pos_vip"></div>
+					<div class="pos_left_show">1.7亿</div>
+					<div class="pos_right_show">更新至11集</div>
+					<p>自我的证明</p>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rrb3xn68.html"><img src="http://pic0.qiyipic.com/image/20170401/d3/93/a_100047949_m_601_m1_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rrb3xn68.html">博人传 火影忍者新时代</a>
+					<!--<div class="pos_vip"></div>-->
+					<div class="pos_left_show">2.5亿</div>
+					<div class="pos_right_show">更新至25集</div>
+					<p>火之意志世代传承</p>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rr8pw23k.html"><img src="img/v_113437812_m_601_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rr8pw23k.html">2017上海漫控潮流博览会</a>
+					<!--<div class="pos_vip"></div>-->
+					<div class="pos_left_show">1080P</div>
+					<div class="pos_right_show">01:38</div>
+					<p>不容错过的精彩漫展</p>
+				</li>
+			</ul>
+			<div class="cartoon_Box">
+				<div class="cartoon_left">
+					<ul>
+						<li>
+							<a href="http://www.iqiyi.com/dongman/sjwj"><img src="http://pic0.qiyipic.com/common/lego/20170821/bc9af97f52064def92eec71426eda8b3.jpg" /></a>
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/dongman/bjxf"><img src="http://pic2.qiyipic.com/common/lego/20170821/60f94c14c592433ebac99500381b42f1.jpg" /></a>
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/dongman/UGC/all"><img src="http://pic4.qiyipic.com/common/lego/20170821/c9ac6477d2404dcb8bafb81f5918acc4.jpg" /></a>
+						</li>
+					</ul>
+
+				</div>
+				<div class="cartoon_right">
+					<ul>
+						<li>
+							<a href="http://www.iqiyi.com/manhua/"><img src="http://pic9.qiyipic.com/common/lego/20170821/1562bcc9eef1427f9e48eaee40b20769.jpg" /></a>
+						</li>
+						<li>
+							<a href="http://up.ipd.pps.tv/upload?type=0"><img src="http://pic4.qiyipic.com/common/lego/20170821/5fdc4c7eb5354cb69d7774cff89a1c5c.jpg" /></a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<!--追翻表-->
+		<div class="Chasing">
+			<div class="rec_title">
+				<div class="title_img"></div><span>追翻表</span>
+				<div class="more">
+					<a href="http://list.iqiyi.com/www/4/38----30220---------4-1-1-iqiyi--.html">更多
+						<div class="more_img"></div>
+					</a>
+				</div>
+			</div>
+			<div class="Chas_list">
+				<ul>
+					<li>
+						<div class="week_img"></div>
+						<a href="#">周一</a>
+					</li>
+					<li>
+						<div class="week_img"></div>
+						<a href="#">周二</a>
+					</li>
+					<li>
+						<div class="week_img"></div>
+						<a href="#">周三</a>
+					</li>
+					<li>
+						<div class="week_img"></div>
+						<a href="#">周四</a>
+					</li>
+					<li>
+						<div class="week_img"></div>
+						<a href="#">周五</a>
+					</li>
+					<li>
+						<div class="week_img"></div>
+						<a href="#">周六</a>
+					</li>
+					<li>
+						<div class="week_img"></div>
+						<a href="#">周日</a>
+					</li>
+				</ul>
+			</div>
+			<div class="Chas_middle li_style_2">
+				<div class="week">
+					<ul class="img_list">
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr8o9t64.html"><img src="http://pic4.qiyipic.com/image/20170630/2a/09/a_100058459_m_601_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr8o9t64.html">洁癖男子！青山君</a>
+							<div class="pos_vip"></div>
+							<div class="pos_left_show">890万</div>
+							<div class="pos_right_show">12集全</div>
+
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr8oa4hg.html"><img src="http://pic1.qiyipic.com/image/20170630/60/15/a_100058445_m_601_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr8oa4hg.html">安志菊 第5集</a>
+							<!--<div class="pos_vip"></div>-->
+							<div class="pos_left_show">244万</div>
+							<div class="pos_right_show">更新至11集</div>
+
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr8oitww.html"><img src="http://pic9.qiyipic.com/image/20160630/73/9c/a_100027186_m_601_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr8oitww.html">智龙迷城X</a>
+							<!--<div class="pos_vip"></div>-->
+							<div class="pos_left_show">4214.1万</div>
+							<div class="pos_right_show">更新至63集</div>
+
+						</li>
+					</ul>
+					<ul class="img_list">
+
+					</ul>
+
+				</div>
+
+				<div class="week">
+					<ul class="img_list">
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr8nndhg.html"><img src="http://pic1.qiyipic.com/image/20170702/0b/65/a_100058449_m_601_m1_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr8nndhg.html">恋爱禁止的世界</a>
+							<div class="pos_vip"></div>
+							<div class="pos_left_show">5510.9万</div>
+							<div class="pos_right_show">12集全</div>
+
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rrak9u24.html"><img src="http://pic5.qiyipic.com/image/20160613/90/6b/a_100026422_m_601_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rrak9u24.html">凹凸世界</a>
+
+							<div class="pos_left_show">981.3万</div>
+							<div class="pos_right_show">更新至32集</div>
+
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr6zwi6o.html"><img src="http://pic0.qiyipic.com/common/lego/20170328/e62d94d16c2546ce92587fb6401dc490.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr6zwi6o.html">圣光不好惹 第1季</a>
+							<!--<div class="pos_vip"></div>-->
+							<div class="pos_left_show">133.3万</div>
+							<div class="pos_right_show">更新至6集</div>
+
+						</li>
+					</ul>
+					<ul class="img_list">
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr8mralg.html"><img src="http://pic1.qiyipic.com/image/20170401/c1/38/a_100047883_m_601_m1_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr8mralg.html">美妙天堂 偶像时间</a>
+
+							<div class="pos_left_show">2374.8万</div>
+							<div class="pos_right_show">25集全</div>
+
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr8mzyns.html"><img src="http://pic6.qiyipic.com/image/20170630/2c/00/a_100058466_m_601_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr8mzyns.html">带着智慧型手机闯荡异..</a>
+							<div class="pos_vip"></div>
+							<div class="pos_left_show">5281.1万</div>
+							<div class="pos_right_show">更新至11集</div>
+
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr8n09x0.html"><img src="http://pic4.qiyipic.com/image/20170630/2f/8a/a_100058532_m_601_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr8n09x0.html">NEW GAME! 第2季</a>
+							<!--<div class="pos_vip"></div>-->
+							<div class="pos_left_show">169.2万</div>
+							<div class="pos_right_show">更新至11集</div>
+
+						</li>
+					</ul>
+				</div>
+
+				<div class="week">
+					<ul class="img_list">
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr8n41iw.html"><img src="http://pic6.qiyipic.com/image/20170630/50/48/a_100058552_m_601_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr8n41iw.html">咕噜咕噜魔法阵</a>
+
+							<div class="pos_left_show">72.6万</div>
+							<div class="pos_right_show">更新至11集</div>
+
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr8muyyg.html"><img src="http://pic0.qiyipic.com/image/20170831/26/25/a_100041585_m_601_m1_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr8muyyg.html">口水三国 第2季</a>
+
+							<div class="pos_left_show">852.5万</div>
+							<div class="pos_right_show">更新至23集</div>
+
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr8474c8.html"><img src="http://pic9.qiyipic.com/image/20170715/a1/48/a_100046323_m_601_m1_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr8474c8.html">降灵记</a>
+							<!--<div class="pos_vip"></div>-->
+							<div class="pos_left_show">4768.4万</div>
+							<div class="pos_right_show">更新至15集</div>
+
+						</li>
+					</ul>
+					<ul class="img_list">
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr92y0js.html"><img src="http://pic0.qiyipic.com/image/20170426/6b/ea/a_100049321_m_601_m2_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr92y0js.html">天谕</a>
+							<div class="pos_vip"></div>
+							<div class="pos_left_show">1548.6万</div>
+							<div class="pos_right_show">更新至12集</div>
+
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rrb3xn68.html"><img src="http://pic0.qiyipic.com/image/20170401/d3/93/a_100047949_m_601_m1_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rrb3xn68.html">博人传 火影忍者新时代</a>
+							<!--<div class="pos_vip"></div>-->
+							<div class="pos_left_show">2.5亿</div>
+							<div class="pos_right_show">更新至25集</div>
+
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr90qxks.html"><img src="http://pic9.qiyipic.com/image/20170630/52/e8/a_100058535_m_601_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr90qxks.html">第一次的GAL</a>
+
+							<div class="pos_left_show">2534.8万</div>
+							<div class="pos_right_show">10集全</div>
+
+						</li>
+					</ul>
+				</div>
+
+				<div class="week">
+					<ul class="img_list">
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr8nwpq4.html"><img src="http://pic2.qiyipic.com/image/20170816/04/8d/a_100049833_m_601_m1_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr8nwpq4.html">画江湖之换世门生</a>
+							<div class="pos_vip"></div>
+							<div class="pos_left_show">492万</div>
+							<div class="pos_right_show">更新至第3集</div>
+
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr910zd4.html"><img src="http://pic1.qiyipic.com/image/20170715/ac/c4/a_100022305_m_601_m4_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr910zd4.html">天行九歌</a>
+							
+							<div class="pos_left_show">1.9亿</div>
+							<div class="pos_right_show">更新至40集</div>
+
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr8q7zx0.html"><img src="http://pic0.qiyipic.com/image/20170831/22/9d/a_100047857_m_601_m2_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr8q7zx0.html">偶活学园（偶像活动..</a>
+							<div class="pos_vip"></div>
+							<div class="pos_left_show">2980万</div>
+							<div class="pos_right_show">更新至23集</div>
+
+						</li>
+					</ul>
+					<ul class="img_list">
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr8mwack.html"><img src="http://pic9.qiyipic.com/image/20170627/5a/7f/a_100057992_m_601_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr8mwack.html">魔晶猎人 第4季</a>
+
+							<div class="pos_left_show">2041万</div>
+							<div class="pos_right_show">更新至21集</div>
+
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr8m4hvo.html"><img src="http://pic4.qiyipic.com/image/20170627/33/23/a_100058000_m_601_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr8m4hvo.html">灵域 第5季</a>
+							<div class="pos_vip"></div>
+							<div class="pos_left_show">6153.2万</div>
+							<div class="pos_right_show">更新至10集</div>
+
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr8mdqno.html"><img src="http://pic7.qiyipic.com/image/20170407/ef/69/a_100048848_m_601_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr8mdqno.html">妖怪名单 第2季</a>
+							<!--<div class="pos_vip"></div>-->
+							<div class="pos_left_show">1826.8万</div>
+							<div class="pos_right_show">更新至8集</div>
+
+						</li>
+					</ul>
+				</div>
+
+				<div class="week">
+					<ul class="img_list">
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr919gqk.html"><img src="http://pic0.qiyipic.com/common/lego/20170915/470b9a6a51584a3ca4a9aa05cdd6caff.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr919gqk.html">次元二Bi治之校园生活..</a>
+							<div class="pos_vip"></div>
+							<div class="pos_left_show">890万</div>
+							<div class="pos_right_show">12集全</div>
+
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr8q72l4.html"><img src="http://pic0.qiyipic.com/image/20170818/36/a1/a_100094789_m_601_m11_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr8q72l4.html">血色苍穹 第1季</a>
+
+							<div class="pos_left_show">2亿</div>
+							<div class="pos_right_show">更新至7集</div>
+
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr8pczac.html"><img src="http://pic4.qiyipic.com/image/20170315/0b/16/a_100047026_m_601_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr8pczac.html">银之守墓人</a>
+							<!--<div class="pos_vip"></div>-->
+							<div class="pos_left_show">6597.9万</div>
+							<div class="pos_right_show">更新至23集</div>
+
+						</li>
+					</ul>
+					<ul class="img_list">
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr8pjb7o.html"><img src="http://pic7.qiyipic.com/image/20170630/cd/0d/a_100058461_m_601_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr8pjb7o.html">梵蒂冈奇迹调查官</a>
+
+							<div class="pos_left_show">209万</div>
+							<div class="pos_right_show">更新至11集</div>
+
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr8p66mw.html"><img src="http://pic1.qiyipic.com/image/20170407/9e/ea/a_100048862_m_601_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr8p66mw.html">甜甜私房猫 第3季 国语版</a>
+							<div class="pos_vip"></div>
+							<div class="pos_left_show">2724.9万</div>
+							<div class="pos_right_show">更新至43集</div>
+
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr8pn7cg.html"><img src="http://pic7.qiyipic.com/image/20170630/8f/e8/a_100058452_m_601_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr8pn7cg.html">来自深渊</a>
+							<div class="pos_vip"></div>
+							<div class="pos_left_show">1233.8万</div>
+							<div class="pos_right_show">更新至11集</div>
+
+						</li>
+					</ul>
+				</div>
+
+				<div class="week">
+					<ul class="img_list">
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr8pk5mk.html"><img src="http://pic7.qiyipic.com/image/20170630/d4/5a/a_100058539_m_601_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr8pk5mk.html">地狱少女 宵伽</a>
+
+							<div class="pos_left_show">623.2万</div>
+							<div class="pos_right_show">更新至10集</div>
+
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr8pkc30.html"><img src="http://pic3.qiyipic.com/image/20170327/fe/2f/a_100047885_m_601_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr8pkc30.html">忍者少女千鸟 第2季</a>
+
+							<div class="pos_left_show">152.8万</div>
+							<div class="pos_right_show">更新至24集</div>
+
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr8pkjes.html"><img src="http://pic0.qiyipic.com/image/20170630/cc/fd/a_100058541_m_601_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr8pkjes.html">将国之天鹰星</a>
+							<!--<div class="pos_vip"></div>-->
+							<div class="pos_left_show">143.3万</div>
+							<div class="pos_right_show">更新至10集</div>
+
+						</li>
+					</ul>
+					<ul class="img_list">
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr8oooek.html"><img src="http://pic9.qiyipic.com/image/20170831/0d/55/a_100059659_m_601_m1_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr8oooek.html">捷德奥特曼 国语版</a>
+							<div class="pos_vip"></div>
+							<div class="pos_left_show">8483.4万</div>
+							<div class="pos_right_show">更新至11集</div>
+
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rrm8o95o.html"><img src="http://pic8.qiyipic.com/image/20170831/90/03/a_100006957_m_601_m12_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rrm8o95o.html">名侦探柯南</a>
+							<div class="pos_vip"></div>
+							<div class="pos_left_show">119.7亿</div>
+							<div class="pos_right_show">更新至928集</div>
+
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rrb3xn68.html"><img src="http://pic0.qiyipic.com/image/20170401/d3/93/a_100047949_m_601_m1_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rrb3xn68.html">博人传 火影忍者新时代</a>
+							<!--<div class="pos_vip"></div>-->
+							<div class="pos_left_show">2.5亿</div>
+							<div class="pos_right_show">更新至25集</div>
+
+						</li>
+					</ul>
+				</div>
+
+				<div class="week">
+					<ul class="img_list">
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr8p01h4.html"><img src="http://pic9.qiyipic.com/image/20170408/60/de/a_100047973_m_601_m3_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr8p01h4.html">Re:CREATORS</a>
+
+							<div class="pos_left_show">3329.8万</div>
+							<div class="pos_right_show">22集全</div>
+
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr8p03oc.html"><img src="http://pic3.qiyipic.com/image/20170701/2e/51/a_100058441_m_601_m1_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr8p03oc.html">活击/刀剑乱舞</a>
+							<div class="pos_vip"></div>
+							<div class="pos_left_show">1222.3万</div>
+							<div class="pos_right_show">更新至12集</div>
+
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr8o1d8s.html"><img src="http://pic1.qiyipic.com/image/20170205/76/18/a_100013208_m_601_m8_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr8o1d8s.html">龙珠超</a>
+							<div class="pos_vip"></div>
+							<div class="pos_left_show">24.4亿</div>
+							<div class="pos_right_show">更新至107集</div>
+
+						</li>
+					</ul>
+					<ul class="img_list">
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr8o41sw.html"><img src="http://pic3.qiyipic.com/image/20170126/51/74/a_100040392_m_601_m1_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr8o41sw.html">光之美少女 食尚甜心</a>
+
+							<div class="pos_left_show">3848.1万</div>
+							<div class="pos_right_show">更新至32集</div>
+
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr8o20a4.html"><img src="http://pic2.qiyipic.com/image/20170831/b4/e5/a_100032949_m_601_m1_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr8o20a4.html">甜甜私房猫 第3季</a>
+
+							<div class="pos_left_show">1.2亿</div>
+							<div class="pos_right_show">更新至50集</div>
+
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr8oa3y0.html"><img src="http://pic9.qiyipic.com/image/20170630/4c/e0/a_100058456_m_601_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr8oa3y0.html">Princess Principal</a>
+							<div class="pos_vip"></div>
+							<div class="pos_left_show">546.6万</div>
+							<div class="pos_right_show">更新至11集</div>
+
+						</li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="yourName">
+				<a href="http://www.iqiyi.com/v_19rrh3ncjn.html"><img src="http://pic6.qiyipic.com/common/lego/20170907/4aa9ddad49da4d3c91cda26f38be4eb0.jpg" /> </a>
+			</div>
+		</div>
+		
+		<!--日漫更新-->
+		<div class="newAni new_Japan">
+			<div class="new_left li_style_2">
+				<div class="rec_title">
+					<div class="title_img"></div><span>日漫更新</span>
+					<div class="more">
+						<a href="http://list.iqiyi.com/www/4/38----30220---------4-1-1-iqiyi--.html">更多
+							<div class="more_img"></div>
+						</a>
+					</div>
+				</div>
+				<div class="left_img">
+					<a href=""><img src="http://pic1.qiyipic.com/image/20170702/0b/65/a_100058449_m_601_m1_480_360.jpg" /></a>
+					<div class="bottom_title">
+						<div class="play_img">
+							<p> 恋爱禁止的世界 </p>
+							<p> 迷茫而虚幻的禁断恋爱 </p>
+						</div>
+						<div class="pos_left_show">5561.8万</div>
+						<div class="pos_right_show">更新至11集</div>
+					</div>
+				</div>
+				<div class="week">
+
+					<ul class="img_list">
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr7m4nuw.html"><img src="http://pic6.qiyipic.com/image/20170630/2c/00/a_100058466_m_601_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr7m4nuw.html">带着智慧型手机闯荡异..</a>
+							<div class="pos_vip"></div>
+							<div class="pos_left_show">5360.5万</div>
+							<div class="pos_right_show">更新至9集</div>
+
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr815fyk.html"><img src="http://pic3.qiyipic.com/image/20170701/2e/51/a_100058441_m_601_m1_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr815fyk.html">活击/刀剑乱舞</a>
+							<div class="pos_vip"></div>
+							<div class="pos_left_show">1224万</div>
+							<div class="pos_right_show">更新至11集</div>
+
+						</li>
+					</ul>
+					<ul class="img_list">
+						<li>
+							<a href="http://www.iqiyi.com/playlist442571002.html"><img src="http://pic1.qiyipic.com/common/20170912/2678e747dca4464c8b982afa50356db5.jpg" /> </a>
+							<a href="http://www.iqiyi.com/playlist442571002.html">2017十月新番预告</a>
+
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr7lshlg.html"><img src="http://pic9.qiyipic.com/image/20170630/52/e8/a_100058535_m_601_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr7lshlg.html">安志菊 第5集</a>
+
+							<div class="pos_left_show">2562.1万</div>
+							<div class="pos_right_show">更新至9集</div>
+
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="new_right">
+				<div class="top_title">日漫新番排行榜
+					<div class="more">
+						<a href="http://list.iqiyi.com/www/4/38----30220---------4-1-1-iqiyi--.html">更多
+							<div class="more_img"></div>
+						</a>
+					</div>
+				</div>
+				<div class="right_list">
+					<div class="day_list">日榜</div>
+					<div class="day_list3">三日榜</div>
+					<div class="day_list_li">
+						<ul>
+							<li>
+								<div class="num_icon">1</div>
+								<div class="over_before">
+									<a href="http://www.iqiyi.com/v_19rr8m80w4.html">博人传 火影忍者新时代 第25集</a>
+								</div>
+								<div class="over_after">
+									<div class="over_img">
+										<a href="http://www.iqiyi.com/v_19rr8m80w4.html">
+											<img src="http://pic9.qiyipic.com/image/20170920/26/5c/v_113501661_m_601_180_101.jpg" /></a>
+									</div>
+									<div class="over_content">
+										<a href="http://www.iqiyi.com/v_19rr8m80w4.html">博人传 火影忍者新时代</a>
+										<a href="http://www.iqiyi.com/v_19rr8m80w4.html">第25集</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="num_icon">2</div>
+								<div class="over_before">
+									<a href="http://www.iqiyi.com/v_19rr8wqqsk.html">海贼王 第804集</a>
+								</div>
+								<div class="over_after">
+									<div class="over_img">
+										<a href="http://www.iqiyi.com/v_19rr8wqqsk.html">
+											<img src="http://pic2.qiyipic.com/image/20170903/82/97/v_113321943_m_601_180_101.jpg" /></a>
+									</div>
+									<div class="over_content">
+										<a href="http://www.iqiyi.com/v_19rr8wqqsk.html">海贼王</a>
+										<a href="http://www.iqiyi.com/v_19rr8wqqsk.html">第804集</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="num_icon">3</div>
+								<div class="over_before">
+									<a href="http://www.iqiyi.com/v_19rr8xwxws.html">龙珠超 第106集</a>
+								</div>
+								<div class="over_after">
+									<div class="over_img">
+										<a href="http://www.iqiyi.com/v_19rr8xwxws.html">
+											<img src="http://pic9.qiyipic.com/image/20170903/e0/b4/v_113320404_m_601_180_101.jpg" /></a>
+									</div>
+									<div class="over_content">
+										<a href="http://www.iqiyi.com/v_19rr8xwxws.html">龙珠超</a>
+										<a href="http://www.iqiyi.com/v_19rr8xwxws.html">第106集</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="num_icon">4</div>
+								<div class="over_before">
+									<a href="http://www.iqiyi.com/v_19rr8mzyns.html">带着智慧型手机闯荡异世界 11</a>
+								</div>
+								<div class="over_after">
+									<div class="over_img">
+										<a href="http://www.iqiyi.com/v_19rr8mzyns.html">
+											<img src="http://pic9.qiyipic.com/image/20170919/60/21/v_113494644_m_601_180_101.jpg" /></a>
+									</div>
+									<div class="over_content">
+										<a href="http://www.iqiyi.com/v_19rr8mzyns.html">带着智慧型手机闯荡异..</a>
+										<a href="http://www.iqiyi.com/v_19rr8mzyns.html">第11集</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="num_icon">5</div>
+								<div class="over_before">
+									<a href="http://www.iqiyi.com/v_19rrl5d9dw.html">火影忍者 疾风传 第664集</a>
+								</div>
+								<div class="over_after">
+									<div class="over_img">
+										<a href="http://www.iqiyi.com/v_19rrl5d9dw.html">
+											<img src="http://pic0.qiyipic.com/image/20160114/8d/75/v_109952467_m_601_180_101.jpg" /></a>
+									</div>
+									<div class="over_content">
+										<a href="http://www.iqiyi.com/v_19rrl5d9dw.html">火影忍者 疾风传</a>
+										<a href="http://www.iqiyi.com/v_19rrl5d9dw.html">第664集</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="num_icon">6</div>
+								<div class="over_before">
+									<a href="http://www.iqiyi.com/v_19rr8p1xww.html">名侦探柯南 第928集</a>
+								</div>
+								<div class="over_after">
+									<div class="over_img">
+										<a href="http://www.iqiyi.com/v_19rr8p1xww.html">
+											<img src="http://pic5.qiyipic.com/image/20170916/6e/db/v_113466083_m_601_180_101.jpg" /></a>
+									</div>
+									<div class="over_content">
+										<a href="http://www.iqiyi.com/v_19rr8p1xww.html">名侦探柯南</a>
+										<a href="http://www.iqiyi.com/v_19rr8p1xww.html">第928集</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="num_icon">7</div>
+								<div class="over_before">
+									<a href="http://www.iqiyi.com/v_19rr7ya6ew.html">捷德奥特曼 第1集</a>
+								</div>
+								<div class="over_after">
+									<div class="over_img">
+										<a href="http://www.iqiyi.com/v_19rr7ya6ew.html">
+											<img src="http://pic9.qiyipic.com/image/20170708/57/30/v_112733229_m_601_180_101.jpg" /></a>
+									</div>
+									<div class="over_content">
+										<a href="http://www.iqiyi.com/v_19rr7ya6ew.html">捷德奥特曼</a>
+										<a href="http://www.iqiyi.com/v_19rr7ya6ew.html">第1集</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="day_list_li">
+						<ul>
+							<li>
+								<div class="num_icon">1</div>
+								<div class="over_before">
+									<a href="http://www.iqiyi.com/v_19rr8m80w4.html">博人传 火影忍者新时代 第25集</a>
+								</div>
+								<div class="over_after">
+									<div class="over_img">
+										<a href="http://www.iqiyi.com/v_19rr8m80w4.html">
+											<img src="http://pic9.qiyipic.com/image/20170920/26/5c/v_113501661_m_601_180_101.jpg" /></a>
+									</div>
+									<div class="over_content">
+										<a href="http://www.iqiyi.com/v_19rr8m80w4.html">博人传 火影忍者新时代</a>
+										<a href="http://www.iqiyi.com/v_19rr8m80w4.html">第25集</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="num_icon">2</div>
+								<div class="over_before">
+									<a href="http://www.iqiyi.com/v_19rr8wqqsk.html">海贼王 第804集</a>
+								</div>
+								<div class="over_after">
+									<div class="over_img">
+										<a href="http://www.iqiyi.com/v_19rr8wqqsk.html">
+											<img src="http://pic2.qiyipic.com/image/20170903/82/97/v_113321943_m_601_180_101.jpg" /></a>
+									</div>
+									<div class="over_content">
+										<a href="http://www.iqiyi.com/v_19rr8wqqsk.html">海贼王</a>
+										<a href="http://www.iqiyi.com/v_19rr8wqqsk.html">第804集</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="num_icon">3</div>
+								<div class="over_before">
+									<a href="http://www.iqiyi.com/v_19rr8xwxws.html">龙珠超 第107集</a>
+								</div>
+								<div class="over_after">
+									<div class="over_img">
+										<a href="http://www.iqiyi.com/v_19rr8xwxws.html">
+											<img src="http://pic9.qiyipic.com/image/20170903/e0/b4/v_113320404_m_601_180_101.jpg" /></a>
+									</div>
+									<div class="over_content">
+										<a href="http://www.iqiyi.com/v_19rr8xwxws.html">龙珠超</a>
+										<a href="http://www.iqiyi.com/v_19rr8xwxws.html">107集</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="num_icon">4</div>
+								<div class="over_before">
+									<a href="http://www.iqiyi.com/v_19rr8mzyns.html">带着智慧型手机闯荡异世界 11</a>
+								</div>
+								<div class="over_after">
+									<div class="over_img">
+										<a href="http://www.iqiyi.com/v_19rr8mzyns.html">
+											<img src="http://pic9.qiyipic.com/image/20170919/60/21/v_113494644_m_601_180_101.jpg" /></a>
+									</div>
+									<div class="over_content">
+										<a href="http://www.iqiyi.com/v_19rr8mzyns.html">带着智慧型手机闯荡异..</a>
+										<a href="http://www.iqiyi.com/v_19rr8mzyns.html">第11集</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="num_icon">5</div>
+								<div class="over_before">
+									<a href="http://www.iqiyi.com/v_19rr8nndhg.html">恋爱禁止的世界 第12集</a>
+								</div>
+								<div class="over_after">
+									<div class="over_img">
+										<a href="http://www.iqiyi.com/v_19rr8nndhg.html">
+											<img src="http://pic9.qiyipic.com/image/20170918/d8/7c/v_113479072_m_601_180_101.jpg" /></a>
+									</div>
+									<div class="over_content">
+										<a href="http://www.iqiyi.com/v_19rr8nndhg.html">恋爱禁止的世界</a>
+										<a href="http://www.iqiyi.com/v_19rr8nndhg.html">第12集</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="num_icon">6</div>
+								<div class="over_before">
+									<a href="http://www.iqiyi.com/v_19rr8p1xww.html">名侦探柯南 第928集</a>
+								</div>
+								<div class="over_after">
+									<div class="over_img">
+										<a href="http://www.iqiyi.com/v_19rr8p1xww.html">
+											<img src="http://pic5.qiyipic.com/image/20170916/6e/db/v_113466083_m_601_180_101.jpg" /></a>
+									</div>
+									<div class="over_content">
+										<a href="http://www.iqiyi.com/v_19rr8p1xww.html">名侦探柯南</a>
+										<a href="http://www.iqiyi.com/v_19rr8p1xww.html">第928集</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="num_icon">7</div>
+								<div class="over_before">
+									<a href="http://www.iqiyi.com/v_19rr7ya6ew.html">捷德奥特曼 第1集</a>
+								</div>
+								<div class="over_after">
+									<div class="over_img">
+										<a href="http://www.iqiyi.com/v_19rr7ya6ew.html">
+											<img src="http://pic9.qiyipic.com/image/20170708/57/30/v_112733229_m_601_180_101.jpg" /></a>
+									</div>
+									<div class="over_content">
+										<a href="http://www.iqiyi.com/v_19rr7ya6ew.html">捷德奥特曼</a>
+										<a href="http://www.iqiyi.com/v_19rr7ya6ew.html">第1集</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--国漫更新-->
+		<div class="newAni new_China">
+			<div class="new_left li_style_2">
+				<div class="rec_title">
+					<div class="title_img"></div><span>国漫更新</span>
+					<div class="more">
+						<a href="http://list.iqiyi.com/www/4/38----30220---------4-1-1-iqiyi--.html">更多
+							<div class="more_img"></div>
+						</a>
+					</div>
+				</div>
+				<div class="left_img">
+					<a href="http://www.iqiyi.com/v_19rr7hvqn8.html"><img src="http://pic3.qiyipic.com/common/lego/20170807/8d441da5fea74725b0e5615ea415a25e.jpg" /></a>
+					<div class="bottom_title">
+						<div class="play_img">
+							<p> 灵域 第5季 </p>
+							<p> 热血少年重返赤澜  </p>
+						</div>
+						<div class="pos_left_show">6582.6万</div>
+						<div class="pos_right_show">更新至10集</div>
+					</div>
+				</div>
+				<div class="week">
+
+					<ul class="img_list">
+						<li>
+							<a href="http://www.iqiyi.com/v_19rra8miqw.html"><img src="http://pic9.qiyipic.com/image/20170715/6c/56/a_100035736_m_601_m4_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rra8miqw.html">画江湖之杯莫停</a>
+
+							<div class="pos_left_show">2.9亿</div>
+							<div class="pos_right_show">40集全</div>
+
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr815fyk.html"><img src="http://pic3.qiyipic.com/image/20170701/2e/51/a_100058441_m_601_m1_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr8kcxgg.html">峡谷重案组</a>
+
+							<div class="pos_left_show">2751万</div>
+							<div class="pos_right_show">更新至7集</div>
+
+						</li>
+					</ul>
+					<ul class="img_list">
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr7d66do.html"><img src="http://pic1.qiyipic.com/image/20170715/17/77/a_100052911_m_601_m1_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr7d66do.html">食神魂 第1季</a>
+							<div class="pos_left_show">1354.5万</div>
+							<div class="pos_right_show">12集全</div>
+						</li>
+						<li>
+							<a href="http://www.iqiyi.com/v_19rr7aer64.html"><img src="http://pic9.qiyipic.com/image/20170510/6c/34/a_100051664_m_601_m1_192_108.jpg" /> </a>
+							<a href="http://www.iqiyi.com/v_19rr7aer64.html">妖神记</a>
+
+							<div class="pos_left_show">2.4亿</div>
+							<div class="pos_right_show">40集全</div>
+
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="new_right">
+				<div class="top_title">国漫新番排行榜
+					<div class="more">
+						<a href="http://list.iqiyi.com/www/4/38----30220---------4-1-1-iqiyi--.html">更多
+							<div class="more_img"></div>
+						</a>
+					</div>
+				</div>
+				<div class="right_list">
+					<div class="day_list">日榜</div>
+					<div class="day_list3">三日榜</div>
+					<div class="day_list_li">
+						<ul>
+							<li>
+								<div class="num_icon">1</div>
+								<div class="over_before">
+									<a href="http://www.iqiyi.com/v_19rr8m80w4.html">精灵梦叶罗丽 第5季 第16集</a>
+								</div>
+								<div class="over_after">
+									<div class="over_img">
+										<a href="http://www.iqiyi.com/v_19rr8m3w4s.html">
+											<img src="http://pic3.qiyipic.com/image/20170920/9a/a9/v_113500613_m_601_180_101.jpg" /></a>
+									</div>
+									<div class="over_content">
+										<a href="http://www.iqiyi.com/v_19rr8m3w4s.html">精灵梦叶罗丽 第5季</a>
+										<a href="http://www.iqiyi.com/v_19rr8m3w4s.html">第16集</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="num_icon">2</div>
+								<div class="over_before">
+									<a href="http://www.iqiyi.com/v_19rr8wqqsk.html">西游记 第23集</a>
+								</div>
+								<div class="over_after">
+									<div class="over_img">
+										<a href="http://www.iqiyi.com/v_19rr8mostw.html">
+											<img src="http://pic8.qiyipic.com/image/20170921/54/d1/v_113511074_m_601_180_101.jpg" /></a>
+									</div>
+									<div class="over_content">
+										<a href="http://www.iqiyi.com/v_19rr8wqqsk.html">西游记</a>
+										<a href="http://www.iqiyi.com/v_19rr8mostw.html">第23集</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="num_icon">3</div>
+								<div class="over_before">
+									<a href="http://www.iqiyi.com/v_19rrh5zbfo.html">熊出没之夺宝熊兵</a>
+								</div>
+								<div class="over_after">
+									<div class="over_img">
+										<a href="http://www.iqiyi.com/v_19rrh5zbfo.html">
+											<img src="http://pic6.qiyipic.com/image/20150317/da/e9/aa/v_105073913_m_601_m3_180_101.jpg" /></a>
+									</div>
+									<div class="over_content">
+										<a href="http://www.iqiyi.com/v_19rrh5zbfo.html">熊出没之夺宝熊兵</a>
+
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="num_icon">4</div>
+								<div class="over_before">
+									<a href="http://www.iqiyi.com/v_19rr8mzyns.html">熊出没 奇幻空间</a>
+								</div>
+								<div class="over_after">
+									<div class="over_img">
+										<a href="http://www.iqiyi.com/v_19rrb5h8kw.html">
+											<img src="http://pic7.qiyipic.com/image/20170329/30/f5/v_112046646_m_601_m1_180_101.jpg" /></a>
+									</div>
+									<div class="over_content">
+										<a href="http://www.iqiyi.com/v_19rrb5h8kw.html">熊出没 奇幻空间</a>
+
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="num_icon">5</div>
+								<div class="over_before">
+									<a href="http://www.iqiyi.com/v_19rr8bgu1w.html">火力少年王悠拳英雄 第26集</a>
+								</div>
+								<div class="over_after">
+									<div class="over_img">
+										<a href="http://www.iqiyi.com/v_19rr8bgu1w.html">
+											<img src="http://pic5.qiyipic.com/image/20170821/b1/b6/v_113190148_m_601_180_101.jpg" /></a>
+									</div>
+									<div class="over_content">
+										<a href="http://www.iqiyi.com/v_19rr8bgu1w.html">火力少年王悠拳英雄</a>
+										<a href="http://www.iqiyi.com/v_19rr8bgu1w.html">第26集</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="num_icon">6</div>
+								<div class="over_before">
+									<a href="http://www.iqiyi.com/v_19rr8ma0xk.html">十万个冷笑话 第3季 第48集</a>
+								</div>
+								<div class="over_after">
+									<div class="over_img">
+										<a href="http://www.iqiyi.com/v_19rr8ma0xk.html">
+											<img src="http://pic1.qiyipic.com/image/20170920/1e/4c/v_113505225_m_601_180_101.jpg" /></a>
+									</div>
+									<div class="over_content">
+										<a href="http://www.iqiyi.com/v_19rr8ma0xk.html">十万个冷笑话 第3季</a>
+										<a href="http://www.iqiyi.com/v_19rr8ma0xk.html">第48集</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="num_icon">7</div>
+								<div class="over_before">
+									<a href="http://www.iqiyi.com/v_19rr90nivo.html">灵域 第5季 第9集</a>
+								</div>
+								<div class="over_after">
+									<div class="over_img">
+										<a href="http://www.iqiyi.com/v_19rr90nivo.html">
+											<img src="http://pic7.qiyipic.com/image/20170913/72/75/v_113429349_m_601_180_101.jpg" /></a>
+									</div>
+									<div class="over_content">
+										<a href="http://www.iqiyi.com/v_19rr90nivo.html">灵域 第5季</a>
+										<a href="http://www.iqiyi.com/v_19rr90nivo.html">第9集</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="day_list_li">
+						<ul>
+							<li>
+								<div class="num_icon">1</div>
+								<div class="over_before">
+									<a href="http://www.iqiyi.com/v_19rr8m80w4.html">精灵梦叶罗丽 第5季 第16集</a>
+								</div>
+								<div class="over_after">
+									<div class="over_img">
+										<a href="http://www.iqiyi.com/v_19rr8m3w4s.html">
+											<img src="http://pic3.qiyipic.com/image/20170920/9a/a9/v_113500613_m_601_180_101.jpg" /></a>
+									</div>
+									<div class="over_content">
+										<a href="http://www.iqiyi.com/v_19rr8m3w4s.html">精灵梦叶罗丽 第5季</a>
+										<a href="http://www.iqiyi.com/v_19rr8m3w4s.html">第16集</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="num_icon">2</div>
+								<div class="over_before">
+									<a href="http://www.iqiyi.com/v_19rrh5zbfo.html">熊出没之夺宝熊兵</a>
+								</div>
+								<div class="over_after">
+									<div class="over_img">
+										<a href="http://www.iqiyi.com/v_19rrh5zbfo.html">
+											<img src="http://pic6.qiyipic.com/image/20150317/da/e9/aa/v_105073913_m_601_m3_180_101.jpg" /></a>
+									</div>
+									<div class="over_content">
+										<a href="http://www.iqiyi.com/v_19rrh5zbfo.html">熊出没之夺宝熊兵</a>
+
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="num_icon">3</div>
+								<div class="over_before">
+									<a href="http://www.iqiyi.com/v_19rr8wqqsk.html">西游记 第22集</a>
+								</div>
+								<div class="over_after">
+									<div class="over_img">
+										<a href="http://www.iqiyi.com/v_19rr8mostw.html">
+											<img src="http://pic8.qiyipic.com/image/20170921/54/d1/v_113511074_m_601_180_101.jpg" /></a>
+									</div>
+									<div class="over_content">
+										<a href="http://www.iqiyi.com/v_19rr8wqqsk.html">西游记</a>
+										<a href="http://www.iqiyi.com/v_19rr8mostw.html">第22集</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="num_icon">4</div>
+								<div class="over_before">
+									<a href="http://www.iqiyi.com/v_19rr8nwpq4.html">画江湖之换世门生 第3集</a>
+								</div>
+								<div class="over_after">
+									<div class="over_img">
+										<a href="http://www.iqiyi.com/v_19rr8nwpq4.html">
+											<img src="http://pic4.qiyipic.com/image/20170919/6e/64/v_113490023_m_601_180_101.jpg" /></a>
+									</div>
+									<div class="over_content">
+										<a href="http://www.iqiyi.com/v_19rr8nwpq4.html">画江湖之换世门生</a>
+										<a href="http://www.iqiyi.com/v_19rr8nwpq4.html">第3集</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="num_icon">5</div>
+								<div class="over_before">
+									<a href="http://www.iqiyi.com/v_19rr8mzyns.html">熊出没 奇幻空间</a>
+								</div>
+								<div class="over_after">
+									<div class="over_img">
+										<a href="http://www.iqiyi.com/v_19rrb5h8kw.html">
+											<img src="http://pic7.qiyipic.com/image/20170329/30/f5/v_112046646_m_601_m1_180_101.jpg" /></a>
+									</div>
+									<div class="over_content">
+										<a href="http://www.iqiyi.com/v_19rrb5h8kw.html">熊出没 奇幻空间</a>
+
+									</div>
+								</div>
+							</li>
+							
+							
+							<li>
+								<div class="num_icon">6</div>
+								<div class="over_before">
+									<a href="http://www.iqiyi.com/v_19rr90nivo.html">灵域 第5季 第9集</a>
+								</div>
+								<div class="over_after">
+									<div class="over_img">
+										<a href="http://www.iqiyi.com/v_19rr90nivo.html">
+											<img src="http://pic7.qiyipic.com/image/20170913/72/75/v_113429349_m_601_180_101.jpg" /></a>
+									</div>
+									<div class="over_content">
+										<a href="http://www.iqiyi.com/v_19rr90nivo.html">灵域 第5季</a>
+										<a href="http://www.iqiyi.com/v_19rr90nivo.html">第9集</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="num_icon">7</div>
+								<div class="over_before">
+									<a href="http://www.iqiyi.com/v_19rr8bgu1w.html">火力少年王悠拳英雄 第26集</a>
+								</div>
+								<div class="over_after">
+									<div class="over_img">
+										<a href="http://www.iqiyi.com/v_19rr8bgu1w.html">
+											<img src="http://pic5.qiyipic.com/image/20170821/b1/b6/v_113190148_m_601_180_101.jpg" /></a>
+									</div>
+									<div class="over_content">
+										<a href="http://www.iqiyi.com/v_19rr8bgu1w.html">火力少年王悠拳英雄</a>
+										<a href="http://www.iqiyi.com/v_19rr8bgu1w.html">第26集</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		<!--vip专区-->
+		<div class="Ani_list li_style_1">
+			<div class="rec_title">
+				<div class="title_img"></div><span>VIP专区</span>
+
+			</div>
+
+			<ul class="img_list">
+				<div class="left_button"></div>
+				<div class="right_button"></div>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rrh3ncjn.html">
+						<img src="http://pic4.qiyipic.com/image/20170825/92/a8/v_232239407_l_601_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rrh3ncjn.html">你的名字。</a>
+					<div class="pos_vip"></div>
+					<div class="pos_left_show">1080P</div>
+					<div class="pos_right_show">01:46:39</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rr8huyr4.html">
+						<img src="http://pic3.qiyipic.com/image/20170819/43/b2/v_113060098_m_601_m1_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rr8huyr4.html">星游记之风暴法米拉</a>
+					<div class="pos_vip"></div>
+					<div class="pos_left_show">1080P</div>
+					<div class="pos_right_show">01:09:40</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rr8f82vs.html">
+						<img src="http://pic6.qiyipic.com/image/20170728/5a/57/v_112954775_m_601_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rr8f82vs.html">哆啦A梦：大雄的南极冰..</a>
+					<div class="pos_vip"></div>
+					<div class="pos_left_show">1080P</div>
+					<div class="pos_right_show">01:41:06</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rrb3qrs8.html">
+						<img src="http://pic8.qiyipic.com/image/20170715/25/e7/a_100047972_m_601_m5_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rrb3qrs8.html">不正经的魔术讲师与禁忌..</a>
+					<div class="pos_vip"></div>
+					<div class="pos_left_show">7422.8万</div>
+					<div class="pos_right_show">12集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rrbayuac.html">
+						<img src="http://pic6.qiyipic.com/image/20170409/09/0a/a_100047860_m_601_m1_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rrbayuac.html">末日时在做什么？有没有..</a>
+					<div class="pos_vip"></div>
+					<div class="pos_left_show">2528.8万</div>
+					<div class="pos_right_show">12集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rrk2fub4.html">
+						<img src="http://pic6.qiyipic.com/image/20170831/cc/33/a_50133103_m_601_m8_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rrk2fub4.html">巴啦啦小魔仙之彩虹心石</a>
+					<div class="pos_vip"></div>
+					<div class="pos_left_show">6.1亿</div>
+					<div class="pos_right_show">36集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rrb95gac.html">
+						<img src="http://pic9.qiyipic.com/image/20170715/17/0d/a_100047858_m_601_m3_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rrb95gac.html">剑姬神圣谭</a>
+					<div class="pos_vip"></div>
+					<div class="pos_left_show">2219.7万</div>
+					<div class="pos_right_show">12集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rrbdcf4o.html">
+						<img src="http://pic0.qiyipic.com/image/20170715/b9/72/a_100047974_m_601_m3_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rrbdcf4o.html">路人女主的养成方法 第2季</a>
+					<div class="pos_vip"></div>
+					<div class="pos_left_show">2732.1万</div>
+					<div class="pos_right_show">12集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rr9ymgbk.html">
+						<img src="http://pic6.qiyipic.com/image/20161228/3d/7d/a_100040308_m_601_m1_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rr9ymgbk.html">政宗君的复仇</a>
+					<div class="pos_vip"></div>
+					<div class="pos_left_show">7118.4万</div>
+					<div class="pos_right_show">12集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rr815fyk.html">
+						<img src="http://pic4.qiyipic.com/image/20161228/9c/e4/v_111510538_m_601_m2_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rr815fyk.html">航海王之黄金城</a>
+					<div class="pos_vip"></div>
+					<div class="pos_left_show">1080P</div>
+					<div class="pos_right_show">02:00:10</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rra6d3gw.html">
+						<img src="http://pic8.qiyipic.com/image/20161212/19/a3/v_111451576_m_601_m1_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rra6d3gw.html">名侦探柯南Episode ..</a>
+					<div class="pos_vip"></div>
+					<div class="pos_left_show">1080P</div>
+					<div class="pos_right_show">01:31:20</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rrfvldjs.html">
+						<img src="http://pic3.qiyipic.com/image/20170831/69/57/a_50529363_m_601_m12_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rrfvldjs.html">熊出没之丛林总动员</a>
+					<div class="pos_vip"></div>
+					<div class="pos_left_show">49亿</div>
+					<div class="pos_right_show">104集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rrg58300.html">
+						<img src="http://pic7.qiyipic.com/image/20170831/ad/4b/a_50403324_m_601_m10_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rrg58300.html">巴啦啦小魔仙之奇迹..</a>
+					<div class="pos_vip"></div>
+					<div class="pos_left_show">14.5亿</div>
+					<div class="pos_right_show">52集全</div>
+				</li>
+			</ul>
+
+		</div>
+		
+		<!--日漫完结-->
+		<div class="Ani_list Ani_1 li_style_1">
+			<div class="rec_title">
+				<div class="title_img"></div><span>日漫完结</span>
+
+			</div>
+
+			<ul class="img_list">
+				<div class="left_button"></div>
+				<div class="right_button"></div>
+				<li>
+					<a href="http://www.iqiyi.com/a_19rrhdmxod.html">
+						<img src="img/a_100094411_m_601_m2_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/a_19rrhdmxod.html">DHC良子喵</a>
+
+					<div class="pos_left_show">111.5万</div>
+
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rran0z40.html">
+						<img src="http://pic1.qiyipic.com/image/20170715/d1/a3/a_100040426_m_601_m1_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rran0z40.html">BanG Dream!</a>
+
+					<div class="pos_left_show">244.1万</div>
+					<div class="pos_right_show">更新至14集</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rr7l6zyc.html">
+						<img src="http://pic7.qiyipic.com/image/20170630/7f/b5/a_100058494_m_601_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rr7l6zyc.html">少女骑士物语</a>
+
+					<div class="pos_left_show">202.2万</div>
+					<div class="pos_right_show">12集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rr7s2twg.html">
+						<img src="http://pic2.qiyipic.com/image/20170628/5f/e1/a_100058204_m_601_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rr7s2twg.html">魔法护士小麦R</a>
+
+					<div class="pos_left_show">76.5万</div>
+					<div class="pos_right_show">12集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rr7rzt1o.html">
+						<img src="http://pic9.qiyipic.com/image/20170630/df/67/a_100058498_m_601_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rr7rzt1o.html">桃剑</a>
+
+					<div class="pos_left_show">171.6万</div>
+					<div class="pos_right_show">12集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rrokxy8c.html">
+						<img src="http://pic8.qiyipic.com/image/20170715/c3/5c/a_100014031_m_601_m2_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rrokxy8c.html">龙珠剧场版全集</a>
+
+					<div class="pos_left_show">1.1亿</div>
+					<div class="pos_right_show">更新至17集</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rr7s0o3k.html">
+						<img src="http://pic6.qiyipic.com/image/20170707/d1/d9/a_100058192_m_601_m1_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rr7s0o3k.html">对魔导学园35试验小队</a>
+
+					<div class="pos_left_show">249万</div>
+					<div class="pos_right_show">12集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rr7s1r08.html">
+						<img src="http://pic5.qiyipic.com/image/20170629/6a/90/a_100058362_m_601_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rr7s1r08.html">落第骑士英雄谭 </a>
+
+					<div class="pos_left_show">864.4万</div>
+					<div class="pos_right_show">12集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rr6zdhqg.html">
+						<img src="http://pic6.qiyipic.com/image/20170613/85/50/a_100055137_m_601_m1_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rr6zdhqg.html">蜡笔小新 第6季</a>
+
+					<div class="pos_left_show">3.1亿</div>
+					<div class="pos_right_show">156集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rrmbf46o.html">
+						<img src="http://pic8.qiyipic.com/image/20160912/78/00/a_100027174_m_601_m1_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rrmbf46o.html">食戟之灵 第2季</a>
+
+					<div class="pos_left_show">4885.4万</div>
+					<div class="pos_right_show">13集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rrnkiljc.html">
+						<img src="http://pic8.qiyipic.com/image/20141004/e1/aa/a_100007325_m_601_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rrnkiljc.html">Fate stay night UBW</a>
+
+					<div class="pos_left_show">4885.7万</div>
+					<div class="pos_right_show">26集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rrjp6ybk.html">
+						<img src="http://pic1.qiyipic.com/image/20170715/70/4a/a_50291222_m_601_m6_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rrjp6ybk.html">家庭教师</a>
+
+					<div class="pos_left_show">2.6亿</div>
+					<div class="pos_right_show">203集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rrbdcf4o.html">
+						<img src="http://pic0.qiyipic.com/image/20170715/b9/72/a_100047974_m_601_m3_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rrbdcf4o.html">路人女主的养成方法..</a>
+					<div class="pos_vip"></div>
+					<div class="pos_left_show">2732.3万</div>
+					<div class="pos_right_show">12集全</div>
+				</li>
+			</ul>
+
+		</div>
+		
+		<!--国漫完结-->
+		<div class="Ani_list Ani_2 li_style_1">
+			<div class="rec_title">
+				<div class="title_img"></div><span>国漫完结</span>
+
+			</div>
+
+			<ul class="img_list">
+				<div class="left_button"></div>
+				<div class="right_button"></div>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rrbcxb7k.html">
+						<img src="http://pic2.qiyipic.com/image/20170831/55/3a/a_100048043_m_601_m3_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rrbcxb7k.html">小花仙 第3季 守护天使</a>
+
+					<div class="pos_left_show">3.9亿</div>
+					<div class="pos_right_show">44集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rr8huyr4.html">
+						<img src="http://pic8.qiyipic.com/image/20170509/2e/39/a_100050673_m_601_m1_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rr8huyr4.html">万古仙穹</a>
+					<div class="pos_vip"></div>
+					<div class="pos_left_show">1.1亿</div>
+					<div class="pos_right_show">12集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rrb2mb50.html">
+						<img src="http://pic6.qiyipic.com/image/20170411/6c/5a/a_100049107_m_601_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rrb2mb50.html">剑王朝</a>
+					<div class="pos_vip"></div>
+					<div class="pos_left_show">6499.8万</div>
+					<div class="pos_right_show">12集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rro7k2gk.html">
+						<img src="http://pic6.qiyipic.com/image/20170715/01/23/a_100013931_m_601_m1_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rro7k2gk.html">功夫鸡</a>
+
+					<div class="pos_left_show">11.9亿</div>
+					<div class="pos_right_show">104集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rrabk2i0.html">
+						<img src="http://pic9.qiyipic.com/image/20170715/91/86/a_100045416_m_601_m1_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rrabk2i0.html">爆裂飞车 第2季</a>
+
+					<div class="pos_left_show">2.1亿</div>
+					<div class="pos_right_show">26集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rrk2fub4.html">
+						<img src="http://pic6.qiyipic.com/image/20160722/28/67/a_100028427_m_601_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rrk2fub4.html">精灵梦叶罗丽 第4季</a>
+
+					<div class="pos_left_show">4.6亿</div>
+					<div class="pos_right_show">26集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rravyqyk.html">
+						<img src="http://pic8.qiyipic.com/image/20170831/d6/80/a_100049767_m_601_m4_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rravyqyk.html">熊熊乐园</a>
+
+					<div class="pos_left_show">17.2亿</div>
+					<div class="pos_right_show">52集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rrb6gag0.html">
+						<img src="http://pic1.qiyipic.com/image/20170413/57/d4/a_100047645_m_601_m5_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rrb6gag0.html">神兽金刚之超变星甲</a>
+
+					<div class="pos_left_show">3.2亿</div>
+					<div class="pos_right_show">46集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rr9tp1hc.html">
+						<img src="http://pic1.qiyipic.com/image/20161221/3d/d1/a_100039798_m_601_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rr9tp1hc.html">哈喽葡星人</a>
+
+					<div class="pos_left_show">3101万</div>
+					<div class="pos_right_show">26集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rrmnq78w.html">
+						<img src="http://pic5.qiyipic.com/image/20170831/31/52/a_100006790_m_601_m1_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rrmnq78w.html">精灵梦叶罗丽全集</a>
+
+					<div class="pos_left_show">12.9亿</div>
+					<div class="pos_right_show">78集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rrll0l7g.html">
+						<img src="http://pic3.qiyipic.com/image/20170831/cb/40/a_100026815_m_601_m2_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rrll0l7g.html">熊出没全集</a>
+
+					<div class="pos_left_show">20.4亿</div>
+					<div class="pos_right_show">28集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rrfvldjs.html">
+						<img src="http://pic3.qiyipic.com/image/20170831/69/57/a_50529363_m_601_m12_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rrfvldjs.html">熊出没之丛林总动员</a>
+					<div class="pos_vip"></div>
+					<div class="pos_left_show">49亿</div>
+					<div class="pos_right_show">104集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rrnv638w.html">
+						<img src="http://pic6.qiyipic.com/image/20150326/74/98/a_100010008_m_601_m1_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rrnv638w.html">忍者龟</a>
+					<div class="pos_vip"></div>
+					<div class="pos_left_show">1亿</div>
+					<div class="pos_right_show">78集全</div>
+				</li>
+			</ul>
+
+		</div>
+		
+		<!--欧美动画-->
+		<div class="Ani_list Ani_3 li_style_1">
+			<div class="rec_title">
+				<div class="title_img"></div><span>欧美动画</span>
+
+			</div>
+
+			<ul class="img_list">
+				<div class="left_button"></div>
+				<div class="right_button"></div>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rr7xz10g.html">
+						<img src="http://pic3.qiyipic.com/image/20170707/d3/b3/a_100059626_m_601_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rr7xz10g.html">魔法俏佳人 第1季</a>
+
+					<div class="pos_left_show">43.7万</div>
+					<div class="pos_right_show">26集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rrjqul5s.html">
+						<img src="http://pic8.qiyipic.com/image/20170831/a2/f3/a_50280829_m_601_m4_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rrjqul5s.html">鳄鱼小顽皮历险记</a>
+
+					<div class="pos_left_show">6.1亿</div>
+					<div class="pos_right_show">12集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rrnv638w.html">
+						<img src="http://pic6.qiyipic.com/image/20150326/74/98/a_100010008_m_601_m1_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rrnv638w.html">忍者龟</a>
+					<div class="pos_vip"></div>
+					<div class="pos_left_show">1亿</div>
+					<div class="pos_right_show">78集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rrm2nafw.html">
+						<img src="http://pic7.qiyipic.com/image/20160908/3a/d4/a_100031749_m_601_m1_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rrm2nafw.html">瓢虫雷迪</a>
+
+					<div class="pos_left_show">8037.6万</div>
+					<div class="pos_right_show">26集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rrjdpcnk.html">
+						<img src="http://pic4.qiyipic.com/image/20131125/51/ea/6a/a_50015009_m_601_m2_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rrjdpcnk.html">蜘蛛侠</a>
+
+					<div class="pos_left_show">2.8亿</div>
+					<div class="pos_right_show">65集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rrohf8io.html">
+						<img src="http://pic0.qiyipic.com/image/20170715/4c/b9/a_100012804_m_601_m3_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rrohf8io.html">变形金刚 领袖之证</a>
+
+					<div class="pos_left_show">1.5亿</div>
+					<div class="pos_right_show">68集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rrjuq41s.html">
+						<img src="http://pic4.qiyipic.com/image/20170831/82/79/a_50346947_m_601_m3_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rrjuq41s.html">剑姬神圣谭</a>
+
+					<div class="pos_left_show">9.2亿</div>
+					<div class="pos_right_show">95集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rrjvb5kk.html">
+						<img src="http://pic6.qiyipic.com/image/20170831/8b/35/a_50337961_m_601_m4_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rrjvb5kk.html">猫和老鼠全集</a>
+
+					<div class="pos_left_show">24.9亿</div>
+					<div class="pos_right_show">185集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rrk55wpg.html">
+						<img src="http://pic1.qiyipic.com/image/20170830/ff/da/a_50218261_m_601_m5_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rrk55wpg.html">海绵宝宝</a>
+
+					<div class="pos_left_show">21.6亿</div>
+					<div class="pos_right_show">334集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rrgcty90.html">
+						<img src="http://pic9.qiyipic.com/image/20170831/98/bd/a_50440853_m_601_m5_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rrgcty90.html">米奇妙妙屋</a>
+
+					<div class="pos_left_show">21.4亿</div>
+					<div class="pos_right_show">26集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rrjxt4oo.html">
+						<img src="http://pic5.qiyipic.com/image/20170830/c5/ee/a_50304007_m_601_m6_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rrjxt4oo.html">爱探险的朵拉</a>
+
+					<div class="pos_left_show">23.8亿</div>
+					<div class="pos_right_show">150集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rro4nfcc.html">
+						<img src="http://pic1.qiyipic.com/image/20170831/81/1c/a_100010120_m_601_m2_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rro4nfcc.html">出发吧 迪亚哥</a>
+
+					<div class="pos_left_show">9.1亿</div>
+					<div class="pos_right_show">80集全</div>
+				</li>
+				<li>
+					<a href="http://www.iqiyi.com/v_19rrokztzc.html">
+						<img src="http://pic0.qiyipic.com/image/20170302/b7/03/v_109340282_m_601_m11_192_108.jpg" /> </a>
+					<a href="http://www.iqiyi.com/v_19rrokztzc.html">西游记之大圣归来</a>
+
+					<div class="pos_left_show">1080P/div>
+					<div class="pos_right_show">01:28:53</div>
+				</li>
+			</ul>
+
+		</div>
+
+		<footer>
+			<div class="box1"><img src="img/ww.png" />
+				<h2 class="box2">合作伙伴</h2></div>
+			<div class="box">
+				<div class="box3">
+					<ul>
+						<li>
+							<div class="box4"><img src="img/430f2bc28000b42085f705330ba7af4e_3c77601b67144940b2a800a232b28f92.jpg" />
+								<a href="">动漫平台</a>
+							</div>
+						</li>
+						<li>
+							<div class="box4"><img src="img/f595e8f86df99cfa5aa03bba0f1d1926_67b3d634095e46f38d3598f2f6f5a95b.jpg" width="80px" height="80px" />
+								<a href="">淘米动画</a>
+							</div>
+						</li>
+						<li>
+							<div class="box4"><img src="img/60c3410c26f092f0fd688592bbf26ea5_82ad36b05f4b49cc9708d05ec1402f36.jpg" />
+								<a href="">4399动漫网</a>
+							</div>
+						</li>
+						<li>
+							<div class="box4"><img src="img/3216ba535f92385386592dbfdb5c1eee_bfa48ecf94f4499da9daf32a39f73c19.jpg" />
+								<a href="">酷米</a>
+							</div>
+						</li>
+						<li>
+							<div class="box4"><img src="img/17e96d2d08f045f3b6333bb5aa2f30b9_1f2dd74de3ca497589a3c4cae01db0ee.jpg" />
+								<a href="">看看动漫</a>
+							</div>
+						</li>
+						<li>
+							<div class="box4"><img src="img/b0abb798ee60a3de513db8476ac43166_882fc509fb034700827443c3fee9a7bd.jpg" />
+								<a href="">有趣岛</a>
+							</div>
+						</li>
+						<li>
+							<div class="box4"><img src="img/7650caa86041d4ee2d443f7ae93f0c9c_3cc82e23520843ceb929bf2724e07cec.jpg" />
+								<a href="">百度动漫</a>
+							</div>
+						</li>
+						<li>
+							<div class="box4"><img src="img/540e8e83aab562f66ebfded12bb7f706_ad51febbdf0d495a98441ae00b9e8d6c.jpg" />
+								<a href="">漫域</a>
+							</div>
+						</li>
+						<li>
+							<div class="box4"><img src="img/22b06df4abf925d3a6d09a427c3ffa23_4674a8d86ffd40cd854f054ff9f908f4.jpg" />
+								<a href="">圣斗士A4S</a>
+							</div>
+						</li>
+						<li>
+							<div class="box4"><img src="img/f18fdcc9f04132f95b252437d63e71ea_2e5ac59b334948fcb64b3b5683b2b6d9.jpg" />
+								<a href="">漫漫看</a>
+							</div>
+						</li>
+						<li>
+							<div class="box4"><img src="img/14a16ee517e45d1c5525e554ee52c420_22427a5f547844179415f8015a219c54.jpg" />
+								<a href="">！尚漫</a>
+							</div>
+						</li>
+						<li>
+							<div class="box4"><img src="img/77c6ab84dab6347b91863df31ea07991_152a6e24ea0849dd99638db963e7eca4.jpg" />
+								<a href="">杭州友诺</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="box5">
+					<ul>
+						<li>啪嗒动漫</li>
+						<li>漫域网</li>
+						<li>洒洒动漫网 </li>
+						<li>114啦动漫大全</li>
+						<li>起跑线儿歌</li>
+					</ul>
+				</div>
+				<div class="box5">
+					<ul>
+						<li>迅雷看看动漫</li>
+						<li>游戏狗</li>
+						<li>井上雄彦 </li>
+						<li>淘米动画片</li>
+						<li>漫布星球</li>
+					</ul>
+				</div>
+				<div class="box5">
+					<ul>
+						<li>有趣岛</li>
+						<li>cosplay</li>
+						<li>儿歌视频大全 </li>
+						<li>泡泡酷动漫</li>
+						<li>178动漫频道</li>
+					</ul>
+				</div>
+				<div class="box5">
+					<ul>
+						<li>百度视频动漫</li>
+						<li>i尚漫原创漫画</li>
+						<li>中国动漫产业网 </li>
+						<li>动画片大全</li>
+						<li>武动乾坤漫画</li>
+					</ul>
+				</div>
+				<div class="box5">
+					<ul>
+						<li>41717漫画网</li>
+						<li>大漫网</li>
+						<li>圣斗士热血传说 </li>
+						<li>2345动漫</li>
+					</ul>
+				</div>
+				<div class="box5">
+					<ul>
+						<li>火影忍者中文</li>
+						<li>嘟嘟动漫网</li>
+						<li>爱你妹动漫点评 </li>
+						<li>动漫之家</li>
+					</ul>
+				</div>
+				<div class="box5">
+					<ul>
+						<li>YACA动漫</li>
+						<li>漫漫看</li>
+						<li>杭州友诺 </li>
+						<li>巴士单机游戏</li>
+					</ul>
+				</div>
+				<div class="box5">
+					<ul>
+						<li>动画片大全</li>
+						<li>TVB卡通</li>
+						<li>动漫星空 </li>
+						<li>亲宝儿歌</li>
+					</ul>
+				</div>
+				<div class="box5">
+					<ul>
+						<li>漫客栈</li>
+						<li>7k7k动画</li>
+						<li>顺网动漫频道 </li>
+						<li>儿歌视频大全</li>
+					</ul>
+				</div>
+				<div class="box5">
+					<ul>
+						<li>3366动画</li>
+						<li>中国漫画家</li>
+						<li>二次元小窝 </li>
+						<li>原创动漫</li>
+					</ul>
+				</div>
+			</div>
+			<div class="box6">
+				<p>责任编辑：李菲 AD001</p>
+			</div>
+			<div class="box7">
+				<div class="box8">
+				<ul>
+					<li>公司介绍 |</li>
+					<li>新闻动态 |</li>
+					<li>联系方式 |</li>
+					<li>招聘英才 |</li>
+					<li>爱奇艺实验室 |</li>
+					<li>开放平台 |</li>
+					<li>爱奇艺号认证 |</li>
+					<li>爱奇艺号 |</li>
+					<li>帮助中心 |</li>
+					<li>侵权投诉 |</li>
+					<li>About Us</li>
+				</ul>
+			</div>
+			<div class="box9">
+				<ul>
+					<li>Copyright © 2017 </li>
+					<li class="a">爱奇艺</li>
+					<li> All Rights Reserved</li>
+				</ul>
+			</div>
+			</div>
+			
+		</footer>
+		<a href="#top" class="toTop"></a>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/Animation.js"></script>
+		<script type="text/javascript" src="js/login.js" ></script>
+		<script type="text/javascript" src="js/jquery.cookie.js" ></script>
+		<script>
+		</script>
+	</body>
+
+</html>
