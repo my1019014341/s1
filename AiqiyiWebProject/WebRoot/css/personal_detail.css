@@ -1,0 +1,113 @@
+.vip_show {
+	width: 1200px;
+	height: 116px;
+	margin: 0 auto;
+	overflow: hidden;
+	background: #f9f9f9;
+	border: 1px solid #eaeaea;
+}
+
+.vip_show .min_details {
+	width: 230px;
+	height: 116px;
+	float: left;
+	border-right: 1px solid #eaeaea;
+}
+
+.vip_show .vip_details {
+	width: 948px;
+	height: 101px;
+	float: left;
+}
+
+.vip_show .head_img {
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin: 10px;
+	border-radius: 25px;
+	overflow: hidden;
+}
+
+.vip_show .details_show {
+	box-sizing: border-box;
+	padding-left: 10px;
+	padding-top: 10px;
+	width: 158px;
+	height: 90px;
+	float: left;
+}
+
+.vip_show .details_show p {
+	font-size: 16px;
+	color: #333;
+	line-height: 26px;
+	margin: 0;
+}
+
+.vip_show .details_show span {
+	font-size: 12px;
+	color: gray;
+}
+
+.vip_show .details_show div {
+	margin-top: 12px;
+	width: 100px;
+	height: 32px;
+	line-height: 32px;
+	color: #fff;
+	text-align: center;
+	font-size: 16px;
+	border-radius: 2px;
+	background-color: #c8a06a;
+}
+
+form {
+	width: 580px;
+	height: 400px;
+	overflow: hidden;
+	margin: 20px auto;
+}
+
+form p {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+}
+
+form p span:first-child {
+	width: 50px;
+	display: inline-block;
+	text-align: center;
+	margin-left: 88px;
+	margin-right: 20px;
+}
+
+form p span:last-child {
+	display: inline-block;
+	width: 120px;
+	height: 26px;
+	line-height: 26px;
+	font-size: 14px;
+	color: gray;
+	margin-left: 52px;
+}
+
+form p input {
+	width: 180px;
+	outline: none;
+	height: 22px;
+	font-size: 16px;
+	padding-left: 10px;
+}
+
+form button {
+	margin-left: 220px;
+	margin-top: 20px;
+}
+
+form h2 {
+	color: #5aa700;
+	margin-left: 175px;
+	margin-bottom: 20px;
+}

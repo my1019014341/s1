@@ -1,0 +1,197 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "宋体";
+	font-size: 14px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+}
+
+img {
+	cursor: pointer;
+}
+
+ul {
+	list-style: none;
+}
+
+ul li {
+	cursor: pointer;
+}
+
+.one_div {
+	width: 1200px;
+	height: 216px;
+	margin: 0 auto;
+}
+
+.nav_div {
+	border-bottom: 1px solid #F2F2F2;
+	width: 1180px;
+	height: 41px;
+	position: relative;
+	padding-left: 20px;
+}
+
+.sub_div {
+	width: 1200px;
+	height: 170px;
+	margin-top: 5px;
+}
+
+.nav_div h3 {
+	width: 230px;
+	height: 45px;
+	line-height: 45px;
+}
+
+.nav_div h3 a {
+	color: #699f00;
+}
+
+.nav_div h3 a span:first-child {
+	font-size: 22px;
+	padding-top: 10px;
+}
+
+.nav_div h3 a span:last-child {
+	font-size: 14px;
+	padding-left: 8px;
+	height: 37px;
+}
+
+.nav_div h3 a em {
+	font-family: arial;
+	margin-left: 4px;
+	font-weight: bold;
+}
+
+.nav_div ul {
+	padding-top: 5px;
+	height: 37px;
+	width: 970px;
+	position: absolute;
+	top: 0;
+	left: 240px;
+	line-height: 37px;
+}
+
+.nav_div ul li {
+	display: inline-block;
+	padding: 0 8px 0 22px;
+	height: 20px;
+	margin-bottom: 5px;
+}
+
+.nav_div ul li a {
+	color: black;
+}
+
+.sub_div ul li {
+	width: 180px;
+	background: #F2F2F2;
+	float: left;
+	margin-left: 20px;
+}
+
+.sub_div ul li p {
+	padding: 5px 5px 0;
+}
+
+.sub_div ul li img {
+	width: 180px;
+	height: 101px;
+}
+
+.sub_div ul li p span {
+	font-size: 12px;
+	height: 27px;
+	padding: 3px;
+	background: white;
+	color: #699f00;
+	line-height: 27px;
+}
+
+a:hover {
+	color: #699f00;
+}
+
+.two_div {
+	width: 1200px;
+	height: 238px;
+	margin-bottom: 10px;
+	margin: 0 auto;
+}
+
+.baby_div {
+	width: 380px;
+	height: 238px;
+	float: left;
+	margin-left: 18px;
+}
+
+.baby_div_title {
+	width: 380px;
+	height: 45px;
+	border-bottom: 2px solid #699f00;
+}
+
+.baby_div h3 a {
+	color: #699f00;
+	float: left;
+	background: url(../img/tit-playBtn.png) no-repeat;
+}
+
+.baby_div h3 a span:first-child {
+	font-size: 27px;
+	font-weight: normal;
+	padding-left: 20px;
+}
+
+.baby_div h3 a span:last-child {
+	font-size: 15px;
+}
+
+.baby_div h3 a em {
+	font-family: arial;
+	margin-left: 4px;
+	font-weight: bold;
+}
+
+.baby_div_title ul li {
+	float: left;
+	margin: 13px 18px 0;
+}
+
+.baby_div_img {
+	width: 380px;
+	height: 193px;
+}
+
+.two_div img {
+	width: 180px;
+	height: 101px;
+}
+
+.baby_div_img li {
+	float: left;
+	margin-top: 30px;
+	background: #F2F2F2;
+	width: 180px;
+	height: 151px;
+}
+
+.baby_div_img li:last-child {
+	margin-left: 20px;
+}
+
+.baby_div_img li p {
+	width: 180px;
+	height: 50px;
+	line-height: 50px;
+	margin: 0;
+}

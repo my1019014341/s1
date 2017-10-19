@@ -1,0 +1,161 @@
+			/*页脚public*/
+			
+			footer * {
+				margin: 0;
+				padding: 0;
+				vertical-align: baseline;
+				font-size: 12px;
+				position: relative;
+			}
+			
+			footer a {
+				color: #333;
+			}
+			
+			footer a:hover {
+				color: #699f00;
+				text-decoration: none;
+			}
+			/*页脚top begin*/
+			
+			footer .footer_top {
+				width: 1180px;
+				height: 126px;
+				margin: 50px auto;
+			}
+			
+			footer .footer_top .footer_half {
+				width: 589px;
+				height: 126px;
+				display: inline;
+				float: left;
+				border: 1px solid #e7e7e7;
+				margin-right: -1px;
+				background-color: #F7F7F7;
+			}
+			
+			footer .footer_top .footer_half_top {
+				width: 589px;
+				height: 55px;
+				padding: 20px 20px 10px;
+				outline: 0;
+				display: inline-block;
+			}
+			
+			footer .footer_top .footer_half_name {
+				font-size: 24px;
+				line-height: 1;
+				color: #333;
+			}
+			
+			footer .footer_top .footer_half_name:hover {
+				color: #699f00;
+			}
+			
+			footer .footer_top .footer_more {
+				font-size: 12px;
+				padding-left: 8px;
+				padding-right: 5px;
+				cursor: pointer;
+				line-height: 1;
+			}
+			
+			footer .footer_top ul {
+				width: 589px;
+				height: 71px;
+				padding: 0 0 15px 20px;
+			}
+			
+			footer .footer_top ul li {
+				float: left;
+				width: 80px;
+				display: inline;
+				list-style: none;
+			}
+			
+			footer .footer_top ul li a {
+				line-height: 28px;
+			}
+			
+			footer .footer_top .dongtai {
+				margin-right: -10px;
+				width: 599px;
+			}
+			
+			footer .footer_top .dongtai li {
+				display: inline;
+				float: left;
+				width: 190px;
+			}
+			
+			footer .footer_top .dongtai li a {
+				line-height: 28px;
+				display: block;
+				width: 100%;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+			/*页脚top end*/
+			/*页脚middle begin*/
+			footer .footer_middle {
+				width: 1180px;
+				height: 96px;
+				margin: 10px auto;
+				padding-top: 10px;
+			}
+			
+			footer .footer_middle ul {}
+			
+			footer .footer_middle li {
+				float: left;
+				height: 14px;
+				padding: 15px;
+				list-style: none;
+			}
+			
+			footer .footer_middle a {
+				color: #666;
+				line-height: 28px;
+			}
+			
+			.mb10 {
+				margin-bottom: 10px;
+			}
+			/*页脚middle end*/
+			/*页脚bottom begin*/
+			
+			footer .footer_bottom {
+				width: 1349px;
+				height: 118px;
+				text-align: center;
+				margin: 20px auto;
+			}
+			
+			footer .footer_bottom .footer_bottom_top {
+				width: 1349px;
+				height: 43px;
+				padding: 5px 0 5px 0;
+			}
+			
+			footer .footer_bottom .footer_bottom_top a {
+				display: inline-block;
+				padding: 0 5px;
+			}
+			
+			footer .footer_bottom .footer_bottom_middle {
+				padding: 5px 0 5px 0;
+				width: 1349px;
+				height: 29px;
+			}
+			
+			footer .footer_bottom .footer_bottom_middle .ml30 {
+				margin-left: 30px;
+			}
+			
+			footer .footer_bottom .footer_bottom_bottom {
+				padding: 5px 0 5px 0;
+				width: 1349px;
+				height: 28px;
+			}
+			/*页脚bottom end*/
